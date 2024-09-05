@@ -1,0 +1,65 @@
+@charset "utf-8";
+/*
+ * Font         : NotoSansKR, LibreBaskerville, jt-font
+ * License      :
+ * Subset Maker : Studio-jt (KMS)
+ * Version      : 1.0.0
+ * description  :
+ */
+
+
+
+/* ************************************** *
+ * NotoSansKR
+ * ************************************** */
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/noto-sans-kr-v12-latin_korean/noto-sans-kr-v12-latin_korean-500.woff2') format('woff2'),
+         url('../fonts/noto-sans-kr-v12-latin_korean/noto-sans-kr-v12-latin_korean-500.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'NotoSansKR';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/noto-sans-kr-v12-latin_korean/noto-sans-kr-v12-latin_korean-700.woff2') format('woff2'),
+         url('../fonts/noto-sans-kr-v12-latin_korean/noto-sans-kr-v12-latin_korean-700.woff') format('woff');
+}
+
+
+
+/* ************************************** *
+ * LibreBaskerville
+ * ************************************** */
+@font-face {
+    font-family: 'LibreBaskerville';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/LibreBaskerville/libre-baskerville-v9-latin-regular.woff2') format('woff2'),
+         url('../fonts/LibreBaskerville/libre-baskerville-v9-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'LibreBaskerville';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/LibreBaskerville/libre-baskerville-v9-latin-700.woff2') format('woff2'),
+         url('../fonts/LibreBaskerville/libre-baskerville-v9-latin-700.woff') format('woff');
+}
+
+
+
+/* ************************************** *
+ * JT-FONT
+ * ************************************** */
+@font-face {
+    font-family:'jt-font';
+    font-style: normal;
+    font-display: block;
+    font-weight: normal;
+    src: url(../fonts/jt-font/fonts/jt-font.eot);
+    src: local("?"),
+         url(../fonts/jt-font/fonts/jt-font.woff) format('woff');
+}
