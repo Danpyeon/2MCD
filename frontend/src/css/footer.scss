@@ -1,0 +1,170 @@
+@import url(./util.scss);
+
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url(../../font/libre-baskerville-v9-latin-700.woff2);
+}
+
+@font-face {
+  font-family: "noto-sans";
+  src: url(../../font/noto-sans-kr-v12-latin_korean-500.woff2);
+}
+
+li {
+  margin-right: 40px;
+
+  :last-child {
+    margin-right: 0px;
+  }
+}
+
+#footer {
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.footer-layer {
+  width: 100%;
+  height: 150px;
+  background: transparent url(../../img/layout/footer-layer.svg) no-repeat
+    center top;
+  background-size: cover;
+  position: absolute;
+  animation: moveUpAndDown 0.9s infinite;
+}
+
+.bottom-20 {
+  bottom: 30rem;
+}
+
+.bottom-30 {
+  bottom: 36rem;
+}
+
+.inner-footer {
+  color: white;
+  background-color: black;
+  padding: 50px;
+  position: relative;
+}
+
+.link-text {
+  margin-bottom: 45px;
+
+  a {
+    color: white;
+    font-size: 3rem;
+  }
+
+  li a {
+    font-size: 1.5rem;
+  }
+
+  .kakao {
+    width: 90px;
+    height: 90px;
+    background-image: url(../../img/icon/kakao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.menu-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mediaText ul {
+  align-items: center;
+}
+
+.summary,
+.copyright {
+  font-size: 1.15rem;
+}
+
+.details {
+  p {
+    transition: all 0.5s ease-in;
+  }
+}
+
+p.none {
+  // display: none;
+  visibility: hidden;
+  animation: hideContents 0.2s ease-in;
+}
+
+p.block {
+  display: block;
+  line-height: 2.5;
+  color: #666;
+  animation: showContents 0.2s ease-in;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 25px;
+    height: auto;
+    margin-left: 5px;
+    animation: rotateAllow 0.2s linear;
+  }
+}
+
+.copyright {
+  color: rgba(240, 237, 230, 0.5);
+  margin-bottom: 55px;
+}
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes showContents {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hideContents {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+}
+
+@keyframes rotateAllow {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
