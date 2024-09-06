@@ -34,11 +34,11 @@ li {
 }
 
 .bottom-20 {
-  bottom: 30rem;
+  bottom: 31rem;
 }
 
 .bottom-30 {
-  bottom: 36rem;
+  bottom: 35rem;
 }
 
 .inner-footer {
@@ -86,7 +86,7 @@ li {
 
 .details {
   p {
-    transition: all 0.5s ease-in;
+    transition: all 0.2s ease-in;
   }
 }
 
@@ -101,6 +101,7 @@ p.block {
   line-height: 2.5;
   color: #666;
   animation: showContents 0.2s ease-in;
+  margin-bottom: 60px;
 }
 
 .summary {

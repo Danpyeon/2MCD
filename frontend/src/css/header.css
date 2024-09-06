@@ -15,6 +15,7 @@ html {
 body {
   background-color: #f0ede6;
   font-family: "LibreBaskerville", "noto-sans", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -24,25 +25,53 @@ a {
 ul {
   list-style-type: none;
   display: flex;
+  padding: 0;
 }
-
-li {
+ul li {
   margin-right: 40px;
 }
-li :last-child {
-  margin-right: 0px;
+
+.header-container {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: 0.21s linear;
+  height: 7rem;
+  background-color: #f0ede6;
+}
+
+.minimize {
+  border-bottom: 1px solid black;
+}
+
+div.none {
+  display: none;
 }
 
 #inner-header {
   display: flex;
-  margin: 35px 55px;
   align-items: center;
   justify-content: space-between;
+  margin: 1.5rem 2.5rem;
+  transition: 0.21s linear;
 }
 
-#menu a {
+#menu > li > a {
   color: black;
   font-size: 1.5rem;
+}
+
+.menu-container {
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
 }
 
 .search-btn {
@@ -52,7 +81,7 @@ li :last-child {
   width: 2.3rem;
   height: 2.3rem;
   background-size: cover;
-  margin-right: 5px;
+  margin-right: 0px 5px 0px 35px;
 }
 
 .search-btn:hover {
@@ -63,6 +92,64 @@ li :last-child {
   background-color: initial;
   border: none;
   height: 2rem;
+  transition: all 0.2s linear;
+}
+.myPage span {
+  font-family: "LibreBaskerville", "noto-sans", sans-serif;
+  font-size: 1.5rem;
+}
+.myPage svg {
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+  transition: 0.2s linear;
+}
+
+#menu-ball {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: -38.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  background: black;
+  top: 6rem;
+  text-align: left;
+  display: block;
+  width: 150px;
+  margin-left: -34px;
+  padding: 0 0 25px 0;
+}
+.sub-menu li {
+  margin: 25px 20px 0px 0px;
+}
+.sub-menu a {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "noto-sans", "LibreBaskerville", sans-serif;
+  padding: 5px 30px;
+}
+.sub-menu a:hover {
+  border-bottom: 3px solid white;
+}
+.sub-menu div {
+  display: inline-block;
+  position: relative;
+}
+
+@keyframes showRight {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 140px;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

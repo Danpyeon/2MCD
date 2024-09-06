@@ -22,15 +22,14 @@ li :last-child {
 .footer-layer {
   width: 100%;
   height: 150px;
-  background: transparent url(../../img/layout/footer-layer.svg) no-repeat
-    center top;
+  background: transparent url(../../img/layout/footer-layer.svg) no-repeat center top;
   background-size: cover;
   position: absolute;
   animation: moveUpAndDown 0.9s infinite;
 }
 
 .bottom-20 {
-  bottom: 33rem;
+  bottom: 31rem;
 }
 
 .bottom-30 {
@@ -78,10 +77,7 @@ li :last-child {
 }
 
 .details p {
-  transition: all 0.5s ease-in;
-  margin-bottom: 50px;
-  line-height: 2.5;
-  color: #666;
+  transition: all 0.2s ease-in;
 }
 
 p.none {
@@ -91,7 +87,10 @@ p.none {
 
 p.block {
   display: block;
+  line-height: 2.5;
+  color: #666;
   animation: showContents 0.2s ease-in;
+  margin-bottom: 60px;
 }
 
 .summary {
@@ -123,13 +122,11 @@ p.block {
     visibility: hidden;
     opacity: 0;
     transform: translateY(-20%);
-    margin-bottom: 0px;
   }
   100% {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-    margin: 50px;
   }
 }
 @keyframes hideContents {
@@ -137,13 +134,11 @@ p.block {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
-    margin-bottom: 50px;
   }
   100% {
     visibility: hidden;
     opacity: 0;
     transform: translateY(-20%);
-    margin-bottom: 00px;
   }
 }
 @keyframes rotateAllow {
