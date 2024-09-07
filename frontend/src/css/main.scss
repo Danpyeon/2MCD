@@ -13,6 +13,31 @@ body {
   height: 5rem;
 }
 
+.rotate-img:hover {
+  transform: rotate(60deg);
+}
+
+.layer-bib {
+  position: relative;
+  left: 17rem;
+}
+
+.title-text {
+  position: relative;
+  top: -1rem;
+  text-align: center;
+  font-size: 100px;
+  width: 100%;
+  font-weight: 700;
+  line-height: 1.24;
+  z-index: 2;
+}
+
+.between-icon-img {
+  width: 100%;
+  text-align: center;
+}
+
 .kor {
   font-family: "noto-sans", "LibreBaskerville", sans-serif;
 }
