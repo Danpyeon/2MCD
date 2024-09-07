@@ -5,6 +5,14 @@ body {
 }
 
 #main {
-  margin-top: 9rem;
-  height: 100%;
+  margin: 9rem 0 9rem 0;
+  min-height: calc(100vh - 5rem);
+}
+
+#footer {
+  height: 5rem;
+}
+
+.kor {
+  font-family: "noto-sans", "LibreBaskerville", sans-serif;
 }

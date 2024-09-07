@@ -29,11 +29,11 @@ li :last-child {
 }
 
 .bottom-20 {
-  bottom: 31rem;
+  bottom: 5rem;
 }
 
 .bottom-30 {
-  bottom: 35rem;
+  bottom: 5rem;
 }
 
 .inner-footer {
@@ -65,6 +65,12 @@ li :last-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.menu-wrap > a:hover,
+.link-text > a:hover,
+.summary:hover {
+  color: #ccc7bb;
 }
 
 .mediaText ul {
@@ -107,6 +113,17 @@ p.block {
 .copyright {
   color: rgba(240, 237, 230, 0.5);
   margin-bottom: 55px;
+}
+
+.sns-link svg {
+  position: absolute;
+  transition: 0.2s linear;
+  display: none;
+}
+
+.sns-link:hover svg {
+  display: block;
+  animation: showRight 0.2s;
 }
 
 @keyframes moveUpAndDown {
