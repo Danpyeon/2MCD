@@ -58,9 +58,21 @@ div.none {
   transition: 0.21s linear;
 }
 
+#menu {
+  margin: 0;
+}
 #menu > li > a {
   color: black;
   font-size: 1.5rem;
+}
+#menu > li > a > div {
+  margin: 16px 0px 16px 0px;
+}
+
+#menu > li:hover > .sub-menu {
+  opacity: 1;
+  display: block;
+  visibility: visible;
 }
 
 .menu-container {
@@ -103,6 +115,7 @@ div.none {
   right: 3rem;
   top: 5rem;
   transition: 0.2s linear;
+  display: none;
 }
 
 #menu-ball {
@@ -115,10 +128,10 @@ div.none {
 
 .sub-menu {
   opacity: 1;
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   background: black;
-  top: 6rem;
+  top: 5.5rem;
   text-align: left;
   display: block;
   width: 150px;
@@ -135,7 +148,7 @@ div.none {
   font-family: "noto-sans", "LibreBaskerville", sans-serif;
   padding: 5px 30px;
 }
-.sub-menu a:hover {
+.sub-menu a:hover > div {
   border-bottom: 3px solid white;
 }
 .sub-menu div {
