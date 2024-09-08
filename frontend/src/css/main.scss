@@ -7,26 +7,99 @@ body {
 #main {
   margin: 9rem 0 9rem 0;
   min-height: calc(100vh - 5rem);
+  text-align: center;
 }
 
 #footer {
   height: 5rem;
 }
 
+.btn-container {
+  width: 100vw;
+  display: flex;
+  margin: 40px 0px 40px 0px;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  width: 15vw;
+  height: 5vw;
+  border: none;
+  background-image: url(/frontend/img/layout/button-basic-stroke.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: initial;
+
+  a {
+    color: black;
+    font-family: "LibreBaskerville", "noto-sans", sans-serif;
+  }
+}
+
+.sub-title {
+  font-size: 4.5vw;
+}
+
+.brand-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  > img {
+    width: 45vw;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > div {
+      margin: 40px 0px;
+      font-size: 1.2vw;
+    }
+  }
+}
+
+.kor {
+  font-family: "noto-sans", "LibreBaskerville", sans-serif;
+}
+
+.rotate-img {
+  width: 10vw;
+}
 .rotate-img:hover {
   transform: rotate(60deg);
 }
 
 .layer-bib {
   position: relative;
-  left: 17rem;
+  left: -18rem;
+}
+
+.layer-bone {
+  position: relative;
+  top: -41vw;
+  left: -5vw;
+}
+
+.layer-cloud {
+  position: relative;
+  top: -59vw;
+  left: 3vw;
+}
+
+.layer-fish {
+  position: relative;
+  left: 36vw;
 }
 
 .title-text {
   position: relative;
   top: -1rem;
   text-align: center;
-  font-size: 100px;
+  font-size: 7vw;
   width: 100%;
   font-weight: 700;
   line-height: 1.24;
@@ -35,9 +108,9 @@ body {
 
 .between-icon-img {
   width: 100%;
-  text-align: center;
-}
-
-.kor {
-  font-family: "noto-sans", "LibreBaskerville", sans-serif;
+  .center-img {
+    width: 60vw;
+    position: relative;
+    top: -5.2vw;
+  }
 }

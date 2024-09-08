@@ -48,10 +48,10 @@ li :last-child {
 }
 .link-text a {
   color: white;
-  font-size: 3rem;
+  font-size: 3vw;
 }
 .link-text li a {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 .link-text .kakao {
   width: 90px;
@@ -79,7 +79,7 @@ li :last-child {
 
 .summary,
 .copyright {
-  font-size: 1.15rem;
+  font-size: 1.15vw;
 }
 
 .details p {

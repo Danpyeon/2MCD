@@ -64,9 +64,10 @@ div.none {
 
 #menu {
   margin: 0;
+
   > li > a {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
   > li > a > div {
@@ -112,7 +113,7 @@ div.none {
 
   span {
     font-family: "LibreBaskerville", "noto-sans", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
   }
 
   svg {
@@ -150,7 +151,7 @@ div.none {
 
   a {
     color: white;
-    font-size: 16px;
+    font-size: 1.2vw;
     font-weight: 600;
     font-family: "noto-sans", "LibreBaskerville", sans-serif;
     padding: 5px 30px;
