@@ -29,8 +29,17 @@
     <link rel="preload" href="/cotiestore/cotie_css/cotie_css22.css" as="style" media="all">
 
     <script src="/JQuery/jquery-3.7.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+          $("#header").load("/frontend/src/html/common/header.html");
+          $("#footer").load("/frontend/src/html/common/footer.html");
+        });
+      </script>
+
 </head>
 <body data-rsssl="1" class="page-template page-template-sub page-template-store page-template-substore-php page page-id-19 desktop use-mouse" style>
+    <header id="header"></header>
+
     <div id="barba-wrapper" data-barba="wrapper" aria-live="polite">
         <div class="barbar-container" data-barba="container" style="visibility: visible;">
             <main id="main" class="main-container">
@@ -131,7 +140,7 @@
                                     <!-- .jt-lazyload -->
                                      <div class="store_list__info">
                                         <b lang="en" class="store-list__info-name">소노인터내셔널 소노펫 홍천</b>
-                                        <p lang="en" class="store-list__info-time">연중무휴</p>
+                                        <p lang="en" class="store-list__info-time ">연중무휴</p>
                                         <p class="store-list__info-addr">강원도 홍천군 서면 한치골길 262</p>
                                         <p lang="en" class="sotre-list__info-tel">
                                             <span>1588-4888</span>
@@ -176,9 +185,9 @@
                                     </figure>
                                     <!-- .jt-lazyload -->
                                      <div class="store_list__info">
-                                        <b lang="en" class="store-list__info-name">코코스퀘어 의왕점</b>
-                                        <p lang="en" class="store-list__info-time">Mon-Sun 10:30-21:00</p>
-                                        <p class="store-list__info-addr">경기 의왕시 바라산로 1 (학의동 1039), 롯데 프리미엄 아울렛 타임빌라스 글라스빌 2F</p>
+                                        <b lang="en" class="store-list__info-name ">코코스퀘어 의왕점</b>
+                                        <p lang="en" class="store-list__info-time ">Mon-Sun 10:30-21:00</p>
+                                        <p class="store-list__info-addr ">경기 의왕시 바라산로 1 (학의동 1039), 롯데 프리미엄 아울렛 타임빌라스 글라스빌 2F</p>
                                         <p lang="en" class="sotre-list__info-tel">
                                             <span>031-229-4012</span>
                                         </p>
@@ -199,9 +208,9 @@
                                     </figure>
                                     <!-- .jt-lazyload -->
                                      <div class="store_list__info">
-                                        <b lang="en" class="store-list__info-name">코코스퀘어 롯데메종동부산점</b>
-                                        <p lang="en" class="store-list__info-time">Mon-Thu 10:30-20:00 / Fri-Sun 10:30-20:30</p>
-                                        <p class="store-list__info-addr">부산 기장군 기장읍 동부산관광로 8 2층 롯데메종동부산점</p>
+                                        <b lang="en" class="store-list__info-name ">코코스퀘어 롯데메종동부산점</b>
+                                        <p lang="en" class="store-list__info-time ">Mon-Thu 10:30-20:00 / Fri-Sun 10:30-20:30</p>
+                                        <p class="store-list__info-addr ">부산 기장군 기장읍 동부산관광로 8 2층 롯데메종동부산점</p>
                                         <p lang="en" class="sotre-list__info-tel">
                                             <span>051-901-1977</span>
                                         </p>
@@ -222,9 +231,9 @@
                                     </figure>
                                     <!-- .jt-lazyload -->
                                      <div class="store_list__info">
-                                        <b lang="en" class="store-list__info-name">피터펫 논현점</b>
-                                        <p lang="en" class="store-list__info-time">Mon-Fri 8:00-22:00 / Sat-Sun 8:00-22:00</p>
-                                        <p class="store-list__info-addr">서울시 강남구 논현로 611 1층</p>
+                                        <b lang="en" class="store-list__info-name ">피터펫 논현점</b>
+                                        <p lang="en" class="store-list__info-time ">Mon-Fri 8:00-22:00 / Sat-Sun 8:00-22:00</p>
+                                        <p class="store-list__info-addr ">서울시 강남구 논현로 611 1층</p>
                                         <p lang="en" class="sotre-list__info-tel">
                                             <span>02-524-0022</span>
                                         </p>
@@ -245,9 +254,9 @@
                                     </figure>
                                     <!-- .jt-lazyload -->
                                      <div class="store_list__info">
-                                        <b lang="en" class="store-list__info-name">켄싱턴 리조트 충주</b>
-                                        <p lang="en" class="store-list__info-time">연중무휴</p>
-                                        <p class="store-list__info-addr">충청북도 충주시 양성면 산전장수1길 103</p>
+                                        <b lang="en" class="store-list__info-name ">켄싱턴 리조트 충주</b>
+                                        <p lang="en" class="store-list__info-time ">연중무휴</p>
+                                        <p class="store-list__info-addr ">충청북도 충주시 양성면 산전장수1길 103</p>
                                         <p lang="en" class="sotre-list__info-tel">
                                             <span>043-857-0055</span>
                                         </p>
@@ -300,8 +309,22 @@
     </div>
     <!-- #barba_warpper -->
      <div id="transition-container">
-
      </div>
+     <footer id="footer">
+         <a lang="en" data-barba-prevent href="#" id="go-top" class="go-top" style>
+            <i class="go-top__arrow"></i>
+            <span class="go-top__txt">top</span>
+            <div class="go-top__punch">
+                <span class="go-top__paw spotted">
+                    <i></i>
+                </span>
+                <i class="go-top__scratch-01"></i>
+                <i class="go-top__scratch-02"></i>
+            </div>
+            <!-- .go-top__punch-->
+         </a>
+         <!-- .go-top -->
+     </footer>
 
      <script>
         $(document).ready(() => {

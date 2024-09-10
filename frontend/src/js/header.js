@@ -9,14 +9,14 @@ window.addEventListener("scroll", () => {
 
   if (top >= 200 && top <= 800) {
     header.addClass("minimize");
-    header.css("height", "6rem");
-    inner.css("margin", " 1rem 2.5rem");
+    header.css("height", "6vw");
+    inner.css("margin", " 1vw 2.5vw");
   } else if (top > 800) {
     if (!header.hasClass("none")) header.addClass("none");
   } else if (top < 200 && header.hasClass("minimize")) {
     header.removeClass("minimize");
-    header.css("height", "7rem");
-    inner.css("margin", "1.5rem 2.5rem");
+    header.css("height", "7vw");
+    inner.css("margin", "1.5vw 2.5vw");
   }
 });
 
