@@ -1,0 +1,169 @@
+@import url(./util.scss);
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url(../../font/libre-baskerville-v9-latin-700.woff2);
+}
+@font-face {
+  font-family: "noto-sans";
+  src: url(../../font/noto-sans-kr-v12-latin_korean-500.woff2);
+}
+body,
+html {
+  margin: 0;
+}
+
+body {
+  background-color: #f0ede6;
+  font-family: "LibreBaskerville", "noto-sans", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+ul li {
+  margin-right: 40px;
+}
+
+.header-container {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: 0.21s linear;
+  height: 7rem;
+  background-color: #f0ede6;
+}
+
+.minimize {
+  border-bottom: 1px solid black;
+}
+
+div.none {
+  display: none;
+}
+
+#inner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 2.5rem;
+  transition: 0.21s linear;
+}
+
+#menu {
+  margin: 0;
+}
+#menu > li > a {
+  color: black;
+  font-size: 1.5vw;
+}
+#menu > li > a > div {
+  margin: 16px 0px 16px 0px;
+  height: 100%;
+}
+
+#menu > li:hover > .sub-menu {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+
+.menu-container {
+  display: flex;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.search-btn {
+  background-color: initial;
+  border: none;
+  background-image: url(../../img/icon/search_close.png);
+  width: 2.3rem;
+  height: 2.3rem;
+  background-size: cover;
+  margin-right: 0px 5px 0px 35px;
+}
+
+.search-btn:hover {
+  background-image: url(../../img/icon/search_open.png);
+}
+
+.myPage {
+  background-color: initial;
+  border: none;
+  height: 2rem;
+  transition: all 0.2s linear;
+}
+.myPage span {
+  font-family: "LibreBaskerville", "noto-sans", sans-serif;
+  font-size: 1.5vw;
+}
+.myPage svg {
+  position: absolute;
+  right: 3rem;
+  top: 5rem;
+  transition: 0.2s linear;
+  display: none;
+}
+
+#menu-ball {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: -38.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.sub-menu {
+  opacity: 1;
+  visibility: hidden;
+  position: absolute;
+  background: black;
+  top: 5.5rem;
+  text-align: left;
+  display: block;
+  width: 150px;
+  margin-left: -34px;
+  padding: 0 0 25px 0;
+}
+.sub-menu li {
+  margin: 25px 20px 0px 0px;
+}
+.sub-menu a {
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 600;
+  font-family: "noto-sans", "LibreBaskerville", sans-serif;
+  padding: 5px 30px;
+}
+.sub-menu a:hover > div {
+  border-bottom: 3px solid white;
+}
+.sub-menu div {
+  display: inline-block;
+  position: relative;
+}
+
+@keyframes showRight {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 110px;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
