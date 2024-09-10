@@ -1,0 +1,1698 @@
+/* https://cotieshop.co.kr/wp-content/themes/cotie/css/rwd-strap.css?ver=1.0.28 */
+@media (max-width: 1800px) {
+    .single-pagination {
+        width:-webkit-calc(100% - 200rem);
+        width: calc(100% - 200rem);
+        max-width: inherit;
+        margin-left: 100rem;
+        margin-right: 100rem
+    }
+}
+
+@media (max-width: 1480px) {
+    .jt-btn__basic {
+        width:245rem;
+        height: 82rem;
+        font-size: 17rem;
+        line-height: 84rem
+    }
+
+    .jt-btn__square {
+        font-size: 22rem
+    }
+
+    .jt-btn__square[target="_blank"]>span:before {
+        font-size: 18rem
+    }
+
+    .selectric .label {
+        height: 50rem;
+        font-size: 17rem;
+        line-height: 50rem
+    }
+
+    .selectric .button {
+        height: 50rem
+    }
+
+    .selectric-items ul,.selectric-items li {
+        font-size: 15rem
+    }
+
+    .selectric-items li {
+        padding: 6rem 20rem
+    }
+
+    .selectric-items li:first-child {
+        padding-top: 22rem
+    }
+
+    .selectric-items li:last-child {
+        padding-bottom: 22rem
+    }
+
+    html.mobile .jt-selectric__wrap:before {
+        line-height: 50rem
+    }
+
+    html.mobile .jt-selectric__wrap>select {
+        padding-top: 17rem;
+        padding-bottom: 17rem;
+        font-size: 17rem
+    }
+
+    .jt-fullvid__poster-btn {
+        width: 130rem;
+        height: 130rem;
+        margin-top: -65rem;
+        margin-left: -65rem
+    }
+
+    .jt-fullvid__poster-btn:before,.jt-fullvid__poster-btn:after {
+        line-height: 130rem
+    }
+
+    .jt-fullvid__poster-btn:before {
+        font-size: 130rem
+    }
+
+    .jt-fullvid__poster-btn:after {
+        font-size: 76rem
+    }
+
+    .jt-fullvid-container .jt-fullvid__poster.jt-fullvid__poster--popup .jt-fullvid__poster-btn:after {
+        font-size: 60rem
+    }
+
+    .jt-category ul a {
+        font-size: 17rem
+    }
+
+    .jt-loadmore {
+        margin-top: 100rem
+    }
+
+    .jt-list-nothing {
+        margin: 100rem auto 0
+    }
+
+    .jt-list-nothing b {
+        font-size: 36rem
+    }
+
+    .jt-list-nothing p {
+        font-size: 17rem
+    }
+
+    .marquee-txt__item>span>i {
+        margin-right: 110rem
+    }
+
+    .jt-share {
+        padding-top: 70rem
+    }
+
+    .jt-share__group {
+        margin-top: -30rem
+    }
+
+    .jt-share__button {
+        width: 60rem;
+        height: 60rem
+    }
+
+    .jt-share__button:before,.jt-share__button:after {
+        line-height: 60rem
+    }
+
+    .jt-share__button:before {
+        font-size: 60rem
+    }
+
+    .jt-share__button:after {
+        font-size: 18rem
+    }
+
+    .jt-share .jt-share__item {
+        width: 46rem;
+        height: 46rem
+    }
+
+    .jt-share .jt-share__item:before {
+        font-size: 46rem;
+        line-height: 46rem
+    }
+
+    .jt-share .jt-share__item:after {
+        line-height: 46rem
+    }
+
+    .jt-share__popup {
+        width: 480rem;
+        height: 260rem;
+        margin-left: -240rem;
+        margin-top: -130rem
+    }
+
+    .jt-share__popup-head {
+        padding: 26rem 30rem
+    }
+
+    .jt-share__popup-body {
+        padding: 71rem 20rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item {
+        margin: 0 20rem
+    }
+
+    .jt-share__popup__close {
+        right: 20rem
+    }
+
+    .jt-share__copynote {
+        padding: 20rem 40rem;
+        left: 50rem;
+        bottom: 25rem
+    }
+
+    .jt-accordion__title {
+        padding: 28rem 60rem 28rem 0
+    }
+
+    .jt-accordion__title b {
+        font-size: 18rem
+    }
+
+    .jt-accordion__control:after {
+        font-size: 36rem
+    }
+
+    .jt-accordion__content-inner {
+        padding: 15rem 0 45rem
+    }
+
+    .jt-single__header-inner {
+        padding-bottom: 36rem
+    }
+
+    .jt-single__title {
+        font-size: 46rem
+    }
+
+    .jt-single__meta {
+        padding-top: 18rem
+    }
+
+    .jt-single__cat {
+        margin-bottom: 16rem;
+        padding: 9rem 22rem 9rem;
+        font-size: 15rem
+    }
+
+    .jt-single__content {
+        margin-bottom: 70rem
+    }
+
+    .jt-single__wrap,.jt-blocks h1,.jt-blocks h2,.jt-blocks h3,.jt-blocks h4,.jt-blocks h5,.jt-blocks h6,.jt-blocks p,.jt-blocks ul,.jt-blocks ol,.jt-blocks blockquote,.jt-blocks .wp-block-buttons,.jt-blocks .wp-block-cover .wp-block-cover__inner-container>*,.jt-blocks .alignwide,.jt-blocks .wp-block-image,.jt-blocks .alignundefined,.jt-blocks .wp-block-cover,.jt-blocks .wp-block-button,.jt-blocks .wp-block-audio,.jt-blocks .wp-block-pullquote,.jt-blocks .wp-block-verse,.jt-blocks .wp-block-code,.jt-blocks .wp-block-preformatted,.jt-blocks .wp-block-video,.jt-blocks .wp-block-embed,.jt-blocks .wp-block-table {
+        max-width: inherit;
+        margin-left: 100rem;
+        margin-right: 100rem
+    }
+
+    .jt-blocks.jt-single__content .alignfull {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .wp-block-embed-wordpress.alignfull iframe,.jt-blocks .wp-block-table.alignfull,.jt-blocks .wp-block-text-columns.alignfull,.jt-blocks .wp-block-audio.alignfull {
+        width: 100%
+    }
+
+    .jt-blocks .wp-block-column h1,.jt-blocks .wp-block-column h2,.jt-blocks .wp-block-column h3,.jt-blocks .wp-block-column h4,.jt-blocks .wp-block-column h5,.jt-blocks .wp-block-column h6,.jt-blocks .wp-block-column p,.jt-blocks .wp-block-column ul,.jt-blocks .wp-block-column ol,.jt-blocks .wp-block-column blockquote,.jt-blocks .wp-block-column .wp-block-buttons {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .blocks-gallery-grid,.wp-block-gallery {
+        margin-left: 100rem;
+        margin-right: 100rem
+    }
+
+    .jt-blocks .wp-block-gallery.alignwide {
+        max-width: inherit
+    }
+
+    .jt-blocks .wp-block-quote {
+        padding-top: 36rem
+    }
+
+    .jt-blocks .wp-block-quote:before {
+        width: 26rem;
+        height: 24rem
+    }
+
+    .jt-blocks blockquote.wp-block-quote {
+        margin-left: 100rem;
+        margin-right: 100rem
+    }
+
+    .jt-blocks blockquote.wp-block-quote.is-large p,.jt-blocks blockquote.wp-block-quote.is-style-large p {
+        font-size: 19rem
+    }
+
+    .jt-blocks h1,.jt-blocks .h1,.jt-blocks h2,.jt-blocks .h2 {
+        font-size: 32rem
+    }
+
+    .jt-blocks h3,.jt-blocks .h3 {
+        font-size: 28rem
+    }
+
+    .jt-blocks h4,.jt-blocks .h4 {
+        font-size: 24rem
+    }
+
+    .jt-blocks h5,.jt-blocks .h5 {
+        font-size: 20rem
+    }
+
+    .jt-blocks h6,.jt-blocks .h6 {
+        font-size: 18rem
+    }
+
+    .jt-blocks p a[target="_blank"]:not(.wp-block-button__link):not(.wp-block-social-link-anchor),.jt-blocks ul a[target="_blank"]:not(.wp-block-button__link):not(.wp-block-social-link-anchor),.jt-blocks ol a[target="_blank"]:not(.wp-block-button__link):not(.wp-block-social-link-anchor) {
+        padding-right: 15rem;
+        margin-right: 4rem
+    }
+
+    .jt-blocks p a[target="_blank"]:not(.wp-block-button__link):after,.jt-blocks ul a[target="_blank"]:not(.wp-block-button__link):after,.jt-blocks ol a[target="_blank"]:not(.wp-block-button__link):after {
+        margin-right: 0
+    }
+
+    .jt-blocks .wp-block-button__link {
+        font-size: 16rem
+    }
+
+    .single-pagination {
+        height: 150rem;
+        width: -webkit-calc(100% - 100rem);
+        width: calc(100% - 100rem);
+        margin-left: 50rem;
+        margin-right: 50rem
+    }
+
+    .single-pagination__link b {
+        font-size: 19rem
+    }
+
+    .single-pagination__list {
+        width: 68rem;
+        height: 68rem;
+        margin-top: -34rem;
+        margin-left: -34rem
+    }
+
+    .single-pagination__list:after {
+        width: 68rem;
+        height: 68rem;
+        line-height: 68rem
+    }
+
+    .jt-alert__container {
+        width: 480rem
+    }
+
+    .jt-alert__content {
+        padding: 110rem 30rem 50rem;
+        background-size: 76rem auto
+    }
+
+    .jt-alert__content p {
+        font-size: 34rem
+    }
+
+    .jt-alert__btn {
+        padding: 26rem 30rem;
+        font-size: 18rem
+    }
+
+    html.ios .jt-alert__btn {
+        padding-top: 27rem;
+        padding-bottom: 25rem
+    }
+}
+
+@media (max-width: 1023px) {
+    .jt-btn__basic {
+        width:236rem;
+        height: 79rem;
+        line-height: 81rem
+    }
+
+    .jt-btn__icon {
+        font-size: 17rem
+    }
+
+    .jt-btn__icon>span {
+        padding-left: 38rem
+    }
+
+    .jt-btn__icon>span:before {
+        width: 28rem;
+        height: 28rem;
+        margin-top: -14rem;
+        font-size: 28rem
+    }
+
+    .jt-btn__underline {
+        padding: 17rem 0;
+        font-size: 17rem
+    }
+
+    .jt-selectric__wrap {
+        width: 126rem
+    }
+
+    .selectric .label {
+        height: 46rem;
+        font-size: 16rem;
+        line-height: 46rem
+    }
+
+    .selectric .button {
+        height: 46rem
+    }
+
+    .selectric .button:after {
+        font-size: 11rem
+    }
+
+    .selectric-items ul,.selectric-items li {
+        font-size: 14rem
+    }
+
+    .selectric-items li {
+        padding: 4rem 16rem
+    }
+
+    .selectric-items li:first-child {
+        padding-top: 18rem
+    }
+
+    .selectric-items li:last-child {
+        padding-bottom: 18rem
+    }
+
+    html.mobile .jt-selectric__wrap:before {
+        font-size: 11rem;
+        line-height: 46rem
+    }
+
+    html.mobile .jt-selectric__wrap>select {
+        font-size: 16rem
+    }
+
+    .swiper-pagination {
+        font-size: 13rem
+    }
+
+    .swiper-navigation button {
+        padding: 0 16rem
+    }
+
+    .swiper-navigation button:after {
+        font-size: 68rem
+    }
+
+    .jt-fullvid__poster-btn {
+        width: 100rem;
+        height: 100rem;
+        margin-top: -50rem;
+        margin-left: -50rem
+    }
+
+    .jt-fullvid__poster-btn:before,.jt-fullvid__poster-btn:after {
+        line-height: 100rem
+    }
+
+    .jt-fullvid__poster-btn:before {
+        font-size: 100rem
+    }
+
+    .jt-fullvid__poster-btn:after {
+        font-size: 58rem;
+        text-indent: 7rem
+    }
+
+    .jt-fullvid-container .jt-fullvid__poster.jt-fullvid__poster--popup .jt-fullvid__poster-btn:after {
+        font-size: 48rem
+    }
+
+    .jt-category {
+        margin-top: 20rem
+    }
+
+    .jt-category ul a {
+        padding: 5rem 11rem;
+        font-size: 16rem
+    }
+
+    .jt-pagination {
+        margin-top: 70rem
+    }
+
+    .jt-pagination .jt-pagination__numbers {
+        min-width: 46rem;
+        height: 46rem;
+        margin: 0 4rem 4rem 4rem;
+        line-height: 46rem
+    }
+
+    .jt-pagination .jt-pagination__numbers.jt-pagination--first:before,.jt-pagination .jt-pagination__numbers.jt-pagination--prev:before,.jt-pagination .jt-pagination__numbers.jt-pagination--next:before,.jt-pagination .jt-pagination__numbers.jt-pagination--last:before {
+        font-size: 22rem;
+        line-height: 46rem
+    }
+
+    .jt-pagination .jt-pagination__numbers.jt-pagination--prev {
+        margin-right: 8rem
+    }
+
+    .jt-pagination .jt-pagination__numbers.jt-pagination--next {
+        margin-left: 8rem
+    }
+
+    .jt-loadmore {
+        margin-top: 70rem
+    }
+
+    .jt-list-nothing {
+        width: 390rem;
+        height: 213rem;
+        padding-top: 80rem
+    }
+
+    .jt-list-nothing b {
+        font-size: 28rem
+    }
+
+    .jt-list-nothing p {
+        padding-top: 12rem
+    }
+
+    .marquee-txt__item>span>i {
+        margin-right: 86rem
+    }
+
+    .jt-share__popup {
+        width: 386rem;
+        height: 228rem;
+        margin-left: -193rem;
+        margin-top: -114rem
+    }
+
+    .jt-share__popup-head b {
+        font-size: 18rem
+    }
+
+    .jt-share__popup__close:after {
+        font-size: 20rem;
+        line-height: 36rem
+    }
+
+    .jt-share__popup-body {
+        padding: 55rem 20rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item {
+        margin: 0 16rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item:after,.jt-share__popup-body .jt-share .jt-share__item.jt-share--twitter:after {
+        font-size: 28rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item.jt-share--facebook:after {
+        font-size: 26rem
+    }
+
+    .jt-share__popup__close {
+        width: 36rem;
+        height: 36rem;
+        margin-top: -18rem
+    }
+
+    .jt-accordion__title {
+        padding: 25rem 56rem 25rem 0
+    }
+
+    .jt-accordion__title b {
+        font-size: 17rem
+    }
+
+    .jt-accordion__control:after {
+        font-size: 32rem
+    }
+
+    .jt-download-files a,.jt-download-files i {
+        font-size: 15rem
+    }
+
+    .jt-single__title {
+        font-size: 40rem
+    }
+
+    .jt-single__title br {
+        display: none
+    }
+
+    .jt-single__cat {
+        padding: 9rem 20rem
+    }
+
+    .jt-single__wrap,.jt-blocks h1,.jt-blocks h2,.jt-blocks h3,.jt-blocks h4,.jt-blocks h5,.jt-blocks h6,.jt-blocks p,.jt-blocks ul,.jt-blocks ol,.jt-blocks blockquote,.jt-blocks .wp-block-buttons,.jt-blocks .wp-block-cover .wp-block-cover__inner-container>*,.jt-blocks .alignwide,.jt-blocks .wp-block-image,.jt-blocks .alignundefined,.jt-blocks .wp-block-cover,.jt-blocks .wp-block-button,.jt-blocks .wp-block-audio,.jt-blocks .wp-block-pullquote,.jt-blocks .wp-block-verse,.jt-blocks .wp-block-code,.jt-blocks .wp-block-preformatted,.jt-blocks .wp-block-video,.jt-blocks .wp-block-embed,.jt-blocks .wp-block-table,.jt-blocks blockquote.wp-block-quote,.blocks-gallery-grid,.wp-block-gallery {
+        margin-left: 50rem;
+        margin-right: 50rem
+    }
+
+    .jt-blocks h1,.jt-blocks .h1,.jt-blocks h2,.jt-blocks .h2 {
+        font-size: 30rem
+    }
+
+    .mfp-iframe-holder .mfp-content {
+        max-width: 90%
+    }
+
+    button.mfp-close {
+        width: 48rem;
+        height: 48rem;
+        top: -57rem;
+        margin-left: -24rem
+    }
+
+    button.mfp-close:after {
+        font-size: 32rem;
+        line-height: 48rem
+    }
+
+    button.mfp-close:active {
+        top: -57rem
+    }
+
+    .mfp-iframe-holder button.mfp-close {
+        width: 48rem;
+        top: -57rem
+    }
+
+    .jt-alert__container {
+        width: 386rem
+    }
+
+    .jt-alert__content {
+        padding: 95rem 30rem 40rem;
+        background-size: 62rem auto
+    }
+
+    .jt-alert__content p {
+        font-size: 28rem
+    }
+
+    .jt-alert__btn {
+        padding: 22rem 30rem;
+        font-size: 17rem
+    }
+
+    html.ios .jt-alert__btn {
+        padding-top: 23rem;
+        padding-bottom: 21rem
+    }
+}
+
+@media (max-width: 860px) {
+    .jt-btn__basic {
+        width:210rem;
+        height: 70rem;
+        font-size: 16rem;
+        line-height: 72rem
+    }
+
+    .jt-btn__basic[class*='jt-btn__basic--icon']>span {
+        padding-left: 26rem
+    }
+
+    .jt-btn__basic[class*='jt-btn__basic--icon']>span:before {
+        font-size: 18rem
+    }
+
+    .jt-btn__icon {
+        font-size: 16rem
+    }
+
+    .jt-btn__icon>span {
+        padding-left: 32rem
+    }
+
+    .jt-btn__icon>span:before {
+        width: 24rem;
+        height: 24rem;
+        margin-top: -11rem;
+        font-size: 24rem
+    }
+
+    .jt-btn__underline {
+        padding: 15rem 0;
+        font-size: 16rem
+    }
+
+    .jt-btn__square {
+        padding: 23rem 30rem;
+        font-size: 18rem;
+        border-width: 3rem
+    }
+
+    .jt-btn__square[target="_blank"]>span:before {
+        font-size: 15rem
+    }
+
+    .selectric .label {
+        height: 42rem;
+        margin-right: 26rem;
+        line-height: 42rem
+    }
+
+    .selectric .button {
+        width: 26rem;
+        height: 42rem;
+        right: -7rem
+    }
+
+    html.mobile .jt-selectric__wrap:before {
+        line-height: 42rem
+    }
+
+    html.mobile .jt-selectric__wrap>select {
+        padding: 13rem 26rem 13rem 0
+    }
+
+    .swiper-pagination-bullet {
+        width: 32rem;
+        height: 32rem;
+        position: relative;
+        background: transparent;
+        opacity: 1
+    }
+
+    .swiper-pagination-bullet:before,.swiper-pagination-bullet:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #000;
+        border-radius: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+    }
+
+    .swiper-pagination-bullet:after {
+        width: 5rem;
+        height: 5rem
+    }
+
+    .swiper-pagination-bullet:before {
+        width: 0rem;
+        height: 0rem
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active:after {
+        width: 3rem;
+        height: 3rem;
+        background: #F0EDE6
+    }
+
+    .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+        width: 11rem;
+        height: 11rem
+    }
+
+    .jt-category {
+        text-align: center
+    }
+
+    .jt-pagination {
+        margin-top: 60rem
+    }
+
+    .jt-pagination .jt-pagination__numbers {
+        min-width: 42rem;
+        height: 42rem;
+        line-height: 42rem;
+        font-size: 13rem
+    }
+
+    .jt-pagination .jt-pagination__numbers.jt-pagination--first:before,.jt-pagination .jt-pagination__numbers.jt-pagination--prev:before,.jt-pagination .jt-pagination__numbers.jt-pagination--next:before,.jt-pagination .jt-pagination__numbers.jt-pagination--last:before {
+        font-size: 20rem;
+        line-height: 42rem
+    }
+
+    .jt-loadmore {
+        margin-top: 60rem
+    }
+
+    .jt-list-nothing {
+        margin-top: 80rem
+    }
+
+    .marquee-txt__item>span>i {
+        margin-right: 60rem
+    }
+
+    .jt-share {
+        padding-top: 50rem
+    }
+
+    .jt-share__group {
+        margin-top: -26rem
+    }
+
+    .jt-share__button {
+        width: 52rem;
+        height: 52rem
+    }
+
+    .jt-share__button:before,.jt-share__button:after {
+        line-height: 52rem
+    }
+
+    .jt-share__button:before {
+        font-size: 52rem
+    }
+
+    .jt-share__button:after {
+        font-size: 15rem;
+        text-indent: -2rem
+    }
+
+    .jt-share .jt-share__item {
+        width: 42rem;
+        height: 42rem
+    }
+
+    .jt-share .jt-share__item:before {
+        font-size: 42rem;
+        line-height: 42rem
+    }
+
+    .jt-share .jt-share__item:after {
+        line-height: 42rem
+    }
+
+    .jt-share__popup {
+        height: 196rem;
+        margin-top: -98rem
+    }
+
+    .jt-share__popup-head {
+        padding: 22rem 24rem
+    }
+
+    .jt-share__popup-head b {
+        font-size: 17rem
+    }
+
+    .jt-share__popup-body {
+        padding: 46rem 20rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item:after,.jt-share__popup-body .jt-share .jt-share__item.jt-share--twitter:after {
+        font-size: 25rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item.jt-share--facebook:after {
+        font-size: 23rem
+    }
+
+    .jt-share__popup__close {
+        right: 16rem
+    }
+
+    .jt-share__popup__close:after {
+        font-size: 18rem
+    }
+
+    .jt-share__copynote {
+        left: 32rem
+    }
+
+    .jt-share__copynote p {
+        font-size: 15rem
+    }
+
+    .jt-download-files {
+        padding-left: 17rem;
+        border-left-width: 2rem
+    }
+
+    .jt-single__header {
+        margin-bottom: 50rem
+    }
+
+    .jt-single__header-inner {
+        padding-bottom: 32rem;
+        border-bottom-width: 2rem
+    }
+
+    .jt-single__title {
+        font-size: 34rem
+    }
+
+    .jt-single__meta {
+        padding-top: 15rem
+    }
+
+    .jt-single__meta>* {
+        font-size: 13rem
+    }
+
+    .jt-single__cat {
+        font-size: 14rem
+    }
+
+    .jt-single__content {
+        margin-bottom: 50rem
+    }
+
+    .jt-single__wrap,.jt-blocks h1,.jt-blocks h2,.jt-blocks h3,.jt-blocks h4,.jt-blocks h5,.jt-blocks h6,.jt-blocks p,.jt-blocks ul,.jt-blocks ol,.jt-blocks blockquote,.jt-blocks .wp-block-buttons,.jt-blocks .wp-block-cover .wp-block-cover__inner-container>*,.jt-blocks .alignwide,.jt-blocks .wp-block-image,.jt-blocks .alignundefined,.jt-blocks .wp-block-cover,.jt-blocks .wp-block-button,.jt-blocks .wp-block-audio,.jt-blocks .wp-block-pullquote,.jt-blocks .wp-block-verse,.jt-blocks .wp-block-code,.jt-blocks .wp-block-preformatted,.jt-blocks .wp-block-video,.jt-blocks .wp-block-embed,.jt-blocks .wp-block-table,.jt-blocks blockquote.wp-block-quote,.blocks-gallery-grid,.wp-block-gallery {
+        margin-left: 32rem;
+        margin-right: 32rem
+    }
+
+    .jt-blocks .wp-block-embed.alignwide,.jt-blocks .wp-block-cover.alignwide,.jt-blocks .wp-block-image.alignwide,.jt-blocks .wp-block-gallery.alignwide {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .jt-blocks .wp-block-columns {
+        margin-bottom: 35rem
+    }
+
+    .jt-blocks h1,.jt-blocks h2,.jt-blocks h3,.jt-blocks h4,.jt-blocks h5,.jt-blocks h6,.jt-blocks .h1,.jt-blocks .h2,.jt-blocks .h3,.jt-blocks .h4,.jt-blocks .h5,.jt-blocks .h6 {
+        margin-top: 30rem;
+        margin-bottom: 12rem
+    }
+
+    .jt-blocks h1,.jt-blocks .h1,.jt-blocks h2,.jt-blocks .h2 {
+        font-size: 26rem
+    }
+
+    .jt-blocks h3,.jt-blocks .h3 {
+        font-size: 24rem
+    }
+
+    .jt-blocks h4,.jt-blocks .h4 {
+        font-size: 22rem
+    }
+
+    .jt-blocks h5,.jt-blocks .h5 {
+        font-size: 18rem
+    }
+
+    .jt-blocks h6,.jt-blocks .h6 {
+        font-size: 16rem
+    }
+
+    .jt-blocks p {
+        margin-bottom: 22rem;
+        font-size: 15rem
+    }
+
+    .jt-blocks li {
+        font-size: 15rem
+    }
+
+    .jt-blocks ul li:before {
+        top: 12rem
+    }
+
+    html.ios .jt-blocks ul li:before {
+        top: 10rem
+    }
+
+    .jt-blocks ul:not(.blocks-gallery-grid),.jt-blocks ol:not(.blocks-gallery-grid) {
+        margin-bottom: 30rem
+    }
+
+    .jt-blocks table {
+        margin-bottom: 20rem
+    }
+
+    .jt-blocks table th,.jt-blocks table td {
+        padding: 16rem 20rem;
+        font-size: 15rem
+    }
+
+    .jt-blocks .wp-block-quote {
+        padding-top: 32rem
+    }
+
+    .jt-blocks .wp-block-quote:before {
+        width: 22rem;
+        height: 20rem
+    }
+
+    .jt-blocks blockquote.wp-block-quote {
+        margin-top: 30rem;
+        margin-bottom: 30rem
+    }
+
+    .jt-blocks .wp-block-quote p,.jt-blocks .wp-block-media-text__content .wp-block-quote p {
+        font-size: 16rem
+    }
+
+    .jt-blocks blockquote.wp-block-quote.is-large p,.jt-blocks blockquote.wp-block-quote.is-style-large p {
+        font-size: 17rem
+    }
+
+    .jt-blocks .wp-block-gallery {
+        margin-bottom: 30rem
+    }
+
+    .jt-blocks .wp-block-embed.is-type-video figcaption {
+        margin-top: 13rem;
+        font-size: 13rem
+    }
+
+    .jt-blocks .wp-block-button__link {
+        font-size: 15rem
+    }
+
+    .single-pagination {
+        height: 68rem;
+        width: -webkit-calc(100% - 64rem);
+        width: calc(100% - 64rem);
+        margin: 70rem 32rem 0
+    }
+
+    .single-pagination--prev {
+        padding-right: 54rem
+    }
+
+    .single-pagination--next {
+        padding-left: 54rem
+    }
+
+    .single-pagination__link,.jt-blocks a.single-pagination__link,.single-pagination__title {
+        font-size: 15rem
+    }
+
+    .single-pagination__link b {
+        font-size: 17rem
+    }
+
+    .single-pagination__link span {
+        display: none
+    }
+}
+
+@media (max-width: 540px) {
+    .jt-btn__basic {
+        width:160rem;
+        height: 53rem;
+        font-size: 12rem;
+        line-height: 55rem
+    }
+
+    .jt-btn__basic[class*='jt-btn__basic--icon']>span {
+        padding-left: 24rem
+    }
+
+    .jt-btn__basic[class*='jt-btn__basic--icon']>span:before {
+        margin-top: -11rem;
+        font-size: 14rem
+    }
+
+    .jt-btn__icon {
+        font-size: 14rem
+    }
+
+    .jt-btn__icon>span {
+        padding-left: 24rem
+    }
+
+    .jt-btn__icon>span:before {
+        width: 20rem;
+        height: 20rem;
+        margin-top: -8rem;
+        font-size: 20rem
+    }
+
+    .jt-btn__underline {
+        padding: 12rem 0;
+        font-size: 14rem
+    }
+
+    .jt-btn__square {
+        padding: 20rem 25rem;
+        font-size: 16rem;
+        border-width: 2rem
+    }
+
+    .jt-btn__square[target="_blank"]>span {
+        padding-right: 23rem
+    }
+
+    .jt-btn__square[target="_blank"]>span:before {
+        margin-top: -12rem;
+        font-size: 12rem
+    }
+
+    html.ios .jt-btn__square {
+        padding-top: 21rem;
+        padding-bottom: 19rem
+    }
+
+    .jt-selectric__wrap {
+        width: 100%
+    }
+
+    .selectric {
+        text-align: center
+    }
+
+    .selectric .label {
+        display: inline-block;
+        vertical-align: middle;
+        height: 40rem;
+        margin-right: 10rem;
+        font-size: 14rem;
+        line-height: 40rem
+    }
+
+    .selectric .button {
+        display: inline-block;
+        vertical-align: middle;
+        width: 24rem;
+        height: 40rem;
+        position: relative;
+        top: auto;
+        right: auto
+    }
+
+    .selectric .button:after {
+        font-size: 10rem
+    }
+
+    .selectric-items {
+        border-width: 1rem
+    }
+
+    .selectric-items ul,.selectric-items li {
+        font-size: 13rem
+    }
+
+    .selectric-items li {
+        padding: 3rem 15rem
+    }
+
+    .selectric-items li:first-child {
+        padding-top: 14rem
+    }
+
+    .selectric-items li:last-child {
+        padding-bottom: 14rem
+    }
+
+    html.mobile .jt-selectric__wrap {
+        text-align: center
+    }
+
+    html.mobile .jt-selectric__wrap:before {
+        display: none
+    }
+
+    html.mobile .jt-selectric__wrap>select {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: transparent
+    }
+
+    html.mobile .jt-selectric__current {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 13rem 0;
+        font-size: 14rem;
+        line-height: 1;
+        font-weight: 700;
+        color: #000
+    }
+
+    html.mobile .jt-selectric__current:after {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 14rem;
+        margin-top: -3rem;
+        font-family: 'jt-font';
+        content: '\e901';
+        font-size: 10rem;
+        font-weight: 400;
+        line-height: 1;
+        font-style: normal;
+        color: #000
+    }
+
+    html.mobile.ios .jt-selectric__current:after {
+        margin-top: -2rem
+    }
+
+    .jt-fullvid__poster-btn {
+        width: 70rem;
+        height: 70rem;
+        margin-top: -35rem;
+        margin-left: -35rem
+    }
+
+    .jt-fullvid__poster-btn:before,.jt-fullvid__poster-btn:after {
+        line-height: 70rem
+    }
+
+    .jt-fullvid__poster-btn:before {
+        font-size: 70rem
+    }
+
+    .jt-fullvid__poster-btn:after {
+        font-size: 42rem;
+        text-indent: 5rem
+    }
+
+    .jt-fullvid-container .jt-fullvid__poster.jt-fullvid__poster--popup .jt-fullvid__poster-btn:after {
+        font-size: 30rem
+    }
+
+    .jt-category {
+        margin-top: 15rem
+    }
+
+    .jt-category ul a {
+        padding: 5rem 6rem;
+        font-size: 14rem
+    }
+
+    .jt-category ul a svg {
+        bottom: -2rem
+    }
+
+    .jt-pagination {
+        margin-top: 52rem
+    }
+
+    .jt-pagination .jt-pagination__numbers {
+        min-width: 38rem;
+        height: 38rem;
+        margin: 0 3rem 3rem 3rem;
+        padding: 0 3rem;
+        font-size: 12rem;
+        line-height: 38rem
+    }
+
+    .jt-pagination .jt-pagination__numbers.jt-pagination--first:before,.jt-pagination .jt-pagination__numbers.jt-pagination--prev:before,.jt-pagination .jt-pagination__numbers.jt-pagination--next:before,.jt-pagination .jt-pagination__numbers.jt-pagination--last:before {
+        font-size: 18rem;
+        line-height: 38rem
+    }
+
+    .jt-pagination .jt-pagination__numbers.jt-pagination--prev {
+        margin-right: 4rem
+    }
+
+    .jt-pagination .jt-pagination__numbers.jt-pagination--next {
+        margin-left: 4rem
+    }
+
+    .jt-loadmore {
+        margin-top: 52rem
+    }
+
+    .jt-list-nothing {
+        width: 280rem;
+        height: 153rem;
+        padding-top: 55rem;
+        margin-top: 50rem
+    }
+
+    .jt-list-nothing b {
+        font-size: 22rem
+    }
+
+    .jt-list-nothing p {
+        padding-top: 10rem;
+        font-size: 15rem
+    }
+
+    .marquee-txt__item>span>i {
+        margin-right: 32rem
+    }
+
+    .jt-share {
+        padding-top: 40rem
+    }
+
+    .jt-share__group {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin-top: 0
+    }
+
+    .jt-share__button {
+        width: 100%;
+        height: auto;
+        padding: 20rem 20rem;
+        font-size: 16rem;
+        line-height: 1;
+        text-align: center;
+        font-weight: 700;
+        border: 2rem solid #000
+    }
+
+    .jt-share__button:before,.jt-share__button:after {
+        display: none
+    }
+
+    .jt-share__button>span {
+        position: static;
+        width: auto;
+        height: auto;
+        clip: inherit;
+        -webkit-clip-path: inherit;
+        clip-path: inherit
+    }
+
+    html.ios .jt-share__button {
+        padding-top: 21rem
+    }
+
+    .jt-share .jt-share__item {
+        width: 40rem;
+        height: 40rem
+    }
+
+    .jt-share .jt-share__item:before {
+        font-size: 40rem;
+        line-height: 40rem
+    }
+
+    .jt-share .jt-share__item:after {
+        font-size: 15rem;
+        line-height: 40rem
+    }
+
+    .jt-share .jt-share__item.jt-share--twitter:after {
+        font-size: 14rem
+    }
+
+    .jt-share__popup {
+        width: -webkit-calc(100% - 48rem);
+        width: calc(100% - 48rem);
+        height: 168rem;
+        margin-top: -84rem;
+        margin-left: 0;
+        left: 24rem
+    }
+
+    .jt-share__popup-head {
+        padding: 20rem 20rem
+    }
+
+    .jt-share__popup-head b {
+        font-size: 16rem
+    }
+
+    .jt-share__popup-body {
+        padding: 36rem 16rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item {
+        margin: 0 10rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item:after,.jt-share__popup-body .jt-share .jt-share__item.jt-share--twitter:after {
+        font-size: 22rem
+    }
+
+    .jt-share__popup-body .jt-share .jt-share__item.jt-share--facebook:after {
+        font-size: 20rem
+    }
+
+    .jt-share__popup__close {
+        right: 11rem
+    }
+
+    .jt-share__copynote {
+        width: -webkit-calc(100% - 48rem);
+        width: calc(100% - 48rem);
+        padding: 15rem 24rem;
+        left: 24rem;
+        text-align: center
+    }
+
+    .jt-share__copynote p {
+        font-size: 14rem
+    }
+
+    html.ios .jt-share__copynote {
+        padding-top: 16rem
+    }
+
+    .jt-accordion__title {
+        padding: 20rem 50rem 20rem 0
+    }
+
+    .jt-accordion__title b {
+        font-size: 16rem
+    }
+
+    .jt-accordion__control {
+        right: 5rem
+    }
+
+    .jt-accordion__control:after {
+        font-size: 28rem
+    }
+
+    .jt-accordion__content-inner {
+        padding: 12rem 0 34rem
+    }
+
+    html.ios .jt-accordion__title {
+        padding-top: 21rem
+    }
+
+    .jt-download-files {
+        padding-left: 15rem
+    }
+
+    .jt-download-files b {
+        padding-left: 20rem;
+        font-size: 15rem
+    }
+
+    .jt-download-files b:before {
+        width: 14rem;
+        height: 14rem;
+        font-size: 14rem
+    }
+
+    .jt-download-files a,.jt-download-files i {
+        font-size: 14rem
+    }
+
+    .jt-download-files i.jt-download-files__comma {
+        padding-right: 4rem
+    }
+
+    html.ios .jt-download-files b:before {
+        margin-top: -8rem
+    }
+
+    .jt-single__header {
+        margin-bottom: 35rem
+    }
+
+    .jt-single__header-inner {
+        padding-bottom: 20rem
+    }
+
+    .jt-single__title {
+        font-size: 25rem;
+        line-height: 1.4
+    }
+
+    .jt-single__meta {
+        padding-top: 8rem
+    }
+
+    .jt-single__meta>* {
+        padding: 0 7rem;
+        font-size: 12rem
+    }
+
+    .jt-single__cat {
+        margin-bottom: 13rem;
+        padding: 7rem 16rem;
+        font-size: 12rem
+    }
+
+    html.ios .jt-single__meta {
+        padding-top: 6rem
+    }
+
+    html.ios .jt-single__cat {
+        margin-bottom: 13rem;
+        padding-top: 8rem;
+        padding-bottom: 6rem
+    }
+
+    .jt-single__wrap,.jt-blocks h1,.jt-blocks h2,.jt-blocks h3,.jt-blocks h4,.jt-blocks h5,.jt-blocks h6,.jt-blocks p,.jt-blocks ul,.jt-blocks ol,.jt-blocks blockquote,.jt-blocks .wp-block-buttons,.jt-blocks .wp-block-cover .wp-block-cover__inner-container>*,.jt-blocks .alignwide,.jt-blocks .alignundefined,.jt-blocks .wp-block-button,.jt-blocks .wp-block-audio,.jt-blocks .wp-block-pullquote,.jt-blocks .wp-block-verse,.jt-blocks .wp-block-code,.jt-blocks .wp-block-preformatted,.jt-blocks .wp-block-table,.jt-blocks blockquote.wp-block-quote,.blocks-gallery-grid,.wp-block-gallery {
+        margin-left: 24rem;
+        margin-right: 24rem
+    }
+
+    .jt-blocks .wp-block-cover,.jt-blocks .wp-block-image,.jt-blocks .wp-block-gallery,.jt-blocks .wp-block-video,.jt-blocks .wp-block-embed {
+        margin-left: 0;
+        margin-right: 0
+    }
+
+    .jt-blocks h1,.jt-blocks .h1,.jt-blocks h2,.jt-blocks .h2 {
+        font-size: 20rem
+    }
+
+    .jt-blocks h3,.jt-blocks .h3 {
+        font-size: 18rem
+    }
+
+    .jt-blocks h4,.jt-blocks .h4 {
+        font-size: 17rem
+    }
+
+    .jt-blocks h5,.jt-blocks .h5 {
+        font-size: 16rem
+    }
+
+    .jt-blocks h6,.jt-blocks .h6 {
+        font-size: 15rem
+    }
+
+    .jt-blocks p {
+        font-size: 14rem
+    }
+
+    .jt-blocks li {
+        font-size: 14rem
+    }
+
+    .jt-blocks ul li {
+        padding-left: 10rem
+    }
+
+    .jt-blocks ul li:before {
+        width: 3rem;
+        height: 3rem
+    }
+
+    .jt-blocks table th,.jt-blocks table td {
+        padding: 12rem 15rem;
+        font-size: 14rem
+    }
+
+    html.ios .jt-blocks table th,html.ios .jt-blocks table td {
+        padding-top: 13rem;
+        padding-bottom: 11rem
+    }
+
+    .jt-blocks p a[target="_blank"]:not(.wp-block-button__link),.jt-blocks ul a[target="_blank"]:not(.wp-block-button__link),.jt-blocks ol a[target="_blank"]:not(.wp-block-button__link) {
+        padding-right: 12rem;
+        margin-right: 3rem
+    }
+
+    .jt-blocks .wp-block-button__link {
+        min-width: 160rem;
+        padding: 12rem 25rem;
+        font-size: 14rem
+    }
+
+    html.ios .jt-blocks .wp-block-button__link {
+        padding-top: 13rem;
+        padding-bottom: 11rem
+    }
+
+    .jt-blocks .wp-block-quote {
+        padding-top: 25rem
+    }
+
+    .jt-blocks .wp-block-quote:before {
+        width: 18rem;
+        height: 16rem
+    }
+
+    .jt-blocks .wp-block-quote p,.jt-blocks .wp-block-media-text__content .wp-block-quote p {
+        font-size: 14rem
+    }
+
+    .jt-blocks blockquote.wp-block-quote.is-large,.jt-blocks blockquote.wp-block-quote.is-style-large {
+        padding-left: 12rem;
+        border-left-width: 2rem
+    }
+
+    .jt-blocks blockquote.wp-block-quote.is-large p,.jt-blocks blockquote.wp-block-quote.is-style-large p {
+        font-size: 15rem
+    }
+
+    .jt-blocks .wp-block-embed.is-type-video figcaption {
+        margin-top: 10rem;
+        font-size: 12rem
+    }
+
+    .jt-embed-video__overlay-btn {
+        width: 70rem;
+        height: 70rem;
+        margin-top: -35rem;
+        margin-left: -35rem
+    }
+
+    .jt-embed-video__overlay-btn:after {
+        font-size: 70rem;
+        line-height: 70rem
+    }
+
+    .jt-blocks .wp-block-gallery .blocks-gallery-item figcaption {
+        padding-bottom: 8rem
+    }
+
+    .jt-blocks .blocks-gallery-grid .blocks-gallery-image,.jt-blocks .blocks-gallery-grid .blocks-gallery-item,.jt-blocks .wp-block-gallery .blocks-gallery-image,.jt-blocks .wp-block-gallery .blocks-gallery-item {
+        margin: 0 6rem 6rem 0;
+        width: -webkit-calc(50% - 6rem);
+        width: calc(50% - 6rem)
+    }
+
+    .jt-blocks .blocks-gallery-grid .blocks-gallery-image:nth-child(even),.jt-blocks .blocks-gallery-grid .blocks-gallery-item:nth-child(even),.jt-blocks .wp-block-gallery .blocks-gallery-image:nth-child(even),.jt-blocks .wp-block-gallery .blocks-gallery-item:nth-child(even) {
+        margin-right: 0
+    }
+
+    .jt-blocks .wp-block-gallery.columns-6 .blocks-gallery-image,.jt-blocks .wp-block-gallery.columns-6 .blocks-gallery-item {
+        width: -webkit-calc(50% - 16rem);
+        width: calc(50% - 16rem)
+    }
+
+    .jt-blocks .wp-block-separator {
+        margin: 50rem auto
+    }
+
+    .single-pagination {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 55rem 24rem 0;
+        text-align: center;
+        border-top: none
+    }
+
+    .single-pagination__link,.single-pagination__title {
+        display: none
+    }
+
+    .single-pagination__list {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 20rem 20rem;
+        font-size: 16rem;
+        line-height: 1;
+        text-align: center;
+        font-weight: 700;
+        color: #fff;
+        border: 2rem solid #000
+    }
+
+    .single-pagination__list>span {
+        position: static;
+        width: auto;
+        height: auto;
+        clip: inherit;
+        -webkit-clip-path: inherit;
+        clip-path: inherit
+    }
+
+    .single-pagination__list:after {
+        display: none
+    }
+
+    html.desktop .single-pagination__list:hover {
+        color: #000
+    }
+
+    html.ios .single-pagination__list {
+        padding-top: 21rem;
+        padding-bottom: 19rem
+    }
+
+    .mfp-container {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .mfp-iframe-holder .mfp-content {
+        max-width: 95%
+    }
+
+    button.mfp-close {
+        width: 40rem;
+        height: 40rem;
+        top: -46rem;
+        margin-left: -20rem
+    }
+
+    button.mfp-close:after {
+        font-size: 27rem;
+        line-height: 40rem
+    }
+
+    button.mfp-close:active {
+        top: -46rem
+    }
+
+    .mfp-iframe-holder button.mfp-close {
+        width: 40rem;
+        top: -46rem
+    }
+
+    .jt-alert__container {
+        width: -webkit-calc(100% - 48rem);
+        width: calc(100% - 48rem)
+    }
+
+    .jt-alert__content {
+        padding: 78rem 24rem 35rem;
+        background-size: 48rem auto
+    }
+
+    .jt-alert__content p {
+        font-size: 24rem
+    }
+
+    .jt-alert__btn {
+        padding: 18rem 24rem;
+        font-size: 16rem
+    }
+
+    html.ios .jt-alert__btn {
+        padding-top: 19rem;
+        padding-bottom: 17rem
+    }
+}

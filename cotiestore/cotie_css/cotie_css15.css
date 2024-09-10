@@ -1,0 +1,290 @@
+/* https://cotieshop.co.kr/wp-content/themes/cotie/modules/cotielog/style.css?ver=1.0.0 */
+.jt-isotope-list {
+    visibility: hidden
+}
+
+.jt-isotope-list {
+    margin-bottom: -168rem;
+    position: relative
+}
+
+.jt-isotope-list:after {
+    content: '';
+    display: table;
+    clear: both
+}
+
+.jt-isotope-list__grid {
+    width: 48%
+}
+
+.jt-isotope-list__gutter {
+    width: 4%
+}
+
+.jt-isotope-list__item {
+    width: 48%;
+    margin-bottom: 168rem
+}
+
+.jt-isotope-list>div:first-child+div+div+div {
+    margin-top: 115rem
+}
+
+.jt-isotope-list__link {
+    display: block;
+    position: relative
+}
+
+.jt-isotope-list__thumb {
+    display: block;
+    position: relative;
+    overflow: hidden
+}
+
+.jt-isotope-list__thumb img {
+    display: block;
+    max-width: 100%
+}
+
+.jt-isotope-list__content {
+    padding-top: 20rem
+}
+
+.jt-isotope-list__title {
+    font-size: 24rem;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    line-height: 1.65;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 3.3em
+}
+
+.jt-isotope-list__desc {
+    margin-top: 26rem;
+    font-size: 18rem;
+    font-weight: 500;
+    letter-spacing: -.025em;
+    line-height: 1.8;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 3.6em
+}
+
+.jt-isotope-list__item--simple .jt-isotope-list__content {
+    padding: 38rem 30rem;
+    background: #F0EDE6;
+    border: 1rem solid #000
+}
+
+.last-post--cotielog .jt-isotope-list {
+    margin-bottom: -120rem
+}
+
+.last-post--cotielog .jt-isotope-list__grid {
+    width: 44.18%
+}
+
+.last-post--cotielog .jt-isotope-list__gutter {
+    width: 11.64%
+}
+
+.last-post--cotielog .jt-isotope-list__item {
+    width: 44.18%;
+    margin-bottom: 120rem
+}
+
+.last-post--cotielog .jt-isotope-list>div:first-child+div+div+div {
+    margin-top: 120rem
+}
+
+@media (max-width: 1480px) {
+    .jt-isotope-list__title {
+        font-size:22rem
+    }
+
+    .jt-isotope-list__desc {
+        margin-top: 15rem;
+        font-size: 17rem
+    }
+}
+
+@media (max-width: 1023px) {
+    .jt-isotope-list {
+        margin-bottom:-100rem
+    }
+
+    .jt-isotope-list__item {
+        margin-bottom: 100rem
+    }
+
+    .jt-isotope-list>div:first-child+div+div+div {
+        margin-top: 80rem
+    }
+
+    .jt-isotope-list__title {
+        font-size: 20rem
+    }
+
+    .jt-isotope-list__desc {
+        margin-top: 12rem
+    }
+
+    .jt-isotope-list__item--simple .jt-isotope-list__content {
+        padding: 32rem 26rem
+    }
+
+    .last-post--cotielog .jt-isotope-list {
+        margin-bottom: -100rem
+    }
+
+    .last-post--cotielog .jt-isotope-list__grid {
+        width: 46%
+    }
+
+    .last-post--cotielog .jt-isotope-list__gutter {
+        width: 8%
+    }
+
+    .last-post--cotielog .jt-isotope-list__item {
+        width: 46%;
+        margin-bottom: 100rem
+    }
+
+    .last-post--cotielog .jt-isotope-list>div:first-child+div+div+div {
+        margin-top: 100rem
+    }
+}
+
+@media (max-width: 860px) {
+    .jt-cotielog-list-wrap {
+        padding:0 32rem
+    }
+
+    .jt-isotope-list {
+        margin-bottom: -80rem
+    }
+
+    .jt-isotope-list__item {
+        margin-bottom: 80rem
+    }
+
+    .jt-isotope-list>div:first-child+div+div+div {
+        margin-top: 65rem
+    }
+
+    .jt-isotope-list__title {
+        font-size: 18rem
+    }
+
+    .jt-isotope-list__desc {
+        font-size: 15rem
+    }
+
+    .last-post--cotielog .jt-isotope-list {
+        margin-bottom: -80rem
+    }
+
+    .last-post--cotielog .jt-isotope-list__grid {
+        width: 48%
+    }
+
+    .last-post--cotielog .jt-isotope-list__gutter {
+        width: 4%
+    }
+
+    .last-post--cotielog .jt-isotope-list__item {
+        width: 48%;
+        margin-bottom: 80rem
+    }
+
+    .last-post--cotielog .jt-isotope-list>div:first-child+div+div+div {
+        margin-top: 80rem
+    }
+}
+
+@media (max-width: 540px) {
+    .jt-cotielog-list-wrap {
+        padding:0
+    }
+
+    .jt-isotope-list {
+        margin-bottom: -58rem
+    }
+
+    .jt-isotope-list__grid {
+        width: 100%
+    }
+
+    .jt-isotope-list__gutter {
+        width: 0
+    }
+
+    .jt-isotope-list__item {
+        width: 100%;
+        margin-bottom: 58rem
+    }
+
+    .jt-isotope-list>div:first-child+div+div+div {
+        margin-top: 0
+    }
+
+    .jt-isotope-list__content {
+        padding-top: 13rem
+    }
+
+    .jt-isotope-list__title {
+        font-size: 16rem
+    }
+
+    .jt-isotope-list__desc {
+        margin-top: 8rem;
+        font-size: 14rem
+    }
+
+    .jt-isotope-list__item--simple .jt-isotope-list__content {
+        padding: 20rem 18rem
+    }
+
+    .jt-isotope-list__item:nth-child(odd) {
+        padding-right: 112rem
+    }
+
+    .jt-isotope-list__item:nth-child(even) {
+        padding-left: 112rem
+    }
+
+    .last-post--cotielog .jt-isotope-list {
+        margin-bottom: -58rem
+    }
+
+    .last-post--cotielog .jt-isotope-list__grid {
+        width: 100%
+    }
+
+    .last-post--cotielog .jt-isotope-list__gutter {
+        width: 0%
+    }
+
+    .last-post--cotielog .jt-isotope-list__item {
+        width: 100%;
+        margin-bottom: 58rem
+    }
+
+    .last-post--cotielog .jt-isotope-list>div:first-child+div+div+div {
+        margin-top: 0
+    }
+
+    .last-post--cotielog .jt-isotope-list__item:nth-child(n+6) {
+        display: none
+    }
+}

@@ -140,24 +140,52 @@ figure, article, header, footer, nav, hgroup, video, audio, aside, main {
 }
 /* store-illust */
 
-
-.jt-lazyload--loaded img[data-unveil], img[data-unveil].jt-lazyload--loaded {
-    opacity: 1;
-}
-.jt-lazyload.jt-lazyload--loaded img {
-    height: auto;
-}
 img[data-unveil] {
     opacity: 0;
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
 }
+
+.jt-lazyload--loaded img[data-unveil], img[data-unveil].jt-lazyload--loaded {
+    opacity: 1;
+}
+
+.jt-lazyload {
+    position: relative;
+    overflow: hidden
+}
+
+.jt-lazyload.jt-lazyload--loaded img {
+    height: auto;
+}
+
 .jt-lazyload img {
     display: block;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.jt-lazyload.jt-lazyload--loaded img {
+    height: auto
+}
+
+.jt-lazyload__color-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #CCC7BB
+}
+
+.jt-lazyload.jt-lazyload--loaded .jt-lazyload__color-preview {
+    background: transparent;
+    -webkit-transition: background .1s;
+    transition: background .1s;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s
 }
 
 /* article-header__inner */
@@ -223,6 +251,17 @@ img[data-unveil] {
     }
 }
 
+.jt-joyful-easteregg {
+    display: none;
+    position: absolute;
+    z-index: 10
+}
+
+.jt-joyful-easteregg img {
+    display: block;
+    max-width: 100%
+}
+
 
 
 .jt-btn__basic {
@@ -286,6 +325,12 @@ img[data-unveil] {
 }
 
 .jt-btn__basic:hover:before {
+    opacity: 1;
+}
+
+.jt-btn__basic>span {
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -299,6 +344,11 @@ a {
     text-decoration: none;
 }
 
+a:active,button:active,.jt-blocks .wp-block-button__link:active,.main-visual .swiper-navigation button:active,.mfp-iframe-holder button.mfp-close:active {
+    cursor: url(/KJH-IMG/cursor-hand-click.png), auto;
+}
+
+
 a, button, .jt-blocks .wp-block-button__link, .main-visual .swiper-navigation button, .mfp-iframe-holder button.mfp-close  {
     cursor: url(/KJH-IMG/cursor-hand.png), auto;
 }
@@ -306,9 +356,17 @@ a, button, .jt-blocks .wp-block-button__link, .main-visual .swiper-navigation bu
 
 
 
+.article:after, .article>.wrap:after {
+    content: '';
+    display: table;
+    clear: both;
+}
 
 
 
+body, textarea:focus, input:focus, a:focus {
+    -webkit-tap-highlight-color: rgba(102, 102, 102, .08);
+}
 
 body {
     overflow-x: hidden;
@@ -323,9 +381,7 @@ body {
     cursor: url(/KJH-IMG/cursor-pointer.png), auto;
 }
 
-body, textarea:focus, input:focus, a:focus {
-    -webkit-tap-highlight-color: rgba(102, 102, 102, .08);
-}
+
 
 @media (max-width: 1480px) {
     html {

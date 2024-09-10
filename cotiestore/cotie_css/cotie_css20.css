@@ -1,0 +1,554 @@
+/* https://cotieshop.co.kr/wp-content/themes/cotie/css/main.css?ver=1.0.28 */
+.main-illust-layer {
+    position: absolute
+}
+
+.main-illust-layer img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+.main-section {
+    padding: 150rem 0
+}
+
+.main-section__title {
+    margin-bottom: 90rem;
+    position: relative
+}
+
+.main-section__title h2 {
+    font-size: 90rem;
+    line-height: 1.24;
+    font-weight: 700;
+    text-align: center;
+    color: #000
+}
+
+.main-visual {
+    position: relative
+}
+
+.main-visual .main-illust-layer--visual-01 {
+    top: -173rem;
+    left: 354rem
+}
+
+.main-visual .main-illust-layer--visual-01 img {
+    width: 175rem
+}
+
+.main-visual .main-illust-layer--visual-02 {
+    top: 467rem;
+    left: -31rem;
+    z-index: 2
+}
+
+.main-visual .main-illust-layer--visual-02 img {
+    width: 149rem;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+.main-visual .main-illust-layer--visual-03 {
+    top: 256rem;
+    right: -22rem;
+    z-index: 2
+}
+
+.main-visual .main-illust-layer--visual-03 img {
+    width: 154rem;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0)
+}
+
+.main-visual__container,.main-visual__wrapper,.main-visual__slide {
+    width: 100%;
+    height: 100%
+}
+
+.main-visual__container {
+    overflow: visible
+}
+
+.main-visual__title {
+    width: 100%;
+    position: absolute;
+    font-size: 127rem;
+    font-weight: 700;
+    line-height: 1.24;
+    text-align: center;
+    color: #000;
+    z-index: 2
+}
+
+.main-visual__img {
+    width: 1014rem;
+    margin: 249rem auto 58rem;
+    position: relative;
+    z-index: 1;
+    opacity: 0
+}
+
+.main-visual__img figure {
+    position: relative;
+    padding-top: 101.38%;
+    background: #CCC7BB;
+    overflow: hidden
+}
+
+.main-visual__img picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.main-visual__img picture img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.main-visual__txt {
+    position: relative;
+    text-align: center;
+    z-index: 2
+}
+
+.main-visual__txt p {
+    font-size: 20rem;
+    line-height: 1.76;
+    font-weight: 500;
+    letter-spacing: -.025em;
+    color: #000
+}
+
+.main-visual__txt .jt-btn__basic {
+    margin-top: 59rem
+}
+
+.main-visual .swiper-control {
+    margin-top: 0;
+    position: absolute;
+    right: 263rem;
+    top: 1298rem;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.main-visual .swiper-pagination.swiper-pagination-fraction {
+    position: relative;
+    top: auto;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none
+}
+
+.main-visual .swiper-navigation {
+    position: static;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.main-visual .swiper-navigation button {
+    width: 123rem;
+    height: 123rem;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    margin-top: -73rem
+}
+
+.main-visual .swiper-navigation button:after {
+    font-size: 123rem
+}
+
+.main-visual .swiper-navigation button.swiper-button-disabled {
+    opacity: 0
+}
+
+.main-visual .swiper-button-prev {
+    left: 90rem
+}
+
+.main-visual .swiper-button-next {
+    right: 90rem
+}
+
+.main-visual .swiper-control.loaded,.main-visual .swiper-navigation.loaded {
+    opacity: 1;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s
+}
+
+.main-visual .scroll-down {
+    position: absolute;
+    top: -webkit-calc(65.3vh - 128rem);
+    top: calc(65.3vh - 128rem);
+    right: 74rem
+}
+
+.main-visual__title {
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.main-visual__title>div.lines {
+    overflow: hidden;
+    font-size: 0
+}
+
+.main-visual__title>div.lines>div.words {
+    margin-right: .25em;
+    vertical-align: middle;
+    font-size: 127rem
+}
+
+.main-visual__title>div.lines>div.words:last-child {
+    margin-right: 0
+}
+
+.main-visual__title>div.lines>div.words>div.chars {
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center
+}
+
+.main-brand.main-section {
+    padding-top: 242rem
+}
+
+.main-brand .main-section__title {
+    margin-bottom: 135rem
+}
+
+.main-brand .main-illust-layer--brand-01 {
+    top: -88rem;
+    right: 45rem
+}
+
+.main-brand .main-illust-layer--brand-01 img {
+    width: 199rem
+}
+
+.main-brand .main-illust-layer--brand-02 {
+    left: -238rem;
+    top: 748rem
+}
+
+.main-brand .main-illust-layer--brand-02 img {
+    width: 478rem
+}
+
+.main-brand .main-illust-layer--brand-03 {
+    right: 153rem;
+    top: 21rem
+}
+
+.main-brand .main-illust-layer--brand-03 img {
+    width: 170rem
+}
+
+.main-brand .main-illust-layer--brand-04 {
+    right: -326rem;
+    top: -313rem;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-perspective: 502rem;
+    perspective: 502rem
+}
+
+.main-brand .main-illust-layer--brand-04 img {
+    width: 502rem;
+    -webkit-transform-origin: center right;
+    -ms-transform-origin: center right;
+    transform-origin: center right
+}
+
+html.ie11 .main-brand .main-illust-layer--brand-02 {
+    left: -305rem
+}
+
+html.ie11 .main-brand .main-illust-layer--brand-03 {
+    right: 70rem
+}
+
+html.ie11 .main-brand .main-illust-layer--brand-04 {
+    right: -396rem
+}
+
+.main-brand__group {
+    position: relative
+}
+
+.main-brand__info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative
+}
+
+.main-brand__info-img {
+    width: 750rem
+}
+
+.main-brand__info-img .jt-lazyload {
+    padding-top: 127.2%
+}
+
+.main-brand__info-txt {
+    width: -webkit-calc(100% - 750rem);
+    width: calc(100% - 750rem);
+    text-align: center
+}
+
+.main-brand__group>li:nth-child(odd) .main-brand__info-txt {
+    padding-left: 45rem
+}
+
+.main-brand__group>li:nth-child(even) .main-brand__info-txt {
+    padding-right: 30rem
+}
+
+.main-brand__info-txt img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%
+}
+
+.main-brand__info-txt p {
+    margin: 57rem 0 77rem;
+    font-size: 20rem;
+    font-weight: 500;
+    line-height: 1.8;
+    letter-spacing: -.025em;
+    color: #000
+}
+
+.main-brand__movie {
+    position: relative;
+    margin: 0 auto
+}
+
+.main-brand__movie-vid {
+    width: 100%;
+    position: relative
+}
+
+.main-brand__movie-vid__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.main-brand__movie-typo {
+    width: 220rem;
+    height: 267rem;
+    position: absolute;
+    left: -296rem;
+    top: 50%;
+    margin-top: -125rem;
+    font-size: 0
+}
+
+.main-brand__movie-typo>span {
+    display: inline-block;
+    width: 62rem
+}
+
+.main-brand__movie-typo>span>img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.main-brand__movie-typo>span+span {
+    margin-left: 17rem
+}
+
+.main-brand--petsoshic .main-brand__info-txt p {
+    margin-bottom: 57rem
+}
+
+.main-brand--petsoshic .main-brand__movie {
+    margin-top: 77rem;
+    padding-right: 180rem
+}
+
+.main-brand--petsoshic .main-brand__movie-vid {
+    padding-top: 50.14%
+}
+
+.main-illust-layer--petsoshic-01 {
+    top: -133rem;
+    right: 380rem
+}
+
+.main-illust-layer--petsoshic-01 img {
+    width: 306rem
+}
+
+.main-illust-layer--petsoshic-02 {
+    top: -181rem;
+    right: 506rem
+}
+
+.main-illust-layer--petsoshic-02 img {
+    width: 93rem
+}
+
+.main-illust-layer--petsoshic-03 {
+    top: -90rem;
+    right: 202rem
+}
+
+.main-illust-layer--petsoshic-03 img {
+    width: 115rem
+}
+
+.main-illust-layer--petsoshic-04 {
+    top: 342rem;
+    right: -78rem
+}
+
+.main-illust-layer--petsoshic-04 img {
+    width: 106rem
+}
+
+.main-illust-layer--petsoshic-05 {
+    bottom: -145rem;
+    right: 494rem
+}
+
+.main-illust-layer--petsoshic-05 img {
+    width: 120rem
+}
+
+.main-illust-layer--petsoshic-06 {
+    top: -70rem;
+    left: 185rem
+}
+
+.main-illust-layer--petsoshic-06 img {
+    width: 66rem
+}
+
+.main-brand--maxbone {
+    margin-top: 196rem
+}
+
+.main-brand--maxbone .main-brand__movie {
+    max-width: 752rem;
+    margin-top: 160rem
+}
+
+.main-brand--maxbone .main-brand__movie-vid {
+    padding-top: 125%
+}
+
+.main-brand--milkpepper {
+    margin-top: 313rem
+}
+
+.main-brand--milkpepper .main-brand__info-txt figure {
+    padding-left: 17rem
+}
+
+.main-slogan.main-section {
+    padding: 65rem 0 57rem
+}
+
+.main-slogan {
+    margin: 32rem 0;
+    font-size: 127rem;
+    font-weight: 700;
+    color: #000;
+    border: solid #000;
+    border-width: 1px 0
+}
+
+.main-log__control {
+    margin-top: 190rem;
+    text-align: center
+}
+
+.main-log .jt-btn__icon {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 26rem
+}
+
+.main-instagram.main-section {
+    padding: 0
+}
+
+.main-instagram .main-section__title h2 {
+    font-size: 60rem
+}
+
+.main-instagram .main-section__title h2 br {
+    display: none
+}
+
+.main-instagram__list {
+    margin: 0 -21rem;
+    overflow: hidden
+}
+
+.main-instagram__item {
+    float: left;
+    width: 25%;
+    padding: 0 21rem
+}
+
+.main-instagram__item>a {
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden
+}
+
+.main-instagram__item>a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.3);
+    opacity: 0;
+    -webkit-transition: opacity cubic-bezier(.05,.9,.32,.96) .3s;
+    transition: opacity cubic-bezier(.05,.9,.32,.96) .3s
+}
+
+.main-instagram__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #CCC7BB no-repeat center center;
+    background-size: cover
+}
+
+html.desktop .main-instagram__item>a:hover:after {
+    opacity: 1
+}

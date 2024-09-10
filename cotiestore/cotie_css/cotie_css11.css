@@ -1,0 +1,965 @@
+/* https://cotieshop.co.kr/wp-content/themes/cotie/css/rwd-main.css?ver=1.0.28 */
+@media (max-width: 1800px) {
+    .main-visual .main-illust-layer--visual-01 {
+        top:-155rem;
+        left: 50%;
+        margin-left: -446rem
+    }
+
+    .main-visual .main-illust-layer--visual-02 {
+        left: 50%;
+        margin-left: -805rem
+    }
+
+    .main-visual .main-illust-layer--visual-03 {
+        width: 154rem;
+        right: auto;
+        left: 50%;
+        margin-left: 650rem
+    }
+
+    .main-visual .swiper-button-prev {
+        left: 50%;
+        margin-left: -700rem
+    }
+
+    .main-visual .swiper-button-next {
+        right: auto;
+        left: 50%;
+        margin-left: 577rem
+    }
+
+    .main-visual .swiper-control {
+        right: auto;
+        left: 50%;
+        margin-left: 478rem
+    }
+
+    .main-brand .main-illust-layer--brand-02 {
+        top: 628rem
+    }
+
+    .main-brand .main-illust-layer--brand-03 {
+        top: -30rem
+    }
+
+    .main-brand .main-illust-layer--brand-04 {
+        top: -364rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-02 {
+        left: -238rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-03 {
+        right: 153rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-04 {
+        right: -326rem
+    }
+
+    .main-brand__info-img {
+        width: 48.63%
+    }
+
+    .main-brand__info-txt {
+        width: 51.37%
+    }
+
+    .main-brand__movie-typo {
+        left: 70rem
+    }
+
+    .main-brand--petsoshic .main-brand__movie {
+        padding-right: 100rem
+    }
+
+    .main-brand--maxbone .main-brand__movie {
+        max-width: 1452rem;
+        padding: 0 350rem
+    }
+
+    .main-brand--milkpepper {
+        margin-top: 290rem
+    }
+}
+
+@media (max-width: 1480px) {
+    .main-illust-layer {
+        -webkit-transform:scale(.8);
+        -ms-transform: scale(.8);
+        transform: scale(.8)
+    }
+
+    .main-section {
+        padding: 120rem 0
+    }
+
+    .main-section__title {
+        margin-bottom: 65rem
+    }
+
+    .main-section__title h2 {
+        font-size: 74rem
+    }
+
+    .main-visual .main-illust-layer--visual-01 {
+        top: -142rem
+    }
+
+    .main-visual .main-illust-layer--visual-02 {
+        top: 377rem;
+        margin-left: -655rem
+    }
+
+    .main-visual .main-illust-layer--visual-03 {
+        top: 195rem;
+        margin-left: 500rem
+    }
+
+    .main-visual__title,.main-visual__title>div.lines>div.words {
+        font-size: 100rem
+    }
+
+    .main-visual__img {
+        width: 845rem;
+        margin: 198rem auto 46rem
+    }
+
+    .main-visual__txt p {
+        font-size: 18rem
+    }
+
+    .main-visual__txt .jt-btn__basic {
+        margin-top: 48rem
+    }
+
+    .main-visual .swiper-navigation button {
+        width: 100rem;
+        height: 100rem;
+        margin-top: -50rem
+    }
+
+    .main-visual .swiper-navigation button:after {
+        font-size: 100rem
+    }
+
+    .main-visual .swiper-button-prev {
+        left: 90rem;
+        margin-left: 0
+    }
+
+    .main-visual .swiper-button-next {
+        right: 90rem;
+        left: auto;
+        margin-left: 0
+    }
+
+    .main-visual .swiper-control {
+        margin-left: 391rem;
+        top: 1076rem
+    }
+
+    .main-brand.main-section {
+        padding-top: 200rem
+    }
+
+    .main-brand .main-section__title {
+        margin-bottom: 100rem
+    }
+
+    .main-brand .main-illust-layer--brand-01 {
+        top: -108rem
+    }
+
+    .main-brand .main-illust-layer--brand-03 {
+        top: -64rem;
+        right: 165rem
+    }
+
+    .main-brand .main-illust-layer--brand-04 {
+        right: -226rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-02 {
+        left: -238rem;
+        top: 748rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-03 {
+        top: 56rem;
+        right: 165rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-04 {
+        top: -244rem;
+        right: -226rem
+    }
+
+    .main-brand__info-txt img {
+        -webkit-transform: scale(.8);
+        -ms-transform: scale(.8);
+        transform: scale(.8)
+    }
+
+    .main-brand__info-txt p {
+        margin: 34rem 0 62rem;
+        font-size: 18rem
+    }
+
+    .main-brand__movie-typo {
+        width: 199rem;
+        height: 238rem;
+        left: 108rem;
+        margin-top: -119rem
+    }
+
+    .main-brand__movie-typo>span {
+        width: 55rem
+    }
+
+    .main-illust-layer--petsoshic-01 {
+        top: -117rem;
+        right: 320rem
+    }
+
+    .main-illust-layer--petsoshic-02 {
+        top: -162rem;
+        right: 426rem
+    }
+
+    .main-illust-layer--petsoshic-03 {
+        top: -77rem;
+        right: 172rem
+    }
+
+    .main-illust-layer--petsoshic-04 {
+        top: 320rem;
+        right: -50rem
+    }
+
+    .main-illust-layer--petsoshic-05 {
+        bottom: -122rem;
+        right: 444rem
+    }
+
+    .main-illust-layer--petsoshic-06 {
+        top: -60rem;
+        left: 162rem
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt p {
+        margin-bottom: 42rem
+    }
+
+    .main-brand--petsoshic .main-brand__movie {
+        padding-right: 50rem
+    }
+
+    .main-brand--maxbone {
+        margin-top: 180rem
+    }
+
+    .main-brand--maxbone .main-brand__movie {
+        margin-top: 140rem
+    }
+
+    .main-brand--milkpepper {
+        margin-top: 240rem
+    }
+
+    .main-slogan {
+        font-size: 110rem
+    }
+
+    .main-log__control {
+        margin-top: 120rem
+    }
+
+    .main-instagram .main-section__title h2 {
+        font-size: 52rem
+    }
+
+    .main-instagram__list {
+        margin: 0 -18rem
+    }
+
+    .main-instagram__item {
+        padding: 0 18rem
+    }
+}
+
+@media (max-width: 1023px) {
+    .main-illust-layer {
+        -webkit-transform:scale(.6);
+        -ms-transform: scale(.6);
+        transform: scale(.6)
+    }
+
+    .main-section {
+        padding: 92rem 0
+    }
+
+    .main-section__title {
+        margin-bottom: 50rem
+    }
+
+    .main-section__title h2 {
+        font-size: 62rem
+    }
+
+    .main-visual .main-illust-layer--visual-01,.main-visual .main-illust-layer--visual-02,.main-visual .main-illust-layer--visual-03 {
+        display: none
+    }
+
+    .main-visual__title,.main-visual__title>div.lines>div.words {
+        font-size: 76rem
+    }
+
+    .main-visual__img {
+        width: 100%;
+        margin: 151rem auto 35rem;
+        padding: 0 50rem
+    }
+
+    .main-visual__txt {
+        padding: 0 50rem
+    }
+
+    .main-visual__txt p {
+        font-size: 17rem
+    }
+
+    .main-visual__txt .jt-btn__basic {
+        margin-top: 42rem
+    }
+
+    .main-visual .swiper-navigation {
+        display: none
+    }
+
+    .main-visual .swiper-control {
+        margin-left: 382rem;
+        top: 1000rem
+    }
+
+    .main-brand.main-section {
+        padding-top: 160rem
+    }
+
+    .main-brand .main-section__title {
+        margin-bottom: 64rem
+    }
+
+    .main-brand .main-illust-layer--brand-01 {
+        top: -118rem;
+        right: -25rem
+    }
+
+    .main-brand .main-illust-layer--brand-02 {
+        top: 336rem;
+        left: -199rem
+    }
+
+    .main-brand .main-illust-layer--brand-03 {
+        top: -63rem;
+        right: 81rem
+    }
+
+    .main-brand .main-illust-layer--brand-04 {
+        right: -258rem;
+        top: -316rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-02 {
+        left: -201rem;
+        top: 386rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-03 {
+        top: -22rem;
+        right: 85rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-04 {
+        top: -274rem;
+        right: -258rem
+    }
+
+    .main-brand__info-txt img {
+        -webkit-transform: scale(.65);
+        -ms-transform: scale(.65);
+        transform: scale(.65)
+    }
+
+    .main-brand__info-txt p {
+        margin: 20rem 0 42rem;
+        font-size: 17rem
+    }
+
+    .main-brand__group>li:nth-child(odd) .main-brand__info-txt {
+        padding-left: 26rem
+    }
+
+    .main-brand__group>li:nth-child(even) .main-brand__info-txt {
+        padding-right: 20rem
+    }
+
+    .main-brand__movie-typo {
+        width: 146rem;
+        height: 182rem;
+        left: 62rem;
+        margin-top: -91rem
+    }
+
+    .main-brand__movie-typo>span {
+        width: 42rem
+    }
+
+    .main-brand__movie-typo>span+span {
+        margin-left: 10rem
+    }
+
+    .main-illust-layer--petsoshic-01 {
+        top: -107rem;
+        right: 150rem
+    }
+
+    .main-illust-layer--petsoshic-02 {
+        top: -135rem;
+        right: 256rem
+    }
+
+    .main-illust-layer--petsoshic-03 {
+        top: -67rem;
+        right: 62rem
+    }
+
+    .main-illust-layer--petsoshic-04 {
+        top: 160rem;
+        right: -60rem
+    }
+
+    .main-illust-layer--petsoshic-05 {
+        bottom: -80rem;
+        right: 164rem
+    }
+
+    .main-illust-layer--petsoshic-06 {
+        top: -58rem;
+        left: 112rem
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt {
+        padding-bottom: 85rem
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt p {
+        margin-top: 5rem
+    }
+
+    .main-brand--petsoshic .main-brand__movie {
+        margin-top: 45rem
+    }
+
+    .main-brand--maxbone {
+        margin-top: 140rem
+    }
+
+    .main-brand--maxbone .main-brand__movie {
+        margin-top: 90rem;
+        padding: 0 230rem
+    }
+
+    .main-brand--milkpepper {
+        margin-top: 200rem
+    }
+
+    .main-slogan.main-section {
+        padding: 60rem 0 52rem
+    }
+
+    .main-slogan {
+        margin: 20rem 0;
+        font-size: 86rem
+    }
+
+    .main-log__control {
+        margin-top: 80rem
+    }
+
+    .main-log .jt-btn__icon {
+        bottom: 20rem
+    }
+
+    .main-instagram .main-section__title h2 {
+        font-size: 42rem
+    }
+
+    .main-instagram__list {
+        margin: 0 -12rem
+    }
+
+    .main-instagram__item {
+        padding: 0 12rem
+    }
+}
+
+@media (max-width: 860px) {
+    .main-illust-layer {
+        -webkit-transform:scale(.5);
+        -ms-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    .main-section {
+        padding: 80rem 0
+    }
+
+    .main-section__title {
+        margin-bottom: 45rem
+    }
+
+    .main-section__title h2 {
+        font-size: 56rem
+    }
+
+    .main-visual__title,.main-visual__title>div.lines>div.words {
+        font-size: 60rem
+    }
+
+    .main-visual__title {
+        white-space: normal
+    }
+
+    .main-visual__img {
+        padding: 0 32rem;
+        margin: 118rem auto 62rem
+    }
+
+    .main-visual--single .main-visual__img {
+        margin-bottom: 40rem
+    }
+
+    .main-visual__txt {
+        padding: 0 32rem
+    }
+
+    .main-visual__txt .jt-btn__basic {
+        margin-top: 35rem
+    }
+
+    .main-visual .swiper-control {
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        top: 787rem
+    }
+
+    .main-visual .swiper-control .swiper-pagination {
+        position: relative
+    }
+
+    .main-brand.main-section {
+        padding-top: 145rem
+    }
+
+    .main-brand .main-section__title {
+        margin-bottom: 58rem
+    }
+
+    .main-brand .main-illust-layer--brand-01 {
+        display: none
+    }
+
+    .main-brand .main-illust-layer--brand-02 {
+        top: 280rem;
+        left: -166rem
+    }
+
+    .main-brand .main-illust-layer--brand-03 {
+        top: -95rem;
+        right: 49rem
+    }
+
+    .main-brand .main-illust-layer--brand-04 {
+        top: -329rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-02 {
+        left: -166rem;
+        top: 256rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-03 {
+        top: -92rem;
+        right: 45rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-04 {
+        top: -325rem
+    }
+
+    .main-brand__info-txt figure {
+        width: 260rem;
+        margin: 0 auto
+    }
+
+    .main-brand__info-txt img {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+
+    .main-brand__info-txt p {
+        margin: 26rem 0 37rem
+    }
+
+    .main-brand__info-txt p br {
+        display: none
+    }
+
+    .main-brand__group>li:nth-child(odd) .main-brand__info-txt {
+        padding-left: 20rem
+    }
+
+    .main-brand__movie-typo {
+        display: none
+    }
+
+    .main-illust-layer--petsoshic-01 {
+        display: none
+    }
+
+    .main-illust-layer--petsoshic-02 {
+        top: -75rem;
+        right: 196rem
+    }
+
+    .main-illust-layer--petsoshic-03 {
+        top: -43rem;
+        right: 52rem
+    }
+
+    .main-illust-layer--petsoshic-04 {
+        top: 110rem;
+        right: -60rem
+    }
+
+    .main-illust-layer--petsoshic-05 {
+        bottom: -73rem;
+        right: 134rem
+    }
+
+    .main-illust-layer--petsoshic-06 {
+        top: -50rem;
+        left: 82rem
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt {
+        padding-bottom: 65rem
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt figure {
+        width: 170rem
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt p {
+        margin-top: 26rem;
+        margin-bottom: 37rem
+    }
+
+    .main-brand--petsoshic .main-brand__movie {
+        margin-top: 30rem
+    }
+
+    .main-brand--maxbone {
+        margin-top: 110rem
+    }
+
+    .main-brand--maxbone .main-brand__movie {
+        margin-top: 75rem;
+        padding: 0 172rem
+    }
+
+    .main-brand--milkpepper {
+        margin-top: 135rem
+    }
+
+    .main-brand--milkpepper .main-brand__info-txt figure {
+        padding-left: 10rem
+    }
+
+    .main-slogan.main-section {
+        padding: 50rem 0 42rem
+    }
+
+    .main-slogan {
+        font-size: 60rem
+    }
+
+    .main-log__control {
+        margin-top: 60rem
+    }
+
+    .main-log .jt-btn__icon {
+        bottom: 18rem
+    }
+
+    .main-instagram .main-section__title h2 {
+        font-size: 34rem
+    }
+
+    .main-instagram__list {
+        margin: 0 -6rem
+    }
+
+    .main-instagram__item {
+        padding: 0 6rem
+    }
+}
+
+@media (max-width: 540px) {
+    .main-illust-layer {
+        -webkit-transform:scale(.32);
+        -ms-transform: scale(.32);
+        transform: scale(.32)
+    }
+
+    .main-section {
+        padding: 50rem 0
+    }
+
+    .main-section__title {
+        margin-bottom: 30rem
+    }
+
+    .main-section__title h2 {
+        font-size: 32rem
+    }
+
+    .main-visual__title,.main-visual__title>div.lines>div.words {
+        font-size: 32rem
+    }
+
+    .main-visual__img {
+        padding: 0;
+        margin: 62rem auto 54rem
+    }
+
+    .main-visual--single .main-visual__img {
+        margin-bottom: 20rem
+    }
+
+    .main-visual__txt {
+        padding: 0 24rem
+    }
+
+    .main-visual__txt p {
+        font-size: 15rem
+    }
+
+    .main-visual__txt .jt-btn__basic {
+        margin-top: 20rem
+    }
+
+    .main-visual .swiper-control {
+        top: 408rem
+    }
+
+    .main-brand.main-section {
+        padding-top: 100rem
+    }
+
+    .main-brand .main-section__title {
+        margin-bottom: 30rem
+    }
+
+    .main-brand .main-illust-layer--brand-02 {
+        top: 449rem;
+        left: -219rem
+    }
+
+    .main-brand .main-illust-layer--brand-03 {
+        top: auto;
+        bottom: -176rem;
+        right: 7rem
+    }
+
+    .main-brand .main-illust-layer--brand-04 {
+        top: auto;
+        bottom: -230rem;
+        right: -254rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-02 {
+        left: -220rem;
+        top: 451rem
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-03 {
+        top: auto;
+        right: 0
+    }
+
+    html.ie11 .main-brand .main-illust-layer--brand-04 {
+        top: auto
+    }
+
+    .main-brand__info {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap
+    }
+
+    .main-brand__info-img {
+        width: 100%;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1
+    }
+
+    .main-brand__info-txt {
+        width: 100%;
+        -webkit-box-ordinal-group: 3;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+        padding-top: 40rem
+    }
+
+    .main-brand__info-txt figure {
+        width: 160rem
+    }
+
+    .main-brand__info-txt p {
+        margin: 20rem 0 30rem;
+        font-size: 15rem
+    }
+
+    .main-brand__group>li:nth-child(n) .main-brand__info-txt {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .main-illust-layer--petsoshic-02 {
+        right: 167rem;
+        top: auto;
+        bottom: -89rem
+    }
+
+    .main-illust-layer--petsoshic-02 img {
+        width: 115rem
+    }
+
+    .main-illust-layer--petsoshic-03 {
+        right: -48rem;
+        top: auto;
+        bottom: -184rem
+    }
+
+    .main-illust-layer--petsoshic-03 img {
+        width: 120rem
+    }
+
+    .main-illust-layer--petsoshic-04,.main-illust-layer--petsoshic-05,.main-illust-layer--petsoshic-06 {
+        display: none
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt {
+        padding-top: 22rem;
+        padding-bottom: 0
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt figure {
+        width: 111rem
+    }
+
+    .main-brand--petsoshic .main-brand__info-txt p {
+        margin-top: 20rem;
+        margin-bottom: 30rem
+    }
+
+    .main-brand--petsoshic .main-brand__movie {
+        margin-top: 60rem;
+        padding-right: 0
+    }
+
+    .main-brand--maxbone {
+        margin-top: 100rem
+    }
+
+    .main-brand--maxbone .main-brand__movie {
+        margin-top: 60rem;
+        padding: 0 54rem
+    }
+
+    .main-brand--milkpepper {
+        margin-top: 100rem;
+        padding-bottom: 80rem
+    }
+
+    .main-brand--milkpepper .main-brand__info-txt figure {
+        width: 198rem
+    }
+
+    .main-new .product-slider-container .swiper-wrapper {
+        display: block
+    }
+
+    .main-new .product-slider-container .product-item {
+        margin-bottom: 58rem
+    }
+
+    .main-new .product-slider-container .product-item:nth-child(5),.product-slider-container .product-item:nth-child(6) {
+        margin-bottom: 0
+    }
+
+    .main-new .product-slider-container .product-item:nth-child(n+7) {
+        display: none
+    }
+
+    .main-slogan.main-section {
+        padding: 34rem 0
+    }
+
+    .main-slogan {
+        font-size: 32rem
+    }
+
+    .main-log .main-section__title h2 {
+        text-align: left
+    }
+
+    .main-log__control {
+        display: none
+    }
+
+    .main-log .jt-btn__icon {
+        display: block;
+        bottom: 4rem
+    }
+
+    .main-instagram.main-section {
+        padding-top: 50rem
+    }
+
+    .main-instagram .main-section__title h2 {
+        font-size: 32rem
+    }
+
+    .main-instagram .main-section__title h2 br {
+        display: block
+    }
+
+    .main-instagram__list {
+        margin: -4rem
+    }
+
+    .main-instagram__item {
+        width: 50%;
+        padding: 4rem
+    }
+}
