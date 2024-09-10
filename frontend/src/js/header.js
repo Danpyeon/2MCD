@@ -3,8 +3,6 @@ window.addEventListener("scroll", () => {
   let header = $(".header-container");
   let inner = $("#inner-header");
 
-  console.log(top);
-
   if (top < 700 && header.hasClass("none")) {
     header.removeClass("none");
   }
@@ -56,4 +54,22 @@ $(document).ready(() => {
       pageUnderline.css("display", "none");
     }
   );
+});
+
+let lastScroll = 0;
+$(window).on("scroll", function () {
+  let scrollTop = $(this).scrollTop();
+
+  if (scrollTop > 800) {
+    if (scrollTop > lastScroll) {
+      // $(".header-container").removeClass("fixed");
+      $(".header-container").addClass("minimize");
+      $(".header-container").addClass("none");
+    } else if (scrollTop <= lastScroll) {
+      // $(".header-container").addClass("fixed");
+      $(".header-container").addClass("minimize");
+      $(".header-container").removeClass("none");
+    }
+    lastScroll = scrollTop;
+  }
 });

@@ -67,6 +67,7 @@ div.none {
 }
 #menu > li > a > div {
   margin: 16px 0px 16px 0px;
+  height: 100%;
 }
 
 #menu > li:hover > .sub-menu {
