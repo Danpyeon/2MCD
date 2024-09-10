@@ -243,9 +243,6 @@ img[data-unveil] {
 }
 
 
-
-
-
 .store_list__info .jt-btn__basic {
     margin-top: 54rem;
 }
@@ -265,11 +262,6 @@ img[data-unveil] {
     }
 }
 
-.jt-btn__basic:before {
-    background-image: url(/KJH-IMG/button-basic-fill.svg);
-    opacity: 0;
-}
-
 .jt-btn__basic:before, .jt-btn__basic:after {
     content: '';
     display: block;
@@ -286,6 +278,16 @@ img[data-unveil] {
 .jt-btn__basic:after {
     background-image: url(/KJH-IMG/button-basic-stroke.svg);
 }
+
+
+.jt-btn__basic:before {
+    background-image: url(/KJH-IMG/button-basic-fill.svg);
+    opacity: 0;
+}
+
+.jt-btn__basic:hover:before {
+}
+
 
 #transition-container {
     display: none;
