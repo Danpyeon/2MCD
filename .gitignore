@@ -173,3 +173,4 @@ dist
 .svelte-kit
 
 package.json
+*.map
