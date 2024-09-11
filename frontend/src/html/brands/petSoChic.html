@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PET SO CHIC | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/petSoChic.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+      });
+    </script>
+    <script src="/frontend/src/js/main.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <div class="movie-on">
+        <img src="/frontend/img/icon/close_icon.png" onclick="closeMovie()" />
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+      <div class="title">PET SO CHIC</div>
+      <div class="img-warapper">
+        <img class="layer-tower" src="/frontend/img/brand/layer-tower.gif" />
+        <img
+          class="visual-petsoshic"
+          src="/frontend/img/brand/visual-petsoshic.jpg"
+        />
+        <img class="layer-net" src="/frontend/img/brand/layer-net.gif" />
+      </div>
+      <div class="brand-info">
+        <img src="/frontend/img/main/brand-petsoshic.gif" />
+        <div>
+          <img src="/frontend/img/icon/logo-petsoshic.svg" />
+          <div class="kor">
+            <b
+              >먹고, 쉬고, 산책하는 모든 순간들이<br />한 폭의 예술이 됩니다.</b
+            >
+            <p>
+              펫 소 시크는 펫 업계에 새로운 패션과 품질의 기준이 되고자
+              합니다.<br />
+              아름다우면서도 고품질의 제품을 만들기 위해 세계적인 명품 브랜드
+              출신의<br />
+              유명 아티스트들이 협력하고 있으며, 각 분야의 장인과 소비자와의
+              소통을 통해<br />
+              최고의 품질과 가치를 전달하고, 최고의 스타일을 선물합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="intro-article">
+        <div class="kor text-view">
+          <b>창업자 스토리</b>
+
+          <p>
+            반려동물을 사랑하는 파리지앵 Julien과 Raphaël은<br />
+            패션에 대한 남다른 열정으로 애견용품 사업에 뛰어들었습니다.<br />
+            반려동물 업계에 새로운 패션의 기준이 되겠다는 결심으로<br />
+            2018년 프랑스 파리에서 시작하여 현재는 프랑스 대통령의 반려견이<br />
+            사용할 만큼 인정받는 프리미엄 브랜드로<br />
+            자리 잡게 되었습니다.
+          </p>
+        </div>
+        <img class="intro-hello" src="/frontend/img/about/intro-hello.gif" />
+      </div>
+      <div class="grass-container">
+        <img class="grass05" src="/frontend/img/icon/pattern-grass-05.jpg" />
+        <img class="grass01" src="/frontend/img/icon/pattern-grass-01.jpg" />
+        <img class="grass02" src="/frontend/img/icon/pattern-grass-02.jpg" />
+      </div>
+      <div class="video-inner video1">
+        <div>
+          <iframe
+            class="video-frame"
+            src="https://player.vimeo.com/video/579214369?muted=1&autoplay=1&autopause=0&loop=1&background=1"
+            frameborder="0"
+          ></iframe>
+          <img class="grass04" src="/frontend/img/icon/pattern-grass-04.jpg" />
+        </div>
+        <a
+          class="video-frame video-view"
+          onclick="movieOn('https\://player.vimeo.com/video/579214369?autoplay=0&muted=0')"
+        >
+          <img src="/frontend/img/icon/more-icon.png" />
+        </a>
+      </div>
+      <img class="grass04-2" src="/frontend/img/icon/pattern-grass-04.jpg" />
+      <div class="intro-article2">
+        <img class="cube" src="/frontend/img/about/intro-product.jpg" />
+        <div class="text-view kor center">
+          <b
+            >유러피안 헤리티지의 세련된 감성 &<br />
+            수의사 콜라보레이션</b
+          >
+          <p>
+            펫 소 시크의 모든 제품은 ‘삶 속의 예술(Art de vivre)’이라는
+            프랑스인들의<br />
+            생활 철학을 담고 있습니다.<br />
+            세계적인 명품 가죽 브랜드 H사 출신의 아티스트가 직접 디자인하고,<br />
+            프랑스 수의사팀의 꼼꼼한 승인을 받아, 반려동물의 움직임과 특성을
+            고려한 설계로<br />
+            우리 아이들에게 안전성과 편안함을 제공합니다.
+          </p>
+        </div>
+      </div>
+      <div class="intro-article2">
+        <img class="gif" src="/frontend/img/brand/intro-petsoshic-05.gif" />
+        <img
+          class="small-cube"
+          src="/frontend/img/brand/intro-petsoshic-04.jpg"
+        />
+      </div>
+      <div class="sub-title">
+        PET SO CHIC WORKS<br />
+        WITH FRENCH ARTIST
+      </div>
+      <img
+        class="note-petsoshic"
+        src="/frontend/img/brand/note-petsoshic.jpg"
+      />
+      <div class="sub-title">MD's choice</div>
+      <div class="brand-item">item...추후 추가예정</div>
+      <div class="blank"></div>
+    </section>
+    <footer id="footer">
+      <a href="/frontend/src/html/brands/maxbone.html">
+        <div class="link-text">
+          <div class="big">MAXBONE</div>
+          <div class="small">
+            <div>BRAND VIEW</div>
+            <svg
+              class="page-underline"
+              width="140"
+              height="8.14"
+              viewBox="0 0 140 8.14"
+            >
+              <path
+                fill="none"
+                stroke="#fff"
+                stroke-width="5.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.75,4.54s44.75.83,61.63.88c37,.09,94.57-1.66,102.18-2.64"
+                style="stroke-dashoffset: 0; stroke-dasharray: none"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+      <div class="background-img"></div>
+    </footer>
+  </body>
+</html>
