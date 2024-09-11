@@ -6,7 +6,11 @@
     <title>꼬띠샵 | 반려동물에게 줄 수 있는 최고의 선물</title>
     <link rel="stylesheet" href="/frontend/src/css/aboutUs.css" />
     <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
-    <script src="/frontend/src/js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d491c888baa187df0bc6f2aa3e26b356"
+    ></script>
+    <script src="/frontend/src/js/about.js"></script>
     <script type="text/javascript">
       $(function () {
         $("#header").load("/frontend/src/html/common/header.html");
@@ -106,7 +110,40 @@
       </div>
       <img class="pattern-grass" src="/frontend/img/icon/pattern-grass.svg" />
       <div class="title">Contact Us</div>
-      <div>naver map</div>
+      <div id="map"></div>
+      <script type="text/javascript">
+        let lat = 37.53077263028023;
+        let lon = 126.99688875817655;
+
+        var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+          mapOption = {
+            center: new kakao.maps.LatLng(lat, lon), //지도의 중심좌표.
+            level: 4, // 지도의 확대 레벨
+          };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+        var imageSrc = "/frontend/img/icon/marker.png", // 마커이미지의 주소입니다
+          imageSize = new kakao.maps.Size(180, 157), // 마커이미지의 크기입니다
+          imageOption = { offset: new kakao.maps.Point(100, 150) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+
+        // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+        var markerImage = new kakao.maps.MarkerImage(
+            imageSrc,
+            imageSize,
+            imageOption
+          ),
+          markerPosition = new kakao.maps.LatLng(lat, lon); // 마커가 표시될 위치입니다
+
+        // 마커를 생성합니다
+        var marker = new kakao.maps.Marker({
+          position: markerPosition,
+          image: markerImage, // 마커이미지 설정
+        });
+
+        // 마커가 지도 위에 표시되도록 설정합니다
+        marker.setMap(map);
+      </script>
       <div class="info-list">
         <div>
           <h3>꼬띠샵 정보</h3>
