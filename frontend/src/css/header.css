@@ -38,7 +38,7 @@ ul li {
   left: 0;
   z-index: 1000;
   transition: 0.21s linear;
-  height: 7rem;
+  height: 7vw;
   background-color: #f0ede6;
 }
 
@@ -54,7 +54,7 @@ div.none {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 1.5rem 2.5rem;
+  margin: 1.5vw 2.5vw;
   transition: 0.21s linear;
 }
 
@@ -90,21 +90,21 @@ div.none {
 .search-btn {
   background-color: initial;
   border: none;
-  background-image: url(../../img/icon/search_close.png);
-  width: 2.3rem;
-  height: 2.3rem;
+  background-image: url(/frontend/img/icon/search_close.png);
+  width: 2.3vw;
+  height: 2.3vw;
   background-size: cover;
   margin-right: 0px 5px 0px 35px;
 }
 
 .search-btn:hover {
-  background-image: url(../../img/icon/search_open.png);
+  background-image: url(/frontend/img/icon/search_open.png);
 }
 
 .myPage {
   background-color: initial;
   border: none;
-  height: 2rem;
+  height: 2vw;
   transition: all 0.2s linear;
 }
 .myPage span {
@@ -113,8 +113,8 @@ div.none {
 }
 .myPage svg {
   position: absolute;
-  right: 3rem;
-  top: 5rem;
+  right: 3vw;
+  top: 5vw;
   transition: 0.2s linear;
   display: none;
 }
@@ -122,8 +122,8 @@ div.none {
 #menu-ball {
   display: none;
   position: absolute;
-  top: 1.5rem;
-  left: -38.5rem;
+  top: 1.5vw;
+  left: -38.5vw;
   transition: all 0.2s ease-in-out;
 }
 
@@ -132,7 +132,7 @@ div.none {
   visibility: hidden;
   position: absolute;
   background: black;
-  top: 5.5rem;
+  top: 5.5vw;
   text-align: left;
   display: block;
   width: 150px;
