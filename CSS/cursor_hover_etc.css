@@ -1,0 +1,40 @@
+body {
+    cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;
+}
+
+#header {
+    cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;
+}
+
+
+a:active,
+button:active,
+.jt-blocks .wp-block-button__link:active,
+.main-visual .swiper-navigation button:active,
+.mfp-iframe-holder button.mfp-close:active {
+    cursor: url(/KJH-IMG/cursor/cursor-hand-click.png), auto;
+}
+
+
+a,
+button,
+.jt-blocks .wp-block-button__link,
+.main-visual .swiper-navigation button,
+.mfp-iframe-holder button.mfp-close {
+    cursor: url(/KJH-IMG/cursor/cursor-hand.png), auto;
+}
+
+#header a,#header a:active,#footer a,#footer a:active {
+    cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;
+}
+
+.jt-joyful-easteregg {
+    display: none;
+    position: absolute;
+    z-index: 10
+}
+
+.jt-joyful-easteregg img {
+    display: block;
+    max-width: 100%
+}

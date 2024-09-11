@@ -373,16 +373,7 @@ img[data-unveil].jt-lazyload--loaded {
     }
 }
 
-.jt-joyful-easteregg {
-    display: none;
-    position: absolute;
-    z-index: 10
-}
 
-.jt-joyful-easteregg img {
-    display: block;
-    max-width: 100%
-}
 
 
 
@@ -439,12 +430,12 @@ img[data-unveil].jt-lazyload--loaded {
 }
 
 .jt-btn__basic:after {
-    background-image: url(/KJH-IMG/button-basic-stroke.svg);
+    background-image: url(/KJH-IMG/button/button-basic-stroke.svg);
 }
 
 
 .jt-btn__basic:before {
-    background-image: url(/KJH-IMG/button-basic-fill.svg);
+    background-image: url(/KJH-IMG/button/button-basic-fill.svg);
     opacity: 0;
 }
 
@@ -460,29 +451,6 @@ img[data-unveil].jt-lazyload--loaded {
 
 #transition-container {
     display: none;
-}
-
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-a:active,
-button:active,
-.jt-blocks .wp-block-button__link:active,
-.main-visual .swiper-navigation button:active,
-.mfp-iframe-holder button.mfp-close:active {
-    cursor: url(/KJH-IMG/cursor-hand-click.png), auto;
-}
-
-
-a,
-button,
-.jt-blocks .wp-block-button__link,
-.main-visual .swiper-navigation button,
-.mfp-iframe-holder button.mfp-close {
-    cursor: url(/KJH-IMG/cursor-hand.png), auto;
 }
 
 
@@ -503,15 +471,6 @@ input:focus,
 a:focus {
     -webkit-tap-highlight-color: rgba(102, 102, 102, .08);
 }
-
-
-
-
-body {
-    cursor: url(/KJH-IMG/cursor-pointer.png), auto;
-}
-
-
 
 @media (max-width: 1480px) {
     html {
@@ -621,87 +580,9 @@ footer {
 
 
 
-.go-top {
-    display: block;
-    width: 60rem;
-    height: 100rem;
-    position: absolute;
-    top: -218rem;
-    right: 73;
-    -webkit-transition: opacity .3s;
-    transition: opacity .3s;
-    z-index: 999;
-}
 
-@media (max-width: 1800px) {
-    .go-top {
-        right: 50rem;
-    }
-}
 
-@media (max-width: 1480px) {
-    .go-top {
-        right: 20rem;
-    }
-}
 
-.go-top.go-top--hide {
-    opacity: 0;
-    z-index: -1;
-}
-
-.go-top.go-top--fix {
-    position: fixed;
-    top: inherit;
-    bottom: 53rem;
-}
-
-i {
-    font-style: italic;
-}
-
-.go-top__arrow {
-    display: block;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 48rem;
-}
-
-.go-top__arrow:after {
-    display: block;
-    width: 100%;
-    font-family: 'jt-font';
-    content: '\e900';
-    font-size: 16rem;
-    line-height: 1;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
-    color: #000;
-}
-
-.go-top__txt {
-    display: block;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: 15rem;
-    font-size: 26rem;
-    line-height: 1;
-    font-weight: 700;
-    text-align: center;
-    color: #000;
-}
-
-.go-top__punch {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-}
 
 .go-top__paw {
     width: 30rem;
