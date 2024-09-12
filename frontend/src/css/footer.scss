@@ -96,13 +96,15 @@ li {
   }
 }
 
-p.none {
-  // display: none;
+p.none,
+span.none {
+  display: none;
   visibility: hidden;
   animation: hideContents 0.2s ease-in;
 }
 
-p.block {
+p.block,
+span.block {
   display: block;
   line-height: 2.5;
   color: #666;

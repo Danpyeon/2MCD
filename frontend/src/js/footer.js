@@ -1,9 +1,11 @@
-function contentsOpenClose() {
-  let contents = $("#contents");
-  let arrowBtn = $("#arrowBtn");
+function contentsOpenClose(c) {
+  let contents = $(`.${c} .contents`);
+  console.log(contents);
+
+  let arrowBtn = $(".arrowBtn");
   let footerimg = $(".footer-layer");
 
-  if (contents.attr("class") === "none") {
+  if (contents.hasClass("none")) {
     contents.removeClass("none");
     contents.addClass("block");
     footerimg.removeClass("bottom-20");
