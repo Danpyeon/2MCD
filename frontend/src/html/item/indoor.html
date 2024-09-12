@@ -6,7 +6,6 @@
     <title>INDOOR | 반려동물에게 줄 수 있는 최고의 선물</title>
     <link rel="stylesheet" href="/frontend/src/css/itemPage.css" />
     <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
-    <script src="/frontend/src/js/itemPage.js"></script>
     <script type="text/javascript">
       $(function () {
         $("#header").load("/frontend/src/html/common/header.html");
@@ -26,14 +25,16 @@
       <nav class="item-menu">
         <div class="category-list">
           <ul class="category-list">
-            <li onclick="categoryFilter('')">ALL</li>
-            <li onclick="categoryFilter('living')">리빙</li>
-            <li onclick="categoryFilter('toy')">장난감</li>
-            <li onclick="categoryFilter('cat')">고양이</li>
+            <li id="all" onclick="categoryFilter('all')">ALL</li>
+            <li id="living" onclick="categoryFilter('living')">리빙</li>
+            <li id="toy" onclick="categoryFilter('toy')">장난감</li>
+            <li id="cat" onclick="categoryFilter('cat')">고양이</li>
           </ul>
         </div>
         <div class="brand-menu-wrapper">
-          <div class="brand-menu">ALL Brands<b class="button">▾</b></div>
+          <div class="brand-menu" onclick="openSubMenu()">
+            ALL Brands<b class="button">▾</b>
+          </div>
           <div class="sub-brand-menu">
             <ul>
               <li onclick="brandFilter('all')">All Brands</li>
@@ -45,36 +46,37 @@
         </div>
       </nav>
       <div class="items">
-        <a href="">
-          <div class="item" onclick="viewItem('id')">
+        <div class="item" onclick="viewItem('id')">
+          <a href="/frontend/src/html/item/itemDetail.html?id=1">
             <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
             <div class="item-brand">MLIK & PEPPER</div>
             <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
-          </div>
-        </a>
-        <a href="">
-          <div class="item" onclick="viewItem('id')">
+          </a>
+        </div>
+        <div class="item" onclick="viewItem('id')">
+          <a href="">
             <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
             <div class="item-brand">MLIK & PEPPER</div>
             <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
-          </div>
-        </a>
-        <a href="">
-          <div class="item" onclick="viewItem('id')">
+          </a>
+        </div>
+        <div class="item" onclick="viewItem('id')">
+          <a href="">
             <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
             <div class="item-brand">MLIK & PEPPER</div>
             <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
-          </div>
-        </a>
-        <a href="">
-          <div class="item" onclick="viewItem('id')">
+          </a>
+        </div>
+        <div class="item" onclick="viewItem('id')">
+          <a href="">
             <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
             <div class="item-brand">MLIK & PEPPER</div>
             <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     </section>
     <footer id="footer"></footer>
+    <script src="/frontend/src/js/itemPage.js"></script>
   </body>
 </html>

@@ -31,12 +31,30 @@ body {
 
     ul {
       align-items: flex-end;
+
+      /* nav, 리스트 */
+      li {
+        position: relative;
+        margin: 0 20px;
+      }
     }
 
     svg {
       position: absolute;
-      top: 3vw;
-      display: none;
+
+      /* animation 고정 */
+      transform: scale(1);
+      animation: navSide 1s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes navSide {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
     }
   }
 
@@ -46,9 +64,15 @@ body {
     top: 1.5vw;
     right: 5vw;
     z-index: 3000;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 
     .sub-brand-menu {
       width: 100%;
+      visibility: hidden;
     }
 
     .brand-menu {
@@ -86,7 +110,6 @@ body {
   display: flow-root;
 
   .item {
-    color: #000;
     padding: 0 18px;
     margin-bottom: 100px;
     width: 30%;
@@ -95,6 +118,10 @@ body {
 
     img {
       width: 100%;
+    }
+
+    a {
+      color: #000;
     }
   }
 
