@@ -58,7 +58,11 @@ html {
     }
 }
 
-
+::selection {
+    background: #ccc7bb;
+    background: rgba(160, 136, 111, .35);
+    color: #fff;
+}
 /*-------------------------------------------------------------------------------*/
 body, textarea:focus, input:focus, a:focus {
     -webkit-tap-highlight-color: rgba(102, 102, 102, .08);

@@ -379,12 +379,12 @@
                                     </div>
                                     <!-- jt-isotope-list__item -->
                                     <div class="jt-isotope-list__item jt-isotope-list__item--picture" style="position: absolute; left: 51.9316%; top: 1295px;">
-                                        <a class="jt-isotope-list__link" href="/cotieLog/html/log/2023년-연말-연시-배송-안내.html">
+                                        <a class="jt-isotope-list__link" href="">
                                             <figure class="jt-isotope-list__thumb jt-lazyload jt-lazyload--maosnry jt-lazyload--loaded" style="padding-top: 100%;">
                                                 <span class="jt-lazyload__color-preview"></span>
-                                                <img width="2250" height="2250" data-unveil="/cotieLog/Log_img/불독전용사이즈2_001.jpg" src="/cotieLog/Log_img/불독전용사이즈2_001.jpg" alt="불독전용사이즈2_001">
+                                                <img width="2250" height="2250" data-unveil="/cotieLog/Log_img/offline.jpg" src="/cotieLog/Log_img/offline.jpg" alt="오프라인">
                                                 <noscript>
-                                                    <img src="/cotieLog/Log_img/불독전용사이즈2_001.jpg" alt="불독전용사이즈2_001">
+                                                    <img src="/cotieLog/Log_img/offline.jpg" alt="오프라인">
                                                 </noscript>
                                             </figure>
                                             <!-- jt-isotope-list-thumb -->
