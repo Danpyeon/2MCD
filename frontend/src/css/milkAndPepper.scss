@@ -266,6 +266,38 @@ body {
   }
 }
 
+.letter-wrapper {
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+.letter-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7.5vw;
+  animation: move_letter 6.5s infinite linear;
+  > i {
+    margin-right: 100px;
+    white-space: nowrap;
+    font-style: normal;
+  }
+}
+
+.letter-animation div:nth-child(2n) {
+  margin: 0 50px;
+}
+
+@keyframes move_letter {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 .circle-container {
   position: relative;
   left: -32vw;
