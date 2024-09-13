@@ -64,6 +64,14 @@ html {
     color: #fff;
 }
 /*-------------------------------------------------------------------------------*/
+body {
+    overflow-x: hidden;
+    font-family: 'NotoSansKR', 'LibreBaskerville', sans-serif;
+    font-size: 16rem;
+    word-break: keep-all;
+    background: #F0EDE6;
+}
+
 body, textarea:focus, input:focus, a:focus {
     -webkit-tap-highlight-color: rgba(102, 102, 102, .08);
 }
@@ -473,3 +481,11 @@ body.page-template-cotielog .article--secondary .article-body {
     padding-left: 28rem;
 }
 /* loadmore */
+
+#footer > div.bottom-20 {
+    bottom: 400rem;
+}
+
+#footer > div.bottom-30 {
+    bottom: 500rem;
+}

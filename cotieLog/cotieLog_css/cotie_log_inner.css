@@ -10,6 +10,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,time,figure,article,
     box-sizing: border-box
 }
 
+body {
+    overflow-x: hidden;
+    font-family: 'NotoSansKR', 'LibreBaskerville', sans-serif;
+    font-size: 16rem;
+    word-break: keep-all;
+    background: #F0EDE6;
+}
+
 html {
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
@@ -946,4 +954,11 @@ figure, article, header, footer, nav, hgroup, video, audio, aside, main {
 }
 .wp-block-image.alignfull img, .wp-block-image.alignwide img {
     width: 100%;
+}
+#footer > div.bottom-20 {
+    bottom: 400rem;
+}
+
+#footer > div.bottom-30 {
+    bottom: 500rem;
 }
