@@ -1,3 +1,47 @@
+isLogin();
+function isLogin() {
+  let login = getCookies("userCache");
+  let link = $(".myPage");
+  let inner = "";
+
+  if (login === null) {
+    inner += '<span class="login-btn">Login</span>';
+  } else {
+    inner += `  <span class="mypage-text"></span>
+              <svg
+                class="page-underline"
+                width="140"
+                height="8.14"
+                viewBox="0 0 140 8.14"
+              >
+                <path
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="5.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.75,4.54s44.75.83,61.63.88c37,.09,94.57-1.66,102.18-2.64"
+                  style="stroke-dashoffset: 0; stroke-dasharray: none"
+                ></path>
+              </svg>`;
+  }
+
+  link.html(inner);
+}
+
+function getCookies(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == " ") c = c.substring(1);
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length, c.length);
+    }
+  }
+  return null;
+}
+
 window.addEventListener("scroll", () => {
   let top = $(window).scrollTop();
   let header = $(".header-container");
