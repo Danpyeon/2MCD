@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>꼬띠샵 | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/itemDetail.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+        $("#footer").load("/frontend/src/html/common/footer.html");
+      });
+    </script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <div class="show-big-img"></div>
+      <div class="share-menu">
+        <button onclick="closeShare()">X</button>
+        <div class="share-title kor">공유하기</div>
+        <div class="share-item">
+          <a href=""
+            ><img src="/frontend/img/icon/facebook_icon.png" alt=""
+          /></a>
+          <a href=""
+            ><img src="/frontend/img/icon/twitter_icon.png" alt=""
+          /></a>
+          <a href=""><img src="/frontend/img/icon/kakao_icon.png" alt="" /></a>
+          <a href=""><img src="/frontend/img/icon/link_icon.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="item-info-wrapper">
+        <div class="item-img" onclick="showImg()">
+          <!-- 상품 소개 이미지 -->
+          <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
+          <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
+        </div>
+        <div class="item">
+          <div class="item-padding">
+            <div class="brand">
+              BRAND :
+              <!-- 브랜드 -->
+              <a
+                href="/frontend/src/html/item/product.html?page=1&sort=milkandpepper"
+                >MILK & PEPPER</a
+              >
+            </div>
+            <div class="hashtag kor">
+              <!-- 해시태그 -->
+              <ul>
+                <li>
+                  <a href="/frontend/src/html/item/search.html?item=귀여운"
+                    >#귀여운</a
+                  >
+                </li>
+                <li>
+                  <a href="/frontend/src/html/item/search.html?item=프랑스"
+                    >#프랑스</a
+                  >
+                </li>
+                <li>
+                  <a href="/frontend/src/html/item/search.html?item=동물모양"
+                    >#동물모양</a
+                  >
+                </li>
+                <li>
+                  <a href="/frontend/src/html/item/search.html?item=인형"
+                    >#인형</a
+                  >
+                </li>
+                <li>
+                  <a href="/frontend/src/html/item/search.html?item=장난감"
+                    >#장난감</a
+                  >
+                </li>
+                <li>
+                  <a href="/frontend/src/html/item/search.html?item=캣닙"
+                    >#캣닙</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="name">
+              <!-- 아이템 이름 -->
+              <b>밀크 앤 페퍼 POULPE Toy 오징어 고양이 장난감</b>
+            </div>
+            <div class="price">
+              <!-- 아이템 가격 -->
+              20,000원
+            </div>
+            <div class="size">
+              <!-- 사이즈 -->
+              <div>
+                <span>size : </span>
+                <ul>
+                  <li>
+                    <input
+                      type="radio"
+                      name="size-op"
+                      id="size1"
+                      value="32"
+                      checked
+                    />
+                    <label for="size1">32</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size-op" id="size2" value="35" />
+                    <label for="size2">35</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size-op" id="size3" value="38" />
+                    <label for="size3">38</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size-op" id="size4" value="41" />
+                    <label for="size4">41</label>
+                  </li>
+                </ul>
+              </div>
+              <button
+                class="size-btn"
+                onclick="showGuide('/frontend/img/brand/maxbone-magazin-forbes.jpg')"
+              >
+                size guide >
+              </button>
+            </div>
+            <div class="buttons">
+              <button class="buy-btn kor"><span>구매하러 가기</span></button>
+              <button class="share-btn" onclick="openShare()">
+                <img src="/frontend/img/icon/share_icon.png" />
+              </button>
+            </div>
+            <img
+              class="grass-small-margin"
+              src="/frontend/img/icon/pattern-grass.svg"
+              alt=""
+            />
+            <div>
+              <div class="item-description kor">
+                <!-- 아이테ㅐㅁ 설명 -->
+                파우더핑크 컬러의 부드러운 인조모피 자켓 펄 그레이 컬러의
+                마이크로 퍼 안감으로 부드럽고 따뜻함 리드줄 구멍
+              </div>
+              <div class="item-info-container">
+                <div
+                  class="item-info details information"
+                  onclick="contentsOpenClose('information')"
+                >
+                  <div class="summary">
+                    <span> Information </span>
+                    <img
+                      class="arrowBtn"
+                      src="/frontend/img/icon/beige_open_icon.png"
+                    />
+                  </div>
+                  <span class="none contents">
+                    <!-- 아이템 정보 -->
+                    <div class="big kor">소재</div>
+                    <div class="small kor">폴리에스터</div>
+                  </span>
+                </div>
+                <div
+                  class="item-info details delivery"
+                  onclick="contentsOpenClose('delivery')"
+                >
+                  <div class="summary">
+                    <span> Delivery&Exchanges/Return </span>
+                    <img
+                      class="arrowBtn"
+                      src="/frontend/img/icon/beige_open_icon.png"
+                    />
+                  </div>
+                  <span class="none contents">
+                    <div class="big kor">배송정보</div>
+                    <div class="small kor">
+                      <ul>
+                        <li>
+                          배송기간 : 1일~3일 (영업일 기준) 상품 종류나 재고
+                          상황에 따라 배송이 다소 지연될 수 있습니다.
+                        </li>
+                        <li>
+                          배송지역: 전국지역 (도서 산간지역, 제주도의 경우 평균
+                          배송일보다 1~2일 더 소요 가능)
+                        </li>
+                        <li>
+                          배송비용 : 3,500원 (5만원 이상 주문 시 무료배송)
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="big kor">교환 및 반품안내</div>
+                    <div class="small kor">
+                      <ul>
+                        <li>
+                          상품하자, 오배송의 경우 택배비는 무료로 반품/교환이
+                          가능합니다.
+                        </li>
+                        <li>
+                          반품/교환은 미사용 제품에 한해 배송 완료 후 7일 이내
+                          고객센터 또는 Q&A 게시판을 통해 접수하여 주십시오.
+                        </li>
+                        <li>
+                          고객 부주의로 상품이 훼손 및 변경된 경우, 털뭍음 등의
+                          사용 흔적이 있는 경우 반품/교환이 불가능합니다.
+                        </li>
+                        <li>
+                          택 제거, 상품 포장이 훼손되어 상품 가치가 상실된 경우
+                          반품/교환이 불가능합니다.
+                        </li>
+                        <li>
+                          모니터 해상도의 차이로 인해 색상이나 이미지가 실제와
+                          다른 경우는 무료 반품/교환 사유가 아닙니다.
+                        </li>
+                        <li>
+                          상품하자 이외 사이즈, 색상교환 등 단순 변심에 의한
+                          교환/반품의 경우 택배비는 고객 부담이며, 무료배송
+                          상품인 경우에도 왕복 택배비가 발생합니다.
+                        </li>
+                        <li>본 제품은 AS가 불가합니다.</li>
+                      </ul>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        class="margin-grass"
+        src="/frontend/img/icon/pattern-grass.svg"
+        alt=""
+      />
+      <div class="describe-imgs hide-img">
+        <!-- 아이템 상세 설명 이미지 -->
+        <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
+        <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
+        <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
+      </div>
+      <div class="img-open-btn">
+        <button class="kor" onclick="openImg()">
+          상품설명
+          <img
+            class="arrowBtn"
+            src="/frontend/img/icon/white_open_icon.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="/frontend/src/js/itemDetailPage.js"></script>
+  </body>
+</html>

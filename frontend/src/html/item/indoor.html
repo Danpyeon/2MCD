@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDOOR | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/itemPage.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+        $("#footer").load("/frontend/src/html/common/footer.html");
+      });
+    </script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <div class="title">Indoor</div>
+      <nav class="item-menu">
+        <div class="category-list">
+          <ul class="category-list">
+            <li id="all" onclick="categoryFilter('all')">ALL</li>
+            <li id="living" onclick="categoryFilter('living')">리빙</li>
+            <li id="toy" onclick="categoryFilter('toy')">장난감</li>
+            <li id="cat" onclick="categoryFilter('cat')">고양이</li>
+          </ul>
+        </div>
+        <div class="brand-menu-wrapper">
+          <div class="brand-menu" onclick="openSubMenu()">
+            ALL Brands<b class="button">▾</b>
+          </div>
+          <div class="sub-brand-menu">
+            <ul>
+              <li onclick="brandFilter('all')">All Brands</li>
+              <li onclick="brandFilter('petsochic')">펫소시크</li>
+              <li onclick="brandFilter('maxbone')">맥스본</li>
+              <li onclick="brandFilter('milkandpepper')">밀크앤페퍼</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="items">
+        <div class="item" onclick="viewItem('id')">
+          <a href="/frontend/src/html/item/itemDetail.html?id=1">
+            <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
+            <div class="item-brand">MLIK & PEPPER</div>
+            <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
+          </a>
+        </div>
+        <div class="item" onclick="viewItem('id')">
+          <a href="">
+            <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
+            <div class="item-brand">MLIK & PEPPER</div>
+            <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
+          </a>
+        </div>
+        <div class="item" onclick="viewItem('id')">
+          <a href="">
+            <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
+            <div class="item-brand">MLIK & PEPPER</div>
+            <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
+          </a>
+        </div>
+        <div class="item" onclick="viewItem('id')">
+          <a href="">
+            <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
+            <div class="item-brand">MLIK & PEPPER</div>
+            <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
+          </a>
+        </div>
+      </div>
+      <div class="page-button"></div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="/frontend/src/js/itemPage.js"></script>
+  </body>
+</html>

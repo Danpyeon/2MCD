@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OUTDOOR | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/itemPage.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+        $("#footer").load("/frontend/src/html/common/footer.html");
+      });
+    </script>
+
+    <script src="/frontend/src/js/itemPage.js"></script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <div class="title">Outdoor</div>
+      <nav class="item-menu">
+        <div class="category-list">
+          <ul>
+            <li id="all" onclick="categoryFilter('all')">
+              ALL
+              <div></div>
+            </li>
+            <li
+              id="springsummer"
+              onclick="categoryFilter('springsummer')"
+              style="position: relative"
+            >
+              봄여름의류
+            </li>
+            <li id="fallwinter" onclick="categoryFilter('fallwinter')">
+              가을겨울의류
+            </li>
+            <li id="harness" onclick="categoryFilter('harness')">하네스</li>
+            <li id="collar" onclick="categoryFilter('collar')">목줄</li>
+
+            <li id="lead" onclick="categoryFilter('lead')">리드줄</li>
+            <li id="accessories" onclick="categoryFilter('accessories')">
+              액서서리
+            </li>
+            <li id="bag" onclick="categoryFilter('bag')">이동가방</li>
+          </ul>
+        </div>
+        <div class="brand-menu-wrapper">
+          <div class="brand-menu">ALL Brands<b class="button">▾</b></div>
+          <div class="sub-brand-menu">
+            <ul>
+              <li onclick="brandFilter('all')">All Brands</li>
+              <li onclick="brandFilter('petsochic')">펫소시크</li>
+              <li onclick="brandFilter('maxbone')">맥스본</li>
+              <li onclick="brandFilter('milkandpepper')">밀크앤페퍼</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="items">
+        <div class="item">
+          <a href="">
+            <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
+            <div class="item-brand">MLIK & PEPPER</div>
+            <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
+            <div class="item-brand">MLIK & PEPPER</div>
+            <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
+            <div class="item-brand">MLIK & PEPPER</div>
+            <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" alt="" />
+            <div class="item-brand">MLIK & PEPPER</div>
+            <div class="item-name">밀크앤페퍼 카야 민트 목줄</div>
+          </a>
+        </div>
+      </div>
+      <div class="page-button"></div>
+    </section>
+    <footer id="footer"></footer>
+
+    <script src="/frontend/src/js/itemPage.js"></script>
+
+    <script></script>
+  </body>
+</html>
