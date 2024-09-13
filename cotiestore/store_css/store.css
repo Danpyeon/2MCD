@@ -498,7 +498,7 @@ html {
 }
 
 /*article-header*/
-.article--pin.js-pin-fixed .article-header {
+.article--pin.c .article-header {
     position: fixed;
 }
 
