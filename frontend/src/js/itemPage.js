@@ -111,3 +111,58 @@ function makeItemList(itemList) {
     str += `</div>`;
   }
 }
+
+makePageButton();
+async function makePageButton() {
+  const params = new URLSearchParams(location.search);
+  let now = params.get("page");
+  let itemCnt;
+  let pageCnt;
+  let btns = "";
+  let obj = { cate: params.get("cate"), sort: params.get("sort") };
+
+  // await $.ajax({
+  //   type: "post",
+  //   url: "http://localhost:3000/send1", // 나중에 수정!
+  //   data: JSON.stringify(obj),
+  //   contentType: "application/json",
+  //   success: (res) => {
+  //     itemCnt = res;
+  //   },
+  //   error: (e) => {
+  //     console.error(e);
+  //   },
+  // });
+
+  itemCnt = 90;
+  pageCnt = itemCnt / 18;
+
+  if (pageCnt <= 1) return;
+
+  if (now >= 2) {
+    btns += `<button onclick="movePage(1)"><b><<</b></button>`;
+    btns += `<button onclick="movePage(${now - 1})"><b><</b></button>`;
+  }
+
+  for (let i = 0; i < pageCnt; i++) {
+    if (i + 1 === +now)
+      btns += `<button onclick="movePage(${i + 1})" class="on">${
+        i + 1
+      }</button>`;
+    else btns += `<button onclick="movePage(${i + 1})">${i + 1}</button>`;
+  }
+
+  if (now < pageCnt) {
+    btns += `<button onclick="movePage(${now - 1})"><b>></b></button>`;
+    btns += `<button onclick="movePage(${pageCnt})"><b>>></b></button>`;
+  }
+
+  $(".page-button").html(btns);
+}
+
+function movePage(page) {
+  const params = new URLSearchParams(location.search);
+
+  params.set("page", page);
+  location.search = params;
+}

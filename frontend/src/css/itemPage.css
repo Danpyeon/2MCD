@@ -118,4 +118,20 @@ body {
   font-size: 1.2vw;
 }
 
+.page-button button {
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
+  background-color: initial;
+  font-family: "LibreBaskerville", "noto-sans", sans-serif;
+}
+.page-button .on {
+  background-color: #000;
+  color: #fff;
+}
+
 /*# sourceMappingURL=itemPage.css.map */
