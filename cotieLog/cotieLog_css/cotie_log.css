@@ -489,3 +489,15 @@ body.page-template-cotielog .article--secondary .article-body {
 #footer > div.bottom-30 {
     bottom: 500rem;
 }
+
+.jt-category ul a svg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+}

@@ -49,5 +49,5 @@
 }
 
 .jt-btn__basic.jt-btn__basic--icon-more>span:before {
-    content: '\e90e';
+    content: '+';
 }
