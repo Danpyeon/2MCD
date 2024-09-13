@@ -13,10 +13,6 @@ body {
   margin: 9rem 0 9rem 0;
   min-height: calc(100vh - 5rem);
   text-align: center;
-
-  a:hover {
-    border-bottom: 1px solid black;
-  }
 }
 
 .size-btn,
@@ -41,6 +37,10 @@ body {
   width: 90vw;
   display: flow-root;
   margin: auto;
+
+  a:hover {
+    border-bottom: 1px solid black;
+  }
 
   .item-img,
   .item {
@@ -174,13 +174,13 @@ body {
 }
 
 .item-info-container {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
   margin-top: 5vw;
   margin-bottom: 5vw;
 
   .item-info:first-child {
-    border-bottom: 1px solid black;
+    border-bottom: 1.5px solid black;
   }
 
   .summary {
@@ -254,5 +254,102 @@ body {
     width: 30px;
     margin-left: 20px;
     height: auto;
+  }
+}
+
+.show-big-img {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f0ede6;
+
+  button {
+    font-size: 5vw;
+    font-weight: lighter;
+    position: absolute;
+    right: 4vw;
+    top: 1vw;
+    z-index: 1001;
+    border: none;
+    background-color: initial;
+  }
+
+  .guide-text {
+    font-size: 2.5vw;
+    position: absolute;
+    left: 3vw;
+    top: 4vw;
+  }
+
+  .guide-imgs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .big-imgs {
+    width: 100vw;
+    height: auto;
+  }
+}
+
+.share-menu {
+  display: none;
+  width: 30vw;
+  height: 15vw;
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background: #f0ede6;
+
+  .share-title {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  button {
+    border: none;
+    font-size: 2vw;
+    color: white;
+    background-color: initial;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+  }
+
+  .share-item {
+    padding: 8%;
+
+    a:hover {
+      border: none;
+    }
+  }
+
+  img {
+    width: 5vw;
+  }
+}
+
+.size {
+  input[type="radio"] {
+    display: none;
+  }
+
+  [type="radio"]:checked + label {
+    border-bottom: 3px solid black;
   }
 }

@@ -1,8 +1,6 @@
 function contentsOpenClose(c) {
   let contents = $(`.${c} .contents`);
-  console.log(contents);
-
-  let arrowBtn = $(".arrowBtn");
+  let arrowBtn = $(`.${c} .arrowBtn`);
   let footerimg = $(".footer-layer");
 
   if (contents.hasClass("none")) {
@@ -10,12 +8,12 @@ function contentsOpenClose(c) {
     contents.addClass("block");
     footerimg.removeClass("bottom-20");
     footerimg.addClass("bottom-30");
-    arrowBtn.attr("src", "/frontend/img/icon/closeBtn.png");
+    arrowBtn.css("transform", "rotate(180deg)");
   } else {
     contents.addClass("none");
     contents.removeClass("block");
     footerimg.removeClass("bottom-30");
     footerimg.addClass("bottom-20");
-    arrowBtn.attr("src", "/frontend/img/icon/openBtn.png");
+    arrowBtn.css("transform", "rotate(0)");
   }
 }

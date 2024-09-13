@@ -17,13 +17,28 @@
       href="/frontend/img/icon/cropped-favicon-32x32.png"
       type="image/x-icon"
     />
-    <script src="/frontend/src/js/itemDetailPage.js"></script>
   </head>
   <body>
     <header id="header"></header>
     <section id="main">
+      <div class="show-big-img"></div>
+      <div class="share-menu">
+        <button onclick="closeShare()">X</button>
+        <div class="share-title kor">공유하기</div>
+        <div class="share-item">
+          <a href=""
+            ><img src="/frontend/img/icon/facebook_icon.png" alt=""
+          /></a>
+          <a href=""
+            ><img src="/frontend/img/icon/twitter_icon.png" alt=""
+          /></a>
+          <a href=""><img src="/frontend/img/icon/kakao_icon.png" alt="" /></a>
+          <a href=""><img src="/frontend/img/icon/link_icon.png" alt="" /></a>
+        </div>
+      </div>
       <div class="item-info-wrapper">
-        <div class="item-img">
+        <div class="item-img" onclick="showImg()">
+          <!-- 상품 소개 이미지 -->
           <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
           <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
         </div>
@@ -31,12 +46,14 @@
           <div class="item-padding">
             <div class="brand">
               BRAND :
+              <!-- 브랜드 -->
               <a
                 href="/frontend/src/html/item/product.html?page=1&sort=milkandpepper"
                 >MILK & PEPPER</a
               >
             </div>
             <div class="hashtag kor">
+              <!-- 해시태그 -->
               <ul>
                 <li>
                   <a href="/frontend/src/html/item/search.html?item=귀여운"
@@ -71,24 +88,52 @@
               </ul>
             </div>
             <div class="name">
+              <!-- 아이템 이름 -->
               <b>밀크 앤 페퍼 POULPE Toy 오징어 고양이 장난감</b>
             </div>
-            <div class="price">20,000원</div>
+            <div class="price">
+              <!-- 아이템 가격 -->
+              20,000원
+            </div>
             <div class="size">
+              <!-- 사이즈 -->
               <div>
                 <span>size : </span>
                 <ul>
-                  <li>32</li>
-                  <li>35</li>
-                  <li>38</li>
-                  <li>41</li>
+                  <li>
+                    <input
+                      type="radio"
+                      name="size-op"
+                      id="size1"
+                      value="32"
+                      checked
+                    />
+                    <label for="size1">32</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size-op" id="size2" value="35" />
+                    <label for="size2">35</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size-op" id="size3" value="38" />
+                    <label for="size3">38</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="size-op" id="size4" value="41" />
+                    <label for="size4">41</label>
+                  </li>
                 </ul>
               </div>
-              <button class="size-btn">size guide ></button>
+              <button
+                class="size-btn"
+                onclick="showGuide('/frontend/img/brand/maxbone-magazin-forbes.jpg')"
+              >
+                size guide >
+              </button>
             </div>
             <div class="buttons">
               <button class="buy-btn kor"><span>구매하러 가기</span></button>
-              <button class="share-btn">
+              <button class="share-btn" onclick="openShare()">
                 <img src="/frontend/img/icon/share_icon.png" />
               </button>
             </div>
@@ -99,6 +144,7 @@
             />
             <div>
               <div class="item-description kor">
+                <!-- 아이테ㅐㅁ 설명 -->
                 파우더핑크 컬러의 부드러운 인조모피 자켓 펄 그레이 컬러의
                 마이크로 퍼 안감으로 부드럽고 따뜻함 리드줄 구멍
               </div>
@@ -111,10 +157,11 @@
                     <span> Information </span>
                     <img
                       class="arrowBtn"
-                      src="/frontend/img/icon/openBtn.png"
+                      src="/frontend/img/icon/beige_open_icon.png"
                     />
                   </div>
                   <span class="none contents">
+                    <!-- 아이템 정보 -->
                     <div class="big kor">소재</div>
                     <div class="small kor">폴리에스터</div>
                   </span>
@@ -127,7 +174,7 @@
                     <span> Delivery&Exchanges/Return </span>
                     <img
                       class="arrowBtn"
-                      src="/frontend/img/icon/openBtn.png"
+                      src="/frontend/img/icon/beige_open_icon.png"
                     />
                   </div>
                   <span class="none contents">
@@ -191,6 +238,7 @@
         alt=""
       />
       <div class="describe-imgs hide-img">
+        <!-- 아이템 상세 설명 이미지 -->
         <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
         <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
         <img src="/frontend/img/brand/maxbone-magazin-forbes.jpg" />
@@ -198,10 +246,15 @@
       <div class="img-open-btn">
         <button class="kor" onclick="openImg()">
           상품설명
-          <img class="arrowBtn" src="/frontend/img/icon/openBtn.png" alt="" />
+          <img
+            class="arrowBtn"
+            src="/frontend/img/icon/white_open_icon.png"
+            alt=""
+          />
         </button>
       </div>
     </section>
     <footer id="footer"></footer>
+    <script src="/frontend/src/js/itemDetailPage.js"></script>
   </body>
 </html>

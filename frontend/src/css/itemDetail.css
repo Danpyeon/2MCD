@@ -14,9 +14,6 @@ body {
   min-height: calc(100vh - 5rem);
   text-align: center;
 }
-#main a:hover {
-  border-bottom: 1px solid black;
-}
 
 .size-btn,
 .share-btn,
@@ -38,6 +35,9 @@ body {
   width: 90vw;
   display: flow-root;
   margin: auto;
+}
+.item-info-wrapper a:hover {
+  border-bottom: 1px solid black;
 }
 .item-info-wrapper .item-img,
 .item-info-wrapper .item {
@@ -150,13 +150,13 @@ body {
 }
 
 .item-info-container {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
   margin-top: 5vw;
   margin-bottom: 5vw;
 }
 .item-info-container .item-info:first-child {
-  border-bottom: 1px solid black;
+  border-bottom: 1.5px solid black;
 }
 .item-info-container .summary {
   width: 100%;
@@ -222,6 +222,91 @@ body {
   width: 30px;
   margin-left: 20px;
   height: auto;
+}
+
+.show-big-img {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f0ede6;
+}
+.show-big-img button {
+  font-size: 5vw;
+  font-weight: lighter;
+  position: absolute;
+  right: 4vw;
+  top: 1vw;
+  z-index: 1001;
+  border: none;
+  background-color: initial;
+}
+.show-big-img .guide-text {
+  font-size: 2.5vw;
+  position: absolute;
+  left: 3vw;
+  top: 4vw;
+}
+.show-big-img .guide-imgs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.show-big-img .big-imgs {
+  width: 100vw;
+  height: auto;
+}
+
+.share-menu {
+  display: none;
+  width: 30vw;
+  height: 15vw;
+  border: 1px solid black;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background: #f0ede6;
+}
+.share-menu .share-title {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  font-size: 1.3vw;
+  font-weight: 700;
+  text-align: left;
+}
+.share-menu button {
+  border: none;
+  font-size: 2vw;
+  color: white;
+  background-color: initial;
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+}
+.share-menu .share-item {
+  padding: 8%;
+}
+.share-menu .share-item a:hover {
+  border: none;
+}
+.share-menu img {
+  width: 5vw;
+}
+
+.size input[type=radio] {
+  display: none;
+}
+.size [type=radio]:checked + label {
+  border-bottom: 3px solid black;
 }
 
 /*# sourceMappingURL=itemDetail.css.map */
