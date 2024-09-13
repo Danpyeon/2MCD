@@ -45,7 +45,11 @@ ul {
   height: 7vw;
   background-color: #f0ede6;
 }
-
+::selection {
+  background: #ccc7bb;
+  background: rgba(160, 136, 111, .35);
+  color: #fff;
+}
 .minimize {
   border-bottom: 1px solid black;
 }

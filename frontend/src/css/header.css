@@ -42,6 +42,12 @@ ul li {
   background-color: #f0ede6;
 }
 
+::selection {
+  background: #ccc7bb;
+  background: rgba(160, 136, 111, 0.35);
+  color: #fff;
+}
+
 .minimize {
   border-bottom: 1px solid black;
 }

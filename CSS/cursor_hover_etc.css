@@ -6,6 +6,12 @@ body {
     cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;
 }
 
+a[data-cursor="custom"], button[data-cursor="custom"], [data-cursor="custom"] a, [data-cursor="custom"] button, .selectric-wrapper, .selectric-items li, .jt-accordion__title, .wp-block-social-link-anchor {
+    cursor: url(/KJH-IMG/cursor/cursor-tiny.png), auto;
+}
+a[data-cursor="custom"]:active, button[data-cursor="custom"]:active, [data-cursor="custom"] a:active, [data-cursor="custom"] button:active, .selectric-wrapper:active, .selectric-items li:active, .jt-accordion__title:active, .wp-block-social-link-anchor:active {
+    cursor: url(/KJH-IMG/cursor/cursor-tiny-click.png), auto;
+}
 
 a:active,
 button:active,
