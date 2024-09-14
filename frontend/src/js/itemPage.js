@@ -60,6 +60,30 @@ function currentMenu() {
     underline.css("left", "0px");
     underline.css("top", "30px");
   }
+
+  sortSetting(params.get("sort"));
+}
+
+function sortSetting(sort) {
+  let text = "";
+
+  switch (sort) {
+    case "petsochic":
+      text = "펫소시크";
+      break;
+    case "maxbone":
+      text = "맥스본";
+      break;
+    case "milkandpepper":
+      text = "밀크앤페퍼";
+      break;
+
+    default:
+      text = "All Brands";
+      break;
+  }
+
+  $(".brand-menu").html(text + '<b class="button">▾</b>');
 }
 
 // api 완성되면 수정함!!!!
@@ -94,7 +118,6 @@ function openSubMenu() {
 
   if (sub.css("visibility") === "hidden") sub.css("visibility", "visible");
   else sub.css("visibility", "hidden");
-  console.log(sub.is(":hidden"));
 }
 
 // 상품 아이템 만들기!

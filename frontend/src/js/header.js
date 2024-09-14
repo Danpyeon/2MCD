@@ -87,7 +87,7 @@ $(document).ready(() => {
     }
   );
 
-  let pageUnderline = $(".page-underline");
+  let pageUnderline = $(".myPage .page-underline");
   $(".myPage").hover(
     function (event) {
       pageUnderline.css("display", "block");
@@ -106,11 +106,9 @@ $(window).on("scroll", function () {
 
   if (scrollTop > 800) {
     if (scrollTop > lastScroll) {
-      // $(".header-container").removeClass("fixed");
       $(".header-container").addClass("minimize");
       $(".header-container").addClass("none");
     } else if (scrollTop <= lastScroll) {
-      // $(".header-container").addClass("fixed");
       $(".header-container").addClass("minimize");
       $(".header-container").removeClass("none");
     }
