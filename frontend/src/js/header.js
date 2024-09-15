@@ -145,5 +145,6 @@ $("#search-user-wrapper > .search-btn").on("click", () => {
 });
 
 function closeSearch() {
+  $(".search-bar").css("animation", "show-search-bar 0.3s reverse");
   $(".search-bar").css("display", "none");
 }

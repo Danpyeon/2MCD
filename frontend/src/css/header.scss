@@ -205,6 +205,9 @@ div.none {
   z-index: 2000;
   background: #f0ede6;
   top: 0;
+  transition: all 0.3s linear;
+  transition-delay: 0.4s;
+  animation: show-search-bar 0.3s;
 
   .search-menu-top {
     margin: 20px;
@@ -269,5 +272,15 @@ div.none {
 
   100% {
     width: 110px;
+  }
+}
+
+@keyframes show-search-bar {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
