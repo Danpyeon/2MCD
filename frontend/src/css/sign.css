@@ -23,6 +23,63 @@ body {
   font-size: 74px;
 }
 
+.signup-form {
+  width: 80%;
+  margin: 100px auto;
+}
+.signup-form table,
+.signup-form .form-title {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+}
+.signup-form .form-title {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 20px 0;
+  border-bottom: 1px solid #bcbcbc;
+}
+.signup-form table {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+.signup-form input {
+  background-color: initial;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 20px;
+  height: 35px;
+}
+.signup-form input[type=text],
+.signup-form input[type=password] {
+  width: 200px;
+}
+.signup-form input[type=email] {
+  width: 400px;
+}
+.signup-form input[type=number] {
+  width: 100px;
+  margin-left: 20px;
+  -moz-appearance: textfield;
+}
+.signup-form input::-webkit-outer-spin-button,
+.signup-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.signup-form input[type=number]:first-child {
+  margin-left: 0;
+}
+.signup-form .red {
+  color: red;
+}
+.signup-form tr {
+  border-bottom: 1px solid #bcbcbc;
+}
+.signup-form td {
+  padding: 20px 0;
+}
+
 .login_form {
   width: 40%;
   margin: 100px auto;
@@ -51,7 +108,8 @@ body {
   display: flex;
   align-items: center;
 }
-.login_form .submit_login {
+
+.submit_login {
   width: 19vw;
   height: 6vw;
   background-color: initial;
@@ -59,7 +117,8 @@ body {
   border: none;
   font-size: 23px;
 }
-.login_form .submit_login::after {
+
+.submit_login::after {
   content: "";
   background-image: url(/frontend/img/layout/button-basic-fill.svg);
   background-size: cover;

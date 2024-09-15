@@ -20,6 +20,60 @@
   </head>
   <body>
     <header id="header"></header>
+    <section id="main">
+      <div class="title">Sign up</div>
+      <form method="post" class="signup-form">
+        <div class="form-title">기본 정보</div>
+        <table class="kor">
+          <tr>
+            <td class="table-title">아이디</td>
+            <td>
+              <input type="text" class="user_id" />
+              (영문소문자/숫자 4~16자)
+            </td>
+          </tr>
+          <tr>
+            <td class="table-title">비밀번호</td>
+            <td>
+              <input type="password" class="user_pw" />(영문
+              대소문자/숫자/특수문자 중 2가지 이상 조합, 8~16자)
+            </td>
+          </tr>
+          <tr>
+            <td class="table-title">비밀번호 확인</td>
+            <td><input type="password" class="pw_check" /></td>
+          </tr>
+          <tr>
+            <td class="table-title">이름</td>
+            <td><input type="text" class="user_name" /></td>
+          </tr>
+          <tr>
+            <td class="table-title">닉네임</td>
+            <td><input type="text" class="user_nickname" /></td>
+          </tr>
+          <tr>
+            <td class="table-title">이메일</td>
+            <td><input type="email" class="user_email" /></td>
+          </tr>
+          <tr>
+            <td class="table-title">휴대전화</td>
+            <td>
+              <input type="number" class="user_phone1" />-<input
+                type="number"
+                class="user_phone2"
+              />-<input type="number" class="user_phone3" />
+            </td>
+          </tr>
+        </table>
+        <button
+          type="submit"
+          class="submit_login kor"
+          onclick="trySignUp(event)"
+        >
+          회원가입
+        </button>
+      </form>
+    </section>
     <script src="/frontend/src/js/sign.js"></script>
     <footer id="footer"></footer>
   </body>

@@ -23,6 +23,74 @@ body {
   font-size: 74px;
 }
 
+.signup-form {
+  width: 80%;
+  margin: 100px auto;
+
+  table,
+  .form-title {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .form-title {
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px 0;
+    border-bottom: 1px solid #bcbcbc;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+  }
+
+  input {
+    background-color: initial;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+    height: 35px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 200px;
+  }
+
+  input[type="email"] {
+    width: 400px;
+  }
+  input[type="number"] {
+    width: 100px;
+    margin-left: 20px;
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"]:first-child {
+    margin-left: 0;
+  }
+
+  .red {
+    color: red;
+  }
+
+  tr {
+    border-bottom: 1px solid #bcbcbc;
+  }
+
+  td {
+    padding: 20px 0;
+  }
+}
+
 .login_form {
   width: 40%;
   margin: 100px auto;
@@ -54,29 +122,29 @@ body {
       align-items: center;
     }
   }
+}
 
-  .submit_login {
-    width: 19vw;
-    height: 6vw;
-    background-color: initial;
-    position: relative;
-    border: none;
-    font-size: 23px;
-  }
+.submit_login {
+  width: 19vw;
+  height: 6vw;
+  background-color: initial;
+  position: relative;
+  border: none;
+  font-size: 23px;
+}
 
-  .submit_login::after {
-    content: "";
-    background-image: url(/frontend/img/layout/button-basic-fill.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 19vw;
-    height: 6vw;
-    top: 50%;
-    left: 50%;
-    z-index: -1;
-    transform: translate(-50%, -50%);
-  }
+.submit_login::after {
+  content: "";
+  background-image: url(/frontend/img/layout/button-basic-fill.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 19vw;
+  height: 6vw;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
 }
 
 .toggle {
