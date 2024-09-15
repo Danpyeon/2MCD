@@ -20,6 +20,21 @@
   </head>
   <body>
     <header id="header"></header>
+    <section id="main">
+      <div class="title">Login</div>
+      <form action="/backend/" method="post" class="login_form">
+        <input class="user_id" type="text" placeholder="아이디" />
+        <input class="user_pw" type="password" placeholder="비밀번호" />
+        <div class="etc_bar">
+          <label class="toggle">
+            <input role="switch" type="checkbox" />
+            <span>보안접속</span>
+          </label>
+          <a href="/frontend/src/html/sign/signUp.html">회원가입</a>
+        </div>
+        <button type="submit" class="submit_login kor">로그인</button>
+      </form>
+    </section>
     <script src="/frontend/src/js/sign.js"></script>
     <footer id="footer"></footer>
   </body>
