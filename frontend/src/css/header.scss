@@ -47,7 +47,7 @@ ul {
 }
 ::selection {
   background: #ccc7bb;
-  background: rgba(160, 136, 111, .35);
+  background: rgba(160, 136, 111, 0.35);
   color: #fff;
 }
 .minimize {
@@ -115,10 +115,12 @@ div.none {
   border: none;
   height: 2vw;
   transition: all 0.2s linear;
+  margin-left: 25px;
 
   span {
     font-family: "LibreBaskerville", "noto-sans", sans-serif;
     font-size: 1.5vw;
+    position: relative;
   }
 
   svg {
@@ -127,6 +129,19 @@ div.none {
     top: 5vw;
     transition: 0.2s linear;
     display: none;
+  }
+
+  .login-btn::after {
+    content: "";
+    width: 9vw;
+    height: 3vw;
+    background-image: url(/frontend/img/layout/button-basic-fill.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20%;
+    right: -42%;
+    z-index: -1;
   }
 }
 

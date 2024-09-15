@@ -6,13 +6,14 @@ function isLogin() {
 
   if (login === null) {
     inner += '<span class="login-btn">Login</span>';
+    link.attr("href", "/frontend/src/html/sign/signIn.html");
   } else {
-    inner += `  <span class="mypage-text"></span>
+    inner += `  <span class="mypage-text">My Page</span>
               <svg
                 class="page-underline"
-                width="140"
+                width="100"
                 height="8.14"
-                viewBox="0 0 140 8.14"
+                viewBox="0 0 100 8.14"
               >
                 <path
                   fill="none"
@@ -24,6 +25,7 @@ function isLogin() {
                   style="stroke-dashoffset: 0; stroke-dasharray: none"
                 ></path>
               </svg>`;
+    link.attr("href", "/frontend/src/html/myPage/myPage.html");
   }
 
   link.html(inner);
