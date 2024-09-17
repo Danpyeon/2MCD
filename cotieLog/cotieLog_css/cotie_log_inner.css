@@ -956,9 +956,12 @@ figure, article, header, footer, nav, hgroup, video, audio, aside, main {
     width: 100%;
 }
 #footer > div.bottom-20 {
-    bottom: 400rem;
+    /* bottom: 400rem; */
+    height: 153rem;
+    top: -100rem;
 }
 
 #footer > div.bottom-30 {
-    bottom: 500rem;
+    top: -100rem;
+    /* bottom: 500rem; */
 }

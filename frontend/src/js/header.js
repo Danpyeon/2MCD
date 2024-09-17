@@ -1,3 +1,49 @@
+isLogin();
+function isLogin() {
+  let login = getCookies("userCache");
+  let link = $(".myPage");
+  let inner = "";
+
+  if (login === null) {
+    inner += '<span class="login-btn">Login</span>';
+    link.attr("href", "/frontend/src/html/sign/signIn.html");
+  } else {
+    inner += `  <span class="mypage-text">My Page</span>
+              <svg
+                class="page-underline"
+                width="100"
+                height="8.14"
+                viewBox="0 0 100 8.14"
+              >
+                <path
+                  fill="none"
+                  stroke="#000"
+                  stroke-width="5.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.75,4.54s44.75.83,61.63.88c37,.09,94.57-1.66,102.18-2.64"
+                  style="stroke-dashoffset: 0; stroke-dasharray: none"
+                ></path>
+              </svg>`;
+    link.attr("href", "/frontend/src/html/myPage/myPage.html");
+  }
+
+  link.html(inner);
+}
+
+function getCookies(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(";");
+  for (var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == " ") c = c.substring(1);
+    if (c.indexOf(nameEQ) == 0) {
+      return c.substring(nameEQ.length, c.length);
+    }
+  }
+  return null;
+}
+
 window.addEventListener("scroll", () => {
   let top = $(window).scrollTop();
   let header = $(".header-container");
@@ -43,7 +89,7 @@ $(document).ready(() => {
     }
   );
 
-  let pageUnderline = $(".page-underline");
+  let pageUnderline = $(".myPage .page-underline");
   $(".myPage").hover(
     function (event) {
       pageUnderline.css("display", "block");
@@ -62,14 +108,47 @@ $(window).on("scroll", function () {
 
   if (scrollTop > 800) {
     if (scrollTop > lastScroll) {
-      // $(".header-container").removeClass("fixed");
       $(".header-container").addClass("minimize");
       $(".header-container").addClass("none");
     } else if (scrollTop <= lastScroll) {
-      // $(".header-container").addClass("fixed");
       $(".header-container").addClass("minimize");
       $(".header-container").removeClass("none");
     }
     lastScroll = scrollTop;
   }
 });
+
+$(".search-bar .search-input-field").on(
+  "propertychange change keyup paste input",
+  () => {
+    let deleteBtn = $(".delete-btn");
+
+    if ($(".search-bar .search-input-field").val()) {
+      deleteBtn.css("visibility", "visible");
+    } else {
+      deleteBtn.css("visibility", "hidden");
+    }
+  }
+);
+
+function clearInput() {
+  $(".search-bar .search-input-field").val("");
+  $(".search-bar .delete-btn").css("visibility", "hidden");
+}
+
+function goSearch() {
+  let search = $(".search-bar .search-input-field").val();
+
+  if (!search) return;
+  location.pathname = "/frontend/src/html/item/search.html";
+  location.search = "?item=" + search;
+}
+
+$("#search-user-wrapper > .search-btn").on("click", () => {
+  $(".search-bar").css("display", "block");
+});
+
+function closeSearch() {
+  $(".search-bar").css("animation", "show-search-bar 0.3s reverse");
+  $(".search-bar").css("display", "none");
+}

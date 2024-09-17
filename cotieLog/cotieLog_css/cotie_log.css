@@ -339,6 +339,7 @@ body.page-template-cotielog .article--secondary .article-body {
     content: '';
     display: table;
     clear: both;
+    
 }
 .jt-isotope-list {
     visibility: hidden;
@@ -346,6 +347,8 @@ body.page-template-cotielog .article--secondary .article-body {
 .jt-isotope-list {
     margin-bottom: -168rem;
     position: relative;
+    height: 1887.62px; 
+    visibility: visible;
 }
 /* jt-isotope-list */
 .jt-isotope-list__grid {
@@ -483,11 +486,14 @@ body.page-template-cotielog .article--secondary .article-body {
 /* loadmore */
 
 #footer > div.bottom-20 {
-    bottom: 400rem;
+    /* bottom: 400rem; */
+    height: 153rem;
+    top: -100rem;
 }
 
 #footer > div.bottom-30 {
-    bottom: 500rem;
+    top: -100rem;
+    /* bottom: 500rem; */
 }
 
 .jt-category ul a svg {
