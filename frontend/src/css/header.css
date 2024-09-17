@@ -112,10 +112,13 @@ div.none {
   border: none;
   height: 2vw;
   transition: all 0.2s linear;
+  margin-left: 25px;
 }
 .myPage span {
   font-family: "LibreBaskerville", "noto-sans", sans-serif;
   font-size: 1.5vw;
+  position: relative;
+  color: black;
 }
 .myPage svg {
   position: absolute;
@@ -123,6 +126,18 @@ div.none {
   top: 5vw;
   transition: 0.2s linear;
   display: none;
+}
+.myPage .login-btn::after {
+  content: "";
+  width: 9vw;
+  height: 3vw;
+  background-image: url(/frontend/img/layout/button-basic-fill.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -20%;
+  right: -42%;
+  z-index: -1;
 }
 
 #menu-ball {
