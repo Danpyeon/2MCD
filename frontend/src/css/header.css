@@ -82,6 +82,12 @@ div.none {
   visibility: visible;
 }
 
+.sub-menu-open:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
 .menu-container {
   display: flex;
 }
@@ -112,13 +118,21 @@ div.none {
   border: none;
   height: 2vw;
   transition: all 0.2s linear;
-  margin-left: 25px;
+  margin-left: 10px;
+  height: 100%;
 }
-.myPage span {
+.myPage .login-btn,
+.myPage .mypage-text {
   font-family: "LibreBaskerville", "noto-sans", sans-serif;
   font-size: 1.5vw;
-  position: relative;
   color: black;
+}
+.myPage .login-btn {
+  position: relative;
+}
+.myPage .mypage-text {
+  height: 100%;
+  margin: 16px 0px 16px 0px;
 }
 .myPage svg {
   position: absolute;
@@ -176,6 +190,11 @@ div.none {
 .sub-menu div {
   display: inline-block;
   position: relative;
+}
+
+#search-user-wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .search-bar {

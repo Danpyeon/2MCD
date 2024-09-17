@@ -1,31 +1,16 @@
 isLogin();
 function isLogin() {
   let login = getCookies("userCache");
-  let link = $(".myPage");
+  let link = $(".my-page-text");
   let inner = "";
 
-  if (login === null) {
-    inner += '<span class="login-btn">Login</span>';
+  if (login !== null) {
+    inner += '<div class="login-btn">Login</div>';
     link.attr("href", "/frontend/src/html/sign/signIn.html");
   } else {
-    inner += `  <span class="mypage-text">My Page</span>
-              <svg
-                class="page-underline"
-                width="100"
-                height="8.14"
-                viewBox="0 0 100 8.14"
-              >
-                <path
-                  fill="none"
-                  stroke="#000"
-                  stroke-width="5.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.75,4.54s44.75.83,61.63.88c37,.09,94.57-1.66,102.18-2.64"
-                  style="stroke-dashoffset: 0; stroke-dasharray: none"
-                ></path>
-              </svg>`;
-    link.attr("href", "/frontend/src/html/myPage/myPage.html");
+    inner += `<div class="mypage-text">My Page</div>`;
+    link.attr("href", "/frontend/src/html/mypage/mypage.html");
+    $(".myPage").addClass("sub-menu-open");
   }
 
   link.html(inner);
@@ -149,6 +134,6 @@ $("#search-user-wrapper > .search-btn").on("click", () => {
 });
 
 function closeSearch() {
-  $(".search-bar").css("animation", "show-search-bar 0.3s reverse");
+  // $(".search-bar").css("animation", "show-search-bar 0.3s reverse");
   $(".search-bar").css("display", "none");
 }
