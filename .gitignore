@@ -174,3 +174,6 @@ dist
 
 package.json
 *.map
+
+# BackEnd Img Files
+Img-Upload
