@@ -55,7 +55,6 @@ async function loadInfo() {
   // await $.ajax({
   //   type: "post",
   //   url: "http://localhost:3000/mypage", // 나중에 수정!
-  //   data: JSON.stringify(obj),
   //   contentType: "application/json",
   //   success: (res) => {
   //     itemList = res;

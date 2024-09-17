@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vw;
+  font-family: "LibreBaskerville", "noto-sans", sans-serif;
+}
+
+.kor {
+  font-family: "noto-sans", "LibreBaskerville", sans-serif;
+}
+
+#main {
+  margin: 10rem 0 15rem 0;
+  min-height: calc(100vh - 5rem);
+  text-align: center;
+}
+
+#footer {
+  height: 5rem;
+}
+
+.title {
+  font-size: 74px;
+}
+
+.signup-form {
+  width: 80%;
+  margin: 100px auto;
+
+  table,
+  .form-title {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .form-title {
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px 0;
+    border-bottom: 1px solid #bcbcbc;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+  }
+
+  input {
+    background-color: initial;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+    height: 35px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 200px;
+  }
+
+  input[type="email"] {
+    width: 400px;
+  }
+
+  .red {
+    color: red;
+  }
+
+  tr {
+    border-bottom: 1px solid #bcbcbc;
+  }
+
+  td {
+    padding: 20px 0;
+  }
+
+  button {
+    border: none;
+    padding: 15px;
+    background-color: rgb(171 153 118);
+    border-radius: 20px;
+  }
+}
