@@ -18,7 +18,58 @@
 </head>
 <body>
   <header id="header"></header>
-  <section id="main">adsf</section>
+  <section id="main">
+    <div class="mypage-wrapper kor">
+      <div class="mypage-view category">
+        <div class="title title-wrapper">마이페이지</div>
+        <ul>
+          <a href="/frontend/src/html/mypage/history.html"><li>주문조회</li></a>
+          <a href="/frontend/src/html/mypage/interests.html"
+            ><li>관심상품</li></a
+          >
+          <a href="/frontend/src/html/mypage/myInfo.html"
+            ><li>회원정보 수정</li></a
+          >
+        </ul>
+      </div>
+      <div class="total category">
+        <div class="title title-wrapper">나의 활동</div>
+        <ul>
+          <li>주문내역 <span class="history-cnt"></span>건</li>
+          <li>관심상품 <span class="inter-cnt"></span>개</li>
+          <li>리뷰 <span class="review-cnt"></span>건</li>
+        </ul>
+      </div>
+      <div class="history category">
+        <div class="title-wrapper">
+          <div class="title">주문내역</div>
+          <div class="more-btn" onclick="movePage('history')">✚</div>
+        </div>
+        <div class="item-list"></div>
+      </div>
+      <div class="interests category">
+        <div class="title-wrapper">
+          <div class="title">관심상품</div>
+          <div class="more-btn" onclick="movePage('interests')">✚</div>
+        </div>
+        <div class="item-list"></div>
+      </div>
+      <div class="review category">
+        <div class="title-wrapper">
+          <div class="title">리뷰</div>
+          <div class="more-btn" onclick="movePage('review')">✚</div>
+        </div>
+        <div class="item-list"></div>
+      </div>
+      <div class="cart category">
+        <div class="title-wrapper">
+          <div class="title">장바구니</div>
+          <div class="more-btn" onclick="movePage('cart')">✚</div>
+        </div>
+        <div class="item-list"></div>
+      </div>
+    </div>
+  </section>
   <footer id="footer"></footer>
   <script src="/frontend/src/js/mypage.js"></script>
 </body>
