@@ -118,27 +118,31 @@ $(window).on("scroll", function () {
   }
 });
 
-$(".search-input-field").on("propertychange change keyup paste input", () => {
-  let deleteBtn = $(".delete-btn");
+$(".search-bar .search-input-field").on(
+  "propertychange change keyup paste input",
+  () => {
+    let deleteBtn = $(".delete-btn");
 
-  if ($(".search-input-field").val()) {
-    deleteBtn.css("visibility", "visible");
-  } else {
-    deleteBtn.css("visibility", "hidden");
+    if ($(".search-bar .search-input-field").val()) {
+      deleteBtn.css("visibility", "visible");
+    } else {
+      deleteBtn.css("visibility", "hidden");
+    }
   }
-});
+);
 
-$(".delete-btn").on("click", () => {
-  $(".search-input-field").val("");
-  $(".delete-btn").css("visibility", "hidden");
-});
+function clearInput() {
+  $(".search-bar .search-input-field").val("");
+  $(".search-bar .delete-btn").css("visibility", "hidden");
+}
 
-$(".search-input .search-btn").on("click", () => {
-  let search = $(".search-input-field").val();
+function goSearch() {
+  let search = $(".search-bar .search-input-field").val();
 
   if (!search) return;
-  location.pathname = "/frontend/src/html/item/search.html?item=" + search;
-});
+  location.pathname = "/frontend/src/html/item/search.html";
+  location.search = "?item=" + search;
+}
 
 $("#search-user-wrapper > .search-btn").on("click", () => {
   $(".search-bar").css("display", "block");
