@@ -117,3 +117,38 @@ $(window).on("scroll", function () {
     lastScroll = scrollTop;
   }
 });
+
+$(".search-bar .search-input-field").on(
+  "propertychange change keyup paste input",
+  () => {
+    let deleteBtn = $(".delete-btn");
+
+    if ($(".search-bar .search-input-field").val()) {
+      deleteBtn.css("visibility", "visible");
+    } else {
+      deleteBtn.css("visibility", "hidden");
+    }
+  }
+);
+
+function clearInput() {
+  $(".search-bar .search-input-field").val("");
+  $(".search-bar .delete-btn").css("visibility", "hidden");
+}
+
+function goSearch() {
+  let search = $(".search-bar .search-input-field").val();
+
+  if (!search) return;
+  location.pathname = "/frontend/src/html/item/search.html";
+  location.search = "?item=" + search;
+}
+
+$("#search-user-wrapper > .search-btn").on("click", () => {
+  $(".search-bar").css("display", "block");
+});
+
+function closeSearch() {
+  $(".search-bar").css("animation", "show-search-bar 0.3s reverse");
+  $(".search-bar").css("display", "none");
+}

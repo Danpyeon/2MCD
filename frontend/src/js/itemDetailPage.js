@@ -17,7 +17,7 @@ function showImg() {
   let imgs = $(".item-img img");
   let bigDiv = $(".show-big-img");
   let srcs =
-    '<button class="show-big-img-close-btn" onclick="closeBigImg()" >X</button>';
+    '<button class="show-big-img-close-btn" onclick="closeBigImg()" >⨉</button>';
 
   for (let i = 0; i < imgs.length; i++) {
     srcs += `<img class="big-imgs" src="${imgs[i].src}" />`;
@@ -34,7 +34,7 @@ function showGuide(src) {
   let bigDiv = $(".show-big-img");
   let srcs = '<span class="guide-text">SIZE GUIDE</span>';
   srcs +=
-    '<button class="show-big-img-close-btn" onclick="closeBigImg()">X</button>';
+    '<button class="show-big-img-close-btn" onclick="closeBigImg()">⨉</button>';
   srcs += `<img class="guide-imgs" src="${src}" />`;
 
   bigDiv.html(srcs);
