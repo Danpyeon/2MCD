@@ -1,12 +1,16 @@
 isLogin();
 function isLogin() {
   let login = getCookies("userCache");
+  // let login = "admin";
   let link = $(".my-page-text");
   let inner = "";
 
-  if (login !== null) {
+  if (login === null) {
     inner += '<div class="login-btn">Login</div>';
     link.attr("href", "/frontend/src/html/sign/signIn.html");
+  } else if (login === "admin") {
+    inner += '<div class="login-btn">Admin</div>';
+    link.attr("href", "/frontend/src/html/admin/itemControl.html");
   } else {
     inner += `<div class="mypage-text">My Page</div>`;
     link.attr("href", "/frontend/src/html/mypage/mypage.html");
