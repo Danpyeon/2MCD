@@ -31,6 +31,11 @@
     z-index: 2;
 }
 
+button {
+    background-color: #F0EDE6;
+    border: none;
+}
+
 .jt-btn__basic[class*='jt-btn__basic--icon']>span:before {
     content: '';
     display: block;

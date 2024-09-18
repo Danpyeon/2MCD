@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="/cotieLog/cotieLog_css/cotie_log.css">
     <link rel="stylesheet" href="/CSS/cursor_hover_etc.css">
     <link rel="stylesheet" href="/CSS/button.css">
-    <link rel="stylesheet" href="/CSS/top.css">
     <script src="/cotiestore/JQuery/jquery-3.7.1.js"></script>
 
     <script type="text/javascript">
@@ -116,7 +115,7 @@
                         <!-- .article-header -->
                         <div class="article-body">
                             <div id="jt-cotielog-list-wrap" class="jt-cotielog-list-wrap" style="opacity: 1;">
-                                <div class="jt-isotope-list" style="">
+                                <div id="jt-list" class="jt-isotope-list" style="position: relative; height: 1926.27px; visibility: visible;">
                                     <div class="jt-isotope-list__grid"></div>
                                     <div class="jt-isotope-list__gutter"></div>
                                     <div class="jt-isotope-list__item jt-isotope-list__item--picture" style="position: absolute; left: 0%; top: 0px;">
@@ -459,7 +458,7 @@
                                     <!-- jt-isotope-list__item -->
                                     <div class="jt-isotope-list__item jt-isotope-list__item--picture add2" style="position: absolute; display: none; left: 51.9026%; top: 4950px;">
                                         <a class="jt-isotope-list__link" href="/cotieLog/html/log/2021-케이펫페어-일산꼬띠샵이-성황리에-종료되었습니.html">
-                                            <figure class="jt-isotope-list__thumb jt-lazyload jt-lazyload--maosnry jt-lazyload--loaded" style="padding-top: 100%;">
+                                            <figure class="jt-isotope-list__thumb jt-lazyload jt-lazyload--maosnry jt-lazyload--loaded" style="padding-top: 125.103%;">
                                                 <span class="jt-lazyload__color-preview"></span>
                                                 <img width="2250" height="2250" data-unveil="/cotieLog/Log_img/부스후기_꼬띠로그용.png" src="/cotieLog/Log_img/부스후기_꼬띠로그용.png" alt="부스후기_꼬띠로그용">
                                                 <noscript>
@@ -569,7 +568,7 @@
                                             <!-- jt-isotope-list-thumb -->
                                             <div class="jt-isotope-list__content">
                                                 <h2 class="jt-isotope-list__title">
-                                                    <span>2021.099 우수 리뷰 고객 캐리커쳐</span>
+                                                    <span>2021.09 우수 리뷰 고객 캐리커쳐</span>
                                                 </h2>
                                             </div>
                                             <!-- jt-isotope-list__content -->
@@ -639,8 +638,8 @@
                                     <!-- jt-isotope-list__item -->
                                 </div>
                                 <!-- .jt-isotope-list -->
-                                <div id="jt-loadmore" class="jt-loadmore">
-                                    <a data-barba-prevent lang="en" class="jt-loadmore__btn jt-btn__basic jt-btn--type01 jt-btn__basic--icon-more" data-loadmore-list data-loadmore-history="jt-isotope-list" data-ppp="6" href="">
+                                <div id="jt-loadmore" class="jt-loadmore" >
+                                    <button  data-barba-prevent lang="en" class="jt-loadmore__btn jt-btn__basic jt-btn--type01 jt-btn__basic--icon-more" data-loadmore-list data-loadmore-history="jt-isotope-list" data-ppp="6" href="">
                                         <span>more</span>
                                         <div class="jt-loadmore__spinner">
                                             <div class="jt-loadmore__spinner_ball_01"></div>
@@ -666,8 +665,8 @@
     <!-- #barba_warpper -->
     <footer id="footer"></footer>
     <!-- 왜인진 모르겠는데 애니매이션 작동 안 해서 #footer>div로 마진 줘서 띄웠음 -->
-
     <script>
+        let page = 0;
         $(document).ready(() => {
             $('.cotielog-illust').hover(
                 function() {
@@ -684,16 +683,30 @@
             );
         });
 
-        $('.jt-loadmore').click(
-            function() {
-                let page = 1;
-                if (page === 1) {
-                    let height = '3740.64px';
-                    $('.main').find('.add1').css('display', '');
-                    console.log(page);
+       $(document).ready(() => {
+            $('#jt-loadmore').click(
+                function() {
+                    page += 1;
+                    if (page === 1) {
+                        $('#main').find('#jt-list').css('height', '3740.64px');
+                        $('#main').find('.add1').css('display', '');
+                    }
+                    if (page === 2) {
+                        $('#main').find('#jt-list').css('height', '5687.36px');
+                        $('#main').find('.add2').css('display', '');
+                    }
+                    if (page === 3) {
+                        $('#main').find('#jt-list').css('height', '7826.03px');
+                        $('#main').find('.add3').css('display', '');
+                    }
+                    if (page === 4) {
+                        $('#main').find('#jt-list').css('height', '8527.86px');
+                        $('#main').find('.add4').css('display', '');
+                        $('#main').find('#jt-loadmore').css('display', 'none');
+                    }
                 }
-            }
-        );
+            );
+       });
     </script>
 </body>
 </html>

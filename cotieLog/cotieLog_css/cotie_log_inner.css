@@ -395,8 +395,8 @@ figure, article, header, footer, nav, hgroup, video, audio, aside, main {
     position: absolute;
     top: 0;
     left: 0;
-    font-family: 'jt-font';
-    content: '\e91d';
+    font-family: 'xeicon';
+    content: '\e9c6';
     font-size: 50rem;
     line-height: 50rem;
     font-weight: 400;
@@ -417,7 +417,7 @@ figure, article, header, footer, nav, hgroup, video, audio, aside, main {
     position: absolute;
     top: 0;
     left: 0;
-    font-family: 'jt-font';
+    font-family: 'xeicon';
     font-size: 18rem;
     line-height: 50rem;
     font-weight: 400;
@@ -432,7 +432,16 @@ figure, article, header, footer, nav, hgroup, video, audio, aside, main {
     }
 }
 .jt-share .jt-share__item.jt-share--facebook:after {
-    content: '\e916';
+    content: '\ebd3';
+}
+.jt-share .jt-share__item.jt-share--twitter:after {
+    content: '\ec1f';
+}
+.jt-share .jt-share__item.jt-share--kakao:after {
+    content: '\ebee';
+}
+.jt-share .jt-share__item.jt-share--link:after {
+    content: '\e9c0';
 }
 .sr-only {
     position: absolute;
@@ -553,8 +562,8 @@ figure, article, header, footer, nav, hgroup, video, audio, aside, main {
     height: 72rem;
     position: absolute;
     top: 0;
-    font-family: 'jt-font';
-    content: '\e92d';
+    font-family: 'xeicon';
+    content: '\e956';
     font-size: 18rem;
     line-height: 72rem;
     font-style: normal;
