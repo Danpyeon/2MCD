@@ -83,3 +83,26 @@ async function loadInfo() {
 }
 
 function makeItemPage(item) {}
+
+async function addCart() {
+  const params = new URLSearchParams(location.search);
+  let id = params.get("id");
+
+  let obj = {
+    id: id,
+  };
+
+  await $.ajax({
+    type: "post",
+    url: "http://localhost:3000/send1", // 나중에 수정!
+    data: JSON.stringify(obj),
+    contentType: "application/json",
+    success: (res) => {
+      // itemInfo = res;
+    },
+    error: (e) => {
+      // itemInfo = e;
+      console.error(e);
+    },
+  });
+}
