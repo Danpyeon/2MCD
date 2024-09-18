@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/sign.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+        $("#footer").load("/frontend/src/html/common/footer.html");
+      });
+    </script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <div class="title">Login</div>
+      <form method="post" class="login_form">
+        <input class="user_id kor" type="text" placeholder="아이디" />
+        <input class="user_pw kor" type="password" placeholder="비밀번호" />
+        <div class="etc_bar">
+          <label class="toggle">
+            <input role="switch" type="checkbox" />
+            <span>보안접속</span>
+          </label>
+          <a href="/frontend/src/html/sign/signUp.html">회원가입</a>
+        </div>
+        <button
+          type="submit"
+          class="submit_login kor"
+          onclick="tryLogin(event)"
+        >
+          로그인
+        </button>
+      </form>
+    </section>
+    <script src="/frontend/src/js/sign.js"></script>
+    <footer id="footer"></footer>
+  </body>
+</html>

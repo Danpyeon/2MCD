@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원정보 수정 | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/myInfo.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+        $("#footer").load("/frontend/src/html/common/footer.html");
+      });
+    </script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <form method="post" class="signup-form">
+        <div class="form-title">회원 정보 수정</div>
+        <table class="kor">
+          <tr>
+            <td class="table-title">아이디</td>
+            <td>
+              <span class="user-id"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-title">비밀번호</td>
+            <td>
+              <input type="password" class="user-pw" />(영문
+              대소문자/숫자/특수문자 중 2가지 이상 조합, 8~16자)
+            </td>
+          </tr>
+          <tr>
+            <td class="table-title">이름</td>
+            <td><span class="user-name"></span></td>
+          </tr>
+          <tr>
+            <td class="table-title">닉네임</td>
+            <td><input type="text" class="user-nickname" /></td>
+          </tr>
+          <tr>
+            <td class="table-title">이메일</td>
+            <td><input type="email" class="user-email" /></td>
+          </tr>
+          <tr>
+            <td class="table-title">휴대전화</td>
+            <td>
+              <span class="user-phone"></span>
+            </td>
+          </tr>
+        </table>
+        <button
+          type="submit"
+          class="submit_login kor"
+          onclick="sendChangeInfo(event)"
+        >
+          회원 정보 수정
+        </button>
+      </form>
+    </section>
+    <footer id="footer"></footer>
+    <script src="/frontend/src/js/myInfo.js"></script>
+  </body>
+</html>
