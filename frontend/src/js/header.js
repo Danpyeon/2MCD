@@ -1,7 +1,7 @@
 isLogin();
 function isLogin() {
-  // let login = getCookies("userCache");
-  let login = "admin";
+  let login = getCookies("userCache");
+  // let login = "admin";
   let link = $(".my-page-text");
   let inner = "";
 
