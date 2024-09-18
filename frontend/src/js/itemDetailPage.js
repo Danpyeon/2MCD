@@ -106,3 +106,8 @@ async function addCart() {
     },
   });
 }
+
+async function buyItem() {
+  // await addCart();
+  location.pathname = `/frontend/src/html/mypage/cart.html`;
+}
