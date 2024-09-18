@@ -27,7 +27,7 @@ function searchItem() {
 
 let page = 1;
 let item;
-// loadSearchItem();
+loadSearchItem();
 async function loadSearchItem() {
   const params = new URLSearchParams(location.search);
   item = params.get("item");
