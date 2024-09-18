@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 관리 | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/itemControl.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+        $("#footer").load("/frontend/src/html/common/footer.html");
+      });
+    </script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <form method="post" class="signup-form">
+        <div class="form-title">상품 관리</div>
+        <table class="kor">
+          <tr>
+            <td class="table-title">브랜드</td>
+            <td>
+              <input type="text" class="item-brand" />
+            </td>
+          </tr>
+          <tr>
+            <td class="table-title">상품명</td>
+            <td>
+              <input type="text" class="item-name" />
+            </td>
+          </tr>
+          <tr>
+            <td class="table-title">판매가</td>
+            <td><input type="number" class="item-price" />원</td>
+          </tr>
+          <tr>
+            <td class="table-title">상품 설명</td>
+            <td><textarea class="item-desc"></textarea></td>
+          </tr>
+          <tr>
+            <td class="table-title">태그</td>
+            <td><input type="text" class="item-tag" />(#제외 입력)</td>
+          </tr>
+          <tr>
+            <td class="table-title">상품 이미지</td>
+            <td>
+              <input type="file" class="item-img" />
+            </td>
+          </tr>
+          <tr>
+            <td class="table-title">상품 상세 이미지</td>
+            <td>
+              <input type="file" class="item-desc-img" />
+            </td>
+          </tr>
+        </table>
+        <button
+          type="submit"
+          class="submit_login kor"
+          onclick="tryUpload(event)"
+        >
+          등록
+        </button>
+      </form>
+    </section>
+    <footer id="footer"></footer>
+    <script src="/frontend/src/js/itemInfo.js"></script>
+  </body>
+</html>
