@@ -1,12 +1,16 @@
 // server.js
 
-
 const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
+const path = require('path'); // 추가
 
 const app = express();
 app.use(cors()); // CORS 설정
+
+// 정적 파일 서빙 설정
+app.use('/frontend', express.static(path.join(__dirname, 'frontend')));
+app.use('/backend/Script', express.static(path.join(__dirname, 'backend', 'Script'))); // 추가
 
 // MySQL 데이터베이스 연결 설정
 const connection = mysql.createConnection({
@@ -16,13 +20,20 @@ const connection = mysql.createConnection({
     password: 'qwer1234',
     database: '2mcd_db'
 });
-connection.connect();
+connection.connect((err) => {
+    if (err) {
+        console.error('MySQL 연결 오류:', err);
+        return;
+    }
+    console.log('MySQL 연결 성공');
+});
 
 // 서버 실행
 app.listen(3000, () => {
     console.log('Server running on port 3000');
 });
 
+// /api/items 엔드포인트
 app.get('/api/items', (req, res) => {
     const page = parseInt(req.query.page) || 1; // 쿼리에서 페이지 번호 가져옴, 기본값은 1
     const cate = req.query.cate || 'all';
@@ -38,21 +49,25 @@ app.get('/api/items', (req, res) => {
     } else if (sort === 'milk-and-pepper') {
         orderByClause = 'ORDER BY i.brand = "milk-and-pepper" DESC, i.item_seq DESC';
     }
-    
-    console.log(req.query);
+
+    console.log('요청 쿼리:', req.query);
 
     // SQL 쿼리에서 longblob 이미지를 불러옴
     const query = `
-        WITH FILE AS (SELECT * FROM FILE_TB
-        WHERE FILE_SEQ IN (SELECT MIN(FILE_SEQ) AS FILE_SEQ FROM FILE_TB
-        GROUP BY ITEM_SEQ
-        ORDER BY ITEM_SEQ))
+        WITH FILE AS (
+            SELECT * FROM FILE_TB
+            WHERE FILE_SEQ IN (
+                SELECT MIN(FILE_SEQ) AS FILE_SEQ FROM FILE_TB
+                GROUP BY ITEM_SEQ
+                ORDER BY ITEM_SEQ
+            )
+        )
         SELECT
-        i.item_seq,
-        i.detail_category,
-        i.brand,
-        i.item_name,
-        f.item_files 
+            i.item_seq,
+            i.detail_category,
+            i.brand,
+            i.item_name,
+            f.item_files 
         FROM item_tb i 
         LEFT OUTER JOIN FILE f ON i.item_seq = f.item_seq
         WHERE (i.detail_category = ? OR ? = 'all')
@@ -61,7 +76,7 @@ app.get('/api/items', (req, res) => {
 
     connection.query(query, [cate, cate, limit, offset], (err, rows) => {
         if (err) {
-            console.error('DB error:', err);
+            console.error('DB 조회 오류:', err);
             res.status(500).json({ error: 'DB 조회 실패' });
         } else {
             // longblob 데이터를 Base64로 변환
