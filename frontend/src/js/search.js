@@ -141,7 +141,6 @@ async function loadSearchItem() {
     },
   });
 
-  $(".search-item-count").text(itemList.length);
   makeList();
 }
 

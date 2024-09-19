@@ -24,10 +24,37 @@
       <form method="post" class="signup-form">
         <div class="form-title">상품 관리</div>
         <table class="kor">
+          <!-- <tr>
+            <td class="table-title">카테고리</td>
+            <td class="item-id"></td>
+          </tr> -->
+          <tr>
+            <td class="table-title">카테고리</td>
+            <td>
+              <select
+                name="top"
+                id="top-select"
+                onchange="insertDetailSelect()"
+              >
+                <option value="Outdoor">Outdoor</option>
+                <option value="Indoor">Indoor</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-title">세부 카테고리</td>
+            <td>
+              <select name="detail" id="detail-select"></select>
+            </td>
+          </tr>
           <tr>
             <td class="table-title">브랜드</td>
             <td>
-              <input type="text" class="item-brand" />
+              <select name="brand" id="brand-select">
+                <option value="maxbone">맥스본</option>
+                <option value="milk-and-pepper">밀크 앤 페퍼</option>
+                <option value="pet-so-chic">펫 소 시크</option>
+              </select>
             </td>
           </tr>
           <tr>
