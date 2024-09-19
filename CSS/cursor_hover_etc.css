@@ -1,6 +1,12 @@
 body {
     cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;
 }
+label {
+    cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;
+}
+label>input {
+    cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;
+}
 
 #header {
     cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;

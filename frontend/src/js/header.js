@@ -33,6 +33,8 @@ function getCookies(name) {
   return null;
 }
 
+
+
 window.addEventListener("scroll", () => {
   let top = $(window).scrollTop();
   let header = $(".header-container");
@@ -125,8 +127,53 @@ function clearInput() {
   $(".search-bar .delete-btn").css("visibility", "hidden");
 }
 
+function isBrand(item) {
+  switch (item) {
+    case "mlikandpepper":
+    case "mlik and pepper":
+    case "mlik & pepper":
+    case "mlik &pepper":
+    case "mlik & pepper":
+    case "mlik& pepper":
+    case "밀크앤페퍼":
+    case "밀크 앤페퍼":
+    case "밀크 앤 페퍼":
+    case "밀크앤 페퍼":
+      location.search = "?page=1&sort=milkandpepper";
+      location.path = "/frontend/src/html/item/product.html";
+      return true;
+
+    case "maxbone":
+    case "맥스본":
+      location.search = "?page=1&sort=maxbone";
+      location.href =
+        "/frontend/src/html/item/product.html?page=1&sort=maxbone";
+      return true;
+
+    case "pet so chic":
+    case "petso chic":
+    case "pet sochic":
+    case "petsochic":
+    case "펫소시크":
+    case "펫 소시크":
+    case "펫 소 시크":
+    case "펫소 시크":
+      location.search = "?page=1&sort=petsochic";
+      location.href =
+        "/frontend/src/html/item/product.html?page=1&sort=petsochic";
+      return true;
+
+    default:
+      break;
+  }
+
+  return false;
+}
+
 function goSearch() {
   let search = $(".search-bar .search-input-field").val();
+
+  if (isBrand(search.toLowerCase())) return;
 
   if (!search) return;
   location.pathname = "/frontend/src/html/item/search.html";

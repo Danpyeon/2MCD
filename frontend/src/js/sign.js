@@ -15,7 +15,7 @@ async function tryLogin(event) {
 
   await $.ajax({
     type: "post",
-    url: "http://localhost:3000/login", // 나중에 수정!
+    url: "http://localhost:3306/2mcd_db", // 나중에 수정!
     data: JSON.stringify(loginData),
     contentType: "application/json",
     success: (res) => {
