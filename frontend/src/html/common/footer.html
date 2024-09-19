@@ -11,16 +11,16 @@
   </head>
   <body>
     <div class="footer-layer bottom-20"></div>
-    <!-- <a lang="en" data-barba-prevent="" href="#" id="go-top" class="go-top go-top--fix" >
+      <a lang="en" data-barba-prevent="" href="#" id="go-top" class="go-top go-top--fix" >
 			  <i class="go-top__arrow" style="opacity: 1; visibility: inherit;"></i>
 			  <span class="go-top__txt" style="transform: translate3d(0px, 0px, 0px);">top</span>
 			  <div class="go-top__punch" style="display: none;">
 				  <span class="go-top__paw"><i style="transform: translate(0px, 100%);"></i></span>
 				  <i class="go-top__scratch-01" style="opacity: 0; visibility: hidden; transform: scale(0, 0);"></i>
 				  <i class="go-top__scratch-02" style="opacity: 0; visibility: hidden; transform: scale(0, 0);"></i>
-			  </div> -->
-    <!-- .go-top__punch -->
-    <!-- </a> -->
+			  </div>
+        <!-- .go-top__punch -->
+		  </a>
     <footer class="inner-footer">
       <div class="link-text">
         <div class="menu-wrap">
@@ -108,19 +108,38 @@
 
     <script>
       $(document).ready(() => {
+        //test
+        console.log('start');
+        console.log(location.pathname);
+        let url = location.pathname;
+        if('/cotieLog/html/cotieLog_main.html' === url || '/cotiestore/store.html' === url) {
+          console.log('true');
+          $('#go-top').show();
+        }
+        else {
+          $('#go-top').hide();
+        }
+    
+        $('#go-top').hover(
+          function() { //마우스 올림
+            $(this).find('.go-top__arrow').hide();
+            $(this).find('.go-top__txt').css('animation', 'go-top-anima 0.1s forwards');
+            $(this).find('.go-top__punch').css('display', 'block');
+            $(this).find('.go-top__paw').addClass('spotted');
+            $(this).find('.go-top__paw').css('transform', 'translate(0px, 0%)');
+            $(this).find('.go-top__paw>i').css('transform', 'translate(0px, 0%)');
+            $(this).find('.go-top__scratch-01').css('opacity', '1', 'visibility', 'inherit', 'transform', 'translate(0px, 0px)');
+            $(this).find('.go-top__scratch-02').css('opacity', '1', 'visibility', 'inherit', 'transform', 'translate(0px, 0px)');
+
         $("#go-top").hover(
           function () {
             //마우스 올림
             $(this).find(".go-top__arrow").hide();
-            $(this)
-              .find(".go-top__txt")
-              .css("animation", "go-top-anima 0.1s forwards");
+            $(this).find(".go-top__txt").css("animation", "go-top-anima 0.1s forwards");
             $(this).find(".go-top__punch").css("display", "block");
             $(this).find(".go-top__paw").addClass("spotted");
             $(this).find(".go-top__paw").css("transform", "translate(0px, 0%)");
-            $(this)
-              .find(".go-top__paw>i")
-              .css("transform", "translate(0px, 0%)");
+            $(this).find(".go-top__paw>i").css("transform", "translate(0px, 0%)");
             $(this)
               .find(".go-top__scratch-01")
               .css(
@@ -177,6 +196,7 @@
           }
         );
       });
+      })
     </script>
   </body>
 </html>
