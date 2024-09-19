@@ -27,29 +27,26 @@ app.post("/search", (req, res) => {
   let obj = req.body;
   let dataArr = [];
   let qry = "";
-  qry += `  WITH FILE AS ( `;
-  qry += `    SELECT ITEM_SEQ, ITEM_FILES `;
-  qry += `    FROM FILE_TB `;
-  qry += `WHERE FILE_SEQ IN (SELECT MIN(FILE_SEQ) AS FILE_SEQ FROM FILE_TB `;
-  qry += `GROUP BY (ITEM_SEQ)) `;
-  qry += `), `;
-  qry += `SEARCH AS ( `;
-  qry += `SELECT `;
-  qry += `    ITEM_SEQ  `;
-  qry += `,BRAND   `;
-  qry += `,ITEM_NAME  `;
-  qry += `    FROM ITEM_TB `;
-  qry += `WHERE ITEM_SEQ IN ( `;
-  qry += `    SELECT DISTINCT ITEM_SEQ `;
-  qry += `FROM `;
-  qry += `(SELECT ITEM.ITEM_SEQ AS ITEM_SEQ `;
-  qry += `     , ITEM_NAME AS ITEM `;
-  qry += `FROM ITEM_TB ITEM `;
-  qry += `UNION `;
-  qry += `SELECT HASH.ITEM_SEQ AS ITEM_SEQ `;
-  qry += `     , HASHTAG_NAME AS ITEM `;
-  qry += `FROM HASHTAG_TB HASH) AS SEARCH_TABLE `;
-  qry += `    WHERE 1=1 `;
+  qry += "  WITH FILE AS (SELECT ITEM_SEQ, ITEM_FILES ";
+  qry += "    FROM FILE_TB ";
+  qry += "    WHERE FILE_SEQ IN (SELECT MIN(FILE_SEQ) AS FILE_SEQ ";
+  qry += "                       FROM FILE_TB ";
+  qry += "                       GROUP BY (ITEM_SEQ))), ";
+  qry += "SEARCH AS (SELECT ITEM_SEQ  ";
+  qry += "           , BRAND   ";
+  qry += "           , ITEM_NAME  ";
+  qry += "      FROM ITEM_TB ";
+  qry += "      WHERE ITEM_SEQ IN (SELECT DISTINCT ITEM_SEQ ";
+  qry += "                         FROM (SELECT ITEM.ITEM_SEQ AS ITEM_SEQ ";
+  qry += "                                    , ITEM_NAME     AS ITEM ";
+  qry +=
+    "                               FROM ITEM_TB ITEM where ITEM.is_delete = 0 ";
+  qry += "                               UNION ";
+  qry += "                               SELECT HASH.ITEM_SEQ AS ITEM_SEQ ";
+  qry += "                                    , HASHTAG_NAME  AS ITEM ";
+  qry +=
+    "                               FROM HASHTAG_TB HASH) AS SEARCH_TABLE ";
+  qry += "                         WHERE 1 = 1 ";
 
   if (obj.detailCategory === "none") {
     qry += `AND ITEM LIKE ? `;

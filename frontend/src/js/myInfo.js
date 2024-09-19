@@ -1,32 +1,44 @@
-let info = {
-  id: "adsf",
-  name: "kkk",
-  nickname: "asdf",
-  email: "asdf@gmail.com",
-  phone: "01012341234",
+  
+  $(".user-id").text('qwer');
+  $(".user-pw").val('1234');
+  $(".user-name").text('실험쥐'),
+  $(".user-nickname").val('test'),
+  $(".user-email").val('qwer@qwer.com'),
+  $(".user-phone").text('010-1234-5678')
+
+
+let obj = {
+  id : $(".user-id").text('qwer'),
+  pw : $(".user-pw").val('1234'),
+  name : $(".user-name").text('실험쥐'),
+  nickname : $(".user-nickname").val('test'),
+  email : $(".user-email").val('qwer@qwer.com'),
+  phone : $(".user-phone").text('010-1234-5678') 
 };
+
 
 loadInfo();
 async function loadInfo() {
-  let data;
-  // await $.ajax({
-  //   type: "post",
-  //   url: "http://localhost:3000/mypage", // 나중에 수정!
-  //   success: (res) => {
-  //     data = res;
-  //   },
-  //   error: (e) => {
-  //     itemList = e;
-  //   },
-  // });
+  let data = info;
+  await $.ajax({
+    type: "post",
+    url: "http://localhost:3000/mypage", // 나중에 수정!
+    success: (res) => {
+      data = res;
+    },
+    error: (e) => {
+      itemList = e;
+    },
+  });
 
-  data = info;
+  // 쿠키로부터 불러온 유저 정보 화면에 표시
+  $(".user-name").text(data.user_name);
+  $(".user-phone").text(data.user_phone);
 
-  $(".user-id").text(data.id);
-  $(".user-name").text(data.name);
-  $(".user-nickname").val(data.nickname);
-  $(".user-email").val(data.email);
-  $(".user-phone").text(data.phone);
+  // 수정 가능한 필드 (비밀번호, 닉네임, 이메일)만 입력 가능하게 설정
+  $(".user-pw").val(data.user_password);
+  $(".user-nickname").val(data.user_nickname);
+  $(".user-email").val(data.user_email);
 }
 
 async function sendChangeInfo(event) {
@@ -35,26 +47,24 @@ async function sendChangeInfo(event) {
   let obj = {
     pw: $(".user-pw").val(),
     nickname: $(".user-nickname").val(),
-    email: $(".user-email").val(),
+    email: $(".user-email").val()
   };
-  let result;
 
   await $.ajax({
     type: "post",
-    url: "http://localhost:3000/info", // 나중에 수정!
+    url: "http://localhost:3000/info", // API URL
     data: JSON.stringify(obj),
     contentType: "application/json",
     success: (res) => {
-      result = res;
+      if (res.status === 200) {
+        alert("회원 정보가 성공적으로 수정되었습니다.");
+      }
     },
     error: (e) => {
-      itemList = e;
-    },
+      alert("회원 정보 수정에 실패했습니다.");
+      console.error(e);
+    }
   });
-
-  if (result.status === 200) {
-    alert("성공적으로 변경되었습니다.");
-  } else {
-    alert("변경에 실패하였습니다.");
-  }
 }
+
+

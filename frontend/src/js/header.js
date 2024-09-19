@@ -33,6 +33,8 @@ function getCookies(name) {
   return null;
 }
 
+
+
 window.addEventListener("scroll", () => {
   let top = $(window).scrollTop();
   let header = $(".header-container");

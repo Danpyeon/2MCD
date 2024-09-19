@@ -1,46 +1,26 @@
-const cart = [
-  {
-    id: 1,
-    name: "밀크앤페퍼 카마라 자켓 토프",
-    price: 9500,
-    cnt: 1,
-  },
-  {
-    id: 2,
-    name: "밀크앤페퍼 카마라 자켓 토프",
-    price: 9500,
-    cnt: 1,
-  },
-  {
-    id: 3,
-    name: "밀크앤페퍼 카마라 자켓 토프",
-    price: 9500,
-    cnt: 1,
-  },
-];
-
 let itemList;
 
 loadItemList();
 async function loadItemList() {
+  // let cart;
+  let id = getCookies("userCache");
+
   let obj = {
-    id: getCookies("userCache"),
+    id: id,
   };
 
-  // await $.ajax({
-  //   type: "post",
-  //   url: "http://localhost:3000/info", // 나중에 수정!
-  //   data: JSON.stringify(obj),
-  //   contentType: "application/json",
-  //   success: (res) => {
-  //     itemList = res;
-  //   },
-  //   error: (e) => {
-  //     console.error(e);
-  //   },
-  // });
-
-  itemList = cart;
+  await $.ajax({
+    type: "post",
+    url: "http://localhost:3000/mypageCart",
+    data: JSON.stringify(obj),
+    contentType: "application/json",
+    success: (res) => {
+      itemList = res.data;
+    },
+    error: (e) => {
+      itemList = e;
+    },
+  });
 
   makeList();
 }
@@ -49,9 +29,9 @@ function makeList() {
   let text = "";
   for (let i = 0; i < itemList.length; i++) {
     text += `  <tr class="item">`;
-    text += `  <td><input type="checkbox" name="item-sel" id="i${itemList[i].id}" class="cb" name='cb' value=${itemList[i].price} /></td>`;
-    text += `  <td>${itemList[i].name}</td>`;
-    text += `  <td>${itemList[i].price}원</td>`;
+    text += `  <td><input type="checkbox" name="item-sel" id="${itemList[i].item_seq}" class="cb" name='cb' value=${itemList[i].item_price} /></td>`;
+    text += `  <td>${itemList[i].item_name}</td>`;
+    text += `  <td>${itemList[i].item_price}원</td>`;
     text += `  <td>1</td>`;
     text += `</tr>`;
   }
@@ -75,7 +55,7 @@ function getCookies(name) {
 let itemCnt = 0;
 let totalPrice = 3000;
 
-$("input[type='checkbox']").on("change", function () {
+$(document).on("change", "input[type='checkbox']", function () {
   if ($(this).is(":checked")) {
     totalPrice += +$(this).val();
   } else {
@@ -86,16 +66,39 @@ $("input[type='checkbox']").on("change", function () {
   $(".total-price").text(totalPrice);
 });
 
-function orderItem(isAll, isOrder) {
+async function orderItem(isAll, isOrder) {
+  let delArr = [];
+
   if (!isAll && $("input[type='checkbox']:checked").length <= 0) {
     alert("상품을 하나이상 선택해주세요");
     return;
   }
 
   if (!isOrder) {
-    $("input[type='checkbox']:checked").each((i) => {
-      let idx = itemList.find((e) => e.id === +$(i).val());
+    $('input[type="checkbox"]:checked').each(function () {
+      let idx = itemList.find((e) => e.item_seq === +$(this).attr("id"));
+      delArr.push(idx.item_seq);
       itemList.splice(idx, 1);
+    });
+
+    let id = getCookies("userCache");
+    let obj = {
+      id: id,
+      list: delArr,
+    };
+
+    await $.ajax({
+      type: "post",
+      url: "http://localhost:3000/deleteCart",
+      data: JSON.stringify(obj),
+      contentType: "application/json",
+      success: (res) => {
+        if (!isOrder) alert("삭제되었습니다");
+      },
+      error: (e) => {
+        if (!isOrder) alert("삭제 실패 하였습니다");
+        console.error("e", e);
+      },
     });
 
     makeList();
