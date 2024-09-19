@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vw;
+  font-family: "LibreBaskerville", "noto-sans", sans-serif;
+}
+
+.kor {
+  font-family: "noto-sans", "LibreBaskerville", sans-serif;
+}
+
+#main {
+  margin: 10rem 0 5rem 0;
+  min-height: calc(100vh - 5rem);
+  text-align: center;
+}
+
+#footer {
+  height: 5rem;
+}
+
+.title {
+  font-size: 4vw;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+
+.list-table {
+  width: 90vw;
+  margin: 0 5vw;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+  }
+
+  th,
+  td {
+    padding: 15px 0;
+  }
+
+  td {
+    border-bottom: 1px solid black;
+    max-width: 100px;
+  }
+
+  img {
+    width: 80px;
+    height: 100px;
+  }
+}
+
+.btn-wrapper {
+  width: 90vw;
+  margin: 50px 5vw 30vw 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    font-size: 1.3vw;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+  .basic-btn {
+    background-color: rgb(219, 204, 180);
+  }
+
+  .brown-btn {
+    background-color: rgb(106, 99, 86);
+    color: white;
+  }
+}
+
+form {
+  button {
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-bottom: 20vw;
+    background-color: rgb(106, 99, 86);
+    color: white;
+  }
+}
+
+.signup-form {
+  width: 80%;
+  margin: 100px auto;
+
+  table,
+  .form-title {
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .form-title {
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px 0;
+    border-bottom: 1px solid #bcbcbc;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+  }
+
+  input,
+  textarea {
+    background-color: initial;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 20px;
+    height: 35px;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 200px;
+  }
+
+  input[type="email"] {
+    width: 400px;
+  }
+  input[type="number"] {
+    // width: 100px;
+    // margin-left: 20px;
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"]:first-child {
+    margin-left: 0;
+  }
+
+  .red {
+    color: red;
+  }
+
+  tr {
+    border-bottom: 1px solid #bcbcbc;
+  }
+
+  td {
+    padding: 20px 0;
+  }
+}

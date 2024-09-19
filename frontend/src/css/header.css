@@ -199,10 +199,10 @@ div.none {
 
 .search-bar {
   width: 100vw;
-  height: 120vw;
+  height: 120vh;
   background-color: rgba(44, 44, 44, 0.4705882353);
   position: fixed;
-  z-index: 1001;
+  z-index: 4001;
   top: 0;
   display: none;
 }
