@@ -8,16 +8,16 @@
   </head>
   <body>
     <div class="footer-layer bottom-20"></div>
-      <a lang="en" data-barba-prevent="" href="#" id="go-top" class="go-top go-top--fix" >
+      <!-- <a lang="en" data-barba-prevent="" href="#" id="go-top" class="go-top go-top--fix" >
 			  <i class="go-top__arrow" style="opacity: 1; visibility: inherit;"></i>
 			  <span class="go-top__txt" style="transform: translate3d(0px, 0px, 0px);">top</span>
 			  <div class="go-top__punch" style="display: none;">
 				  <span class="go-top__paw"><i style="transform: translate(0px, 100%);"></i></span>
 				  <i class="go-top__scratch-01" style="opacity: 0; visibility: hidden; transform: scale(0, 0);"></i>
 				  <i class="go-top__scratch-02" style="opacity: 0; visibility: hidden; transform: scale(0, 0);"></i>
-			  </div>
+			  </div> -->
         <!-- .go-top__punch -->
-		  </a>
+		  <!-- </a> -->
     <footer class="inner-footer">
       <div class="link-text">
         <div class="menu-wrap">
@@ -105,6 +105,20 @@
 
     <script>
       $(document).ready(() => {
+
+        //test
+        console.log('start');
+        console.log(location.pathname);
+        let url = location.pathname;
+        //main 페이지 일 경우
+        // if('/frontend/src/html/main.html' === url) {
+        //   console.log('true');
+        //   $('#go-top').hide();
+        // }
+        // else {
+        //   $('#go-top').show();
+        // }
+    
         $('#go-top').hover(
           function() { //마우스 올림
             $(this).find('.go-top__arrow').hide();
