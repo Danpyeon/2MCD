@@ -88,9 +88,13 @@ function sortSetting(sort) {
 
 // api 완성되면 수정함!!!!
 // 아이템 필터링해서 불러오기
+loadItems();
 async function loadItems() {
   const params = new URLSearchParams(location.search);
+  let path = location.pathname.split("/");
+
   let obj = {
+    topCategory: path[path.length - 1].slice(0, -5),
     category: params.get("cate") ? params.get("cate") : "all",
     sort: params.get("sort") ? params.get("sort") : "all",
     page: params.get("page"),
@@ -99,18 +103,21 @@ async function loadItems() {
 
   await $.ajax({
     type: "post",
-    url: "http://localhost:3000/send1", // 나중에 수정!
+    url: "http://localhost:3000/inoutdoor", // 나중에 수정!
     data: JSON.stringify(obj),
     contentType: "application/json",
+    dataType: "json",
     success: (res) => {
       itemList = res;
+      console.log(res);
     },
     error: (e) => {
-      itemList = e;
+      // itemList = e;
+      console.error(e);
     },
   });
 
-  makeItemList(itemList);
+  // makeItemList(itemList);
 }
 
 function openSubMenu() {
