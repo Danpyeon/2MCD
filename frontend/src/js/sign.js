@@ -22,7 +22,7 @@ async function tryLogin(event) {
       // result = res;
 
       if (res.status === 200) {
-        document.cookie = `userCache=${res.userRole}; path=/`;
+        document.cookie = `userCache=${loginData.id}; path=/`;
         alert("로그인 성공");
         location.href = "/frontend/src/html/main.html"
       }

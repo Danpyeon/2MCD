@@ -7,6 +7,12 @@ label {
 label>input {
     cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;
 }
+.title-wrapper>.more-btn{
+    cursor: url(/KJH-IMG/cursor/cursor-tiny.png), auto;
+}
+.title-wrapper>.more-btn:active{
+    cursor: url(/KJH-IMG/cursor/cursor-tiny-click.png), auto;
+}
 
 #header {
     cursor: url(/KJH-IMG/cursor/cursor-pointer.png), auto;

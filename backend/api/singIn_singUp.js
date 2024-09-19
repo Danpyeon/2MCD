@@ -73,4 +73,4 @@ app.post('/signUp', (req, res) => {
         return res.status(401).json({ message: '비밀번호가 일치하지 않습니다.' });
       }
   });
-});
+});0
