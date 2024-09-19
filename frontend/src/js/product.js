@@ -9,9 +9,11 @@ function setTitle() {
     case "maxbone":
       text = "MAXBONE";
       break;
+    case "pet-so-chic":
     case "petsochic":
       text = "PET SO CHIC";
       break;
+    case "milk-and-pepper":
     case "milkandpepper":
       text = "MILK & PEPPER";
       break;
