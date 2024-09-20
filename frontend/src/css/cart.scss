@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vw;
+  font-family: "LibreBaskerville", "noto-sans", sans-serif;
+}
+
+.kor {
+  font-family: "noto-sans", "LibreBaskerville", sans-serif;
+}
+
+#main {
+  margin: 10rem 0 25rem 0;
+  min-height: calc(100vh - 5rem);
+  text-align: center;
+}
+
+#footer {
+  height: 5rem;
+}
+
+.title {
+  font-size: 4vw;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+
+.list-table {
+  width: 90vw;
+  margin: 0 5vw;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    text-align: center;
+  }
+
+  th,
+  td {
+    padding: 15px 0;
+  }
+
+  td {
+    border-bottom: 1px solid black;
+    max-width: 100px;
+  }
+}
+
+.price-bar {
+  width: 90vw;
+  margin: 50px 5vw 0 5vw;
+  padding: 15px 0;
+  background-color: rgb(119, 93, 58);
+  border-radius: 40px;
+  color: white;
+  text-align: right;
+
+  div {
+    margin-right: 50px;
+  }
+}
+
+.btn-wrapper {
+  width: 90vw;
+  margin: 50px 5vw 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    border: none;
+    font-size: 1.3vw;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+  .basic-btn {
+    background-color: rgb(219, 204, 180);
+  }
+
+  .brown-btn {
+    background-color: rgb(106, 99, 86);
+    color: white;
+  }
+}

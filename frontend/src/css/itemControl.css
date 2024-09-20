@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vw;
+  font-family: "LibreBaskerville", "noto-sans", sans-serif;
+}
+
+.kor {
+  font-family: "noto-sans", "LibreBaskerville", sans-serif;
+}
+
+#main {
+  margin: 10rem 0 5rem 0;
+  min-height: calc(100vh - 5rem);
+  text-align: center;
+}
+
+#footer {
+  height: 5rem;
+}
+
+.title {
+  font-size: 4vw;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+
+.list-table {
+  width: 90vw;
+  margin: 0 5vw;
+}
+.list-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.list-table thead {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+.list-table th,
+.list-table td {
+  padding: 15px 0;
+}
+.list-table td {
+  border-bottom: 1px solid black;
+  max-width: 100px;
+}
+.list-table img {
+  width: 80px;
+  height: 100px;
+}
+
+.btn-wrapper {
+  width: 90vw;
+  margin: 50px 5vw 30vw 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn-wrapper button {
+  border: none;
+  font-size: 1.3vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.btn-wrapper .basic-btn {
+  background-color: rgb(219, 204, 180);
+}
+.btn-wrapper .brown-btn {
+  background-color: rgb(106, 99, 86);
+  color: white;
+}
+
+form button {
+  border: none;
+  font-size: 1.5vw;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin-bottom: 20vw;
+  background-color: rgb(106, 99, 86);
+  color: white;
+}
+
+.signup-form {
+  width: 80%;
+  margin: 100px auto;
+}
+.signup-form table,
+.signup-form .form-title {
+  width: 100%;
+  text-align: left;
+  font-size: 20px;
+}
+.signup-form .form-title {
+  font-size: 25px;
+  font-weight: 900;
+  padding: 20px 0;
+  border-bottom: 1px solid #bcbcbc;
+}
+.signup-form table {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+.signup-form input,
+.signup-form textarea {
+  background-color: initial;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 20px;
+  height: 35px;
+}
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: 200px;
+}
+.signup-form input[type="email"] {
+  width: 400px;
+}
+.signup-form input[type="number"] {
+  -moz-appearance: textfield;
+}
+.signup-form input::-webkit-outer-spin-button,
+.signup-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.signup-form input[type="number"]:first-child {
+  margin-left: 0;
+}
+.signup-form .red {
+  color: red;
+}
+.signup-form tr {
+  border-bottom: 1px solid #bcbcbc;
+}
+.signup-form td {
+  padding: 20px 0;
+}
+
+.signup-form select {
+  background-color: initial;
+  border-radius: 5px;
+  margin-right: 20px;
+  font-size: 20px;
+  border: 2px solid black;
+  height: 35px;
+}
+
+/*# sourceMappingURL=itemControl.css.map */

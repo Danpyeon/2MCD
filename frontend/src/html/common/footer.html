@@ -2,9 +2,25 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="/frontend/src/css/footer.css" />
+    <link rel="stylesheet" href="/CSS/top.css" />
+    <link
+      rel="stylesheet"
+      href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
   </head>
   <body>
     <div class="footer-layer bottom-20"></div>
+      <a lang="en" data-barba-prevent="" href="#" id="go-top" class="go-top go-top--fix" >
+			  <i class="go-top__arrow" style="opacity: 1; visibility: inherit;"></i>
+			  <span class="go-top__txt" style="transform: translate3d(0px, 0px, 0px);">top</span>
+			  <div class="go-top__punch" style="display: none;">
+				  <span class="go-top__paw"><i style="transform: translate(0px, 100%);"></i></span>
+				  <i class="go-top__scratch-01" style="opacity: 0; visibility: hidden; transform: scale(0, 0);"></i>
+				  <i class="go-top__scratch-02" style="opacity: 0; visibility: hidden; transform: scale(0, 0);"></i>
+			  </div>
+        <!-- .go-top__punch -->
+		  </a>
     <footer class="inner-footer">
       <div class="link-text">
         <div class="menu-wrap">
@@ -12,7 +28,9 @@
           <div class="mediaText">
             <ul>
               <li class="sns-link">
-                <a href="https://www.facebook.com/cotieshop.co.kr/" target="_blank"
+                <a
+                  href="https://www.facebook.com/cotieshop.co.kr/"
+                  target="_blank"
                   >facebook
 
                   <svg
@@ -58,22 +76,25 @@
               <li class="sns-link kakao">
                 <a href="https://pf.kakao.com/_ivZMs/chat" target="_blank">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <br>
+                  <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  <br>
+                  <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <a href="https://smartstore.naver.com/cotie_shop" target="_blank">Buy Shop</a>
+        <a href="https://smartstore.naver.com/cotie_shop" target="_blank"
+          >Buy Shop</a
+        >
       </div>
-      <div class="details" onclick="contentsOpenClose()">
+      <div class="details fo" onclick="contentsOpenClose('fo')">
         <div class="summary">
-          Cotieshop <img id="arrowBtn" src="/frontend/img/icon/openBtn.png" />
+          Cotieshop
+          <img class="arrowBtn" src="/frontend/img/icon/openBtn.png" />
         </div>
-        <p id="contents" class="none">
+        <p class="none contents">
           주식회사 델핀 서울특별시 용산구 우사단로2길 1, 3층 대표 : 신승호
           사업자 등록번호 : 113-86-83830 <br />
           04413 서울특별시 용산구 우사단로2길 1 (보광동) TEL : 02-2678-3096~7
@@ -84,5 +105,98 @@
         Copyright 2021. Cotieshop All rights reserved.
       </div>
     </footer>
+
+    <script>
+      $(document).ready(() => {
+        //test
+        console.log('start');
+        console.log(location.pathname);
+        let url = location.pathname;
+        if('/cotieLog/html/cotieLog_main.html' === url || '/cotiestore/store.html' === url) {
+          console.log('true');
+          $('#go-top').show();
+        }
+        else {
+          $('#go-top').hide();
+        }
+    
+        $('#go-top').hover(
+          function() { //마우스 올림
+            $(this).find('.go-top__arrow').hide();
+            $(this).find('.go-top__txt').css('animation', 'go-top-anima 0.1s forwards');
+            $(this).find('.go-top__punch').css('display', 'block');
+            $(this).find('.go-top__paw').addClass('spotted');
+            $(this).find('.go-top__paw').css('transform', 'translate(0px, 0%)');
+            $(this).find('.go-top__paw>i').css('transform', 'translate(0px, 0%)');
+            $(this).find('.go-top__scratch-01').css('opacity', '1', 'visibility', 'inherit', 'transform', 'translate(0px, 0px)');
+            $(this).find('.go-top__scratch-02').css('opacity', '1', 'visibility', 'inherit', 'transform', 'translate(0px, 0px)');
+
+        $("#go-top").hover(
+          function () {
+            //마우스 올림
+            $(this).find(".go-top__arrow").hide();
+            $(this).find(".go-top__txt").css("animation", "go-top-anima 0.1s forwards");
+            $(this).find(".go-top__punch").css("display", "block");
+            $(this).find(".go-top__paw").addClass("spotted");
+            $(this).find(".go-top__paw").css("transform", "translate(0px, 0%)");
+            $(this).find(".go-top__paw>i").css("transform", "translate(0px, 0%)");
+            $(this)
+              .find(".go-top__scratch-01")
+              .css(
+                "opacity",
+                "1",
+                "visibility",
+                "inherit",
+                "transform",
+                "translate(0px, 0px)"
+              );
+            $(this)
+              .find(".go-top__scratch-02")
+              .css(
+                "opacity",
+                "1",
+                "visibility",
+                "inherit",
+                "transform",
+                "translate(0px, 0px)"
+              );
+          },
+          function () {
+            //마우스 내림
+            $(this).find(".go-top__arrow").show();
+            $(this).find(".go-top__txt").css("animation", "none");
+            $(this).find(".go-top__punch").css("display", "none");
+            $(this).find(".go-top__paw").removeClass("spotted");
+            $(this)
+              .find(".go-top__paw")
+              .css("transform", "translate(0px, 100%)");
+            $(this)
+              .find(".go-top__paw>i")
+              .css("transform", "translate(0px, 100%)");
+            $(this)
+              .find(".go-top__scratch-01")
+              .css(
+                "opacity",
+                "0",
+                "visibility",
+                "hidden",
+                "transform",
+                "scale(0, 0)"
+              );
+            $(this)
+              .find(".go-top__scratch-02")
+              .css(
+                "opacity",
+                "0",
+                "visibility",
+                "hidden",
+                "transform",
+                "scale(0, 0)"
+              );
+          }
+        );
+      });
+      })
+    </script>
   </body>
 </html>

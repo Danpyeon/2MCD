@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원정보 수정 | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/cart.css" />
+    <link rel="stylesheet" href="/CSS/cursor_hover_etc.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+        $("#footer").load("/frontend/src/html/common/footer.html");
+      });
+    </script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <div class="title kor">장바구니</div>
+      <div class="list-table">
+        <table>
+          <thead>
+            <tr>
+              <th>선택</th>
+              <th>상품정보</th>
+              <th>상품금액</th>
+              <th>수량</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="price-bar kor">
+        <div>
+          총 <span class="item-cnt">0</span>개의 상품 금액
+          <span class="white-back">+</span> 배송비
+          <span class="deli-price">3000</span>원
+          <span class="black-back">+</span> 합계
+          <span class="total-price">3000</span>원
+        </div>
+      </div>
+      <div class="btn-wrapper kor">
+        <button class="basic-btn" onclick="orderItem(false, false)">
+          선택 상품 삭제
+        </button>
+        <div>
+          <button class="basic-btn" onclick="orderItem(false, true)">
+            선택 상품 주문
+          </button>
+          <button class="brown-btn" onclick="orderItem(true, true)">
+            전체 상품 주문
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="/frontend/src/js/cart.js"></script>
+  </body>
+</html>

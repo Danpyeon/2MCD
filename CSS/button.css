@@ -1,0 +1,58 @@
+.jt-btn__basic:before,
+.jt-btn__basic:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.jt-btn__basic:after {
+    background-image: url(/KJH-IMG/button/button-basic-stroke.svg);
+}
+
+
+.jt-btn__basic:before {
+    background-image: url(/KJH-IMG/button/button-basic-fill.svg);
+    opacity: 0;
+}
+
+.jt-btn__basic:hover:before {
+    opacity: 1;
+}
+
+.jt-btn__basic>span {
+    position: relative;
+    z-index: 2;
+}
+
+button {
+    background-color: #F0EDE6;
+    border: none;
+}
+
+.jt-btn__basic[class*='jt-btn__basic--icon']>span:before {
+    content: '';
+    display: block;
+    width: 24rem;
+    height: 24rem;
+    position: absolute;
+    left: -2rem;
+    top: 50%;
+    margin-top: -12rem;
+    font-family: 'jt-font';
+    font-size: 20rem;
+    line-height: 24rem;
+    text-align: center;
+    font-weight: 400;
+    color: #000;
+}
+
+.jt-btn__basic.jt-btn__basic--icon-more>span:before {
+    content: '+';
+}

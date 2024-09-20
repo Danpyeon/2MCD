@@ -6,7 +6,6 @@
     <title>STORE | 꼬띠샵</title>
     <link rel="stylesheet" href="./store_css/store.css">
     <link rel="stylesheet" href="/CSS/cursor_hover_etc.css">
-    <link rel="stylesheet" href="/CSS/top.css">
 
     <script src="./JQuery/jquery-3.7.1.js"></script>
     <script type="text/javascript">
@@ -34,7 +33,7 @@
                                 </p>
                                 <div class="store-illust">
                                     <div class="store-illust__base">
-                                        <figure class="jt-lazyload jt-lazyload--loaded">
+                                        <figure class="jt-lazyload jt-lazyload--loaded js-pin-fixed">
                                             <img width="416" height="550" data-unveil="/KJH-IMG/hover/store-character-base.jpg" src="/KJH-IMG/hover/store-character-base.jpg" alt="꼬띠">
                                             <noscript>
                                                 <img src="../KJH-IMG/hover/store-character-base.jpg" alt="꼬띠"/>
@@ -290,21 +289,7 @@
      </div>
      <footer id="footer">
      </footer>
-     <footer id="footer">
-        <a lang="en" data-barba-prevent href="#" id="go-top" class="go-top go-top--hide" style>
-            <i class="go-top__arrow"></i>
-            <span class="go-top__txt">top</span>
-            <div class="go-top__punch">
-                <span class="go-top__paw">
-                    <i></i>
-                </span>
-                <i class="go-top__scratch-01"></i>
-                <i class="go-top__scratch-02"></i>
-            </div>
-            <!-- .go-top__punch-->
-         </a>
-         <!-- .go-top -->
-     </footer>
+     
 
      <script>
         $(document).ready(() => {
@@ -322,14 +307,6 @@
                 }
             );
         });
-
-        $(document).ready( () => {
-            $('#main').mouseup (
-                () => {
-                    //마우스 눌렀을 때 이모지 뜨는 스크립트인데 누군가 적어주지 않을까? 일단 당장은 포기함
-                }
-            )
-        })
         
      </script>
 </body>

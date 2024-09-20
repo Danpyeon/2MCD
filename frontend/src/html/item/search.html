@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>검색 결과 | 반려동물에게 줄 수 있는 최고의 선물</title>
+    <link rel="stylesheet" href="/frontend/src/css/search.css" />
+    <script src="/frontend/lib/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("#header").load("/frontend/src/html/common/header.html");
+        $("#footer").load("/frontend/src/html/common/footer.html");
+      });
+    </script>
+    <link
+      rel="shortcut icon"
+      href="/frontend/img/icon/cropped-favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+    <section id="main">
+      <div class="search-page-bar">
+        <div class="search-input">
+          <input
+            class="kor search-input-field"
+            type="text"
+            placeholder="검색어를 입력해주세요"
+          />
+          <button class="delete-btn" onclick="deleteInput()">✕</button>
+          <button class="search-btn" onclick="searchItem()">&nbsp;</button>
+        </div>
+        <div class="search-title kor">
+          "
+          <span class="search-item-title"></span>
+          "의 검색결과
+        </div>
+      </div>
+      <div class="item-list-container">
+        <div class="result-wrapper">
+          <div class="title">Products</div>
+          <div class="item-list"></div>
+          <div class="btn-container">
+            <button class="more-btn" onclick="addItemList()">╋ more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="/frontend/src/js/search.js"></script>
+  </body>
+</html>

@@ -1,3 +1,8 @@
+.go-top.go-top--fix {
+    width: 58.375;
+    height: 97.292;
+}
+
 .go-top.go-top--hide {
     opacity: 0;
     z-index: -1
@@ -13,6 +18,24 @@
     -webkit-transition: opacity .3s;
     transition: opacity .3s;
     z-index: 999;
+    font-size: 16rem;
+}
+
+.go-top.go-top--fix {
+    position: fixed;
+    top: inherit;
+    bottom: 53rem;
+}
+
+.go-top__paw {
+    width: 30rem;
+    height: 62rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -15rem;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
 }
 
 @media (max-width: 1800px) {
@@ -27,10 +50,13 @@
     }
 }
 
-.go-top.go-top--fix {
-    position: fixed;
-    top: inherit;
-    bottom: 53rem;
+@keyframes go-top-anima {
+    from {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        transform: translate3d(-6px, -58.68586px, 0px) rotate(-25deg);
+    }
 }
 
 .go-top__arrow {
@@ -44,8 +70,8 @@
 .go-top__arrow:after {
     display: block;
     width: 100%;
-    font-family: 'jt-font';
-    content: '\e900';
+    font-family: 'xeicon';
+    content: '\e944';
     font-size: 16rem;
     line-height: 1;
     font-weight: 400;
@@ -75,6 +101,47 @@
     left: 0;
     bottom: 0;
 }
+.go-top__punch>i {
+    display: block;
+    position: absolute;
+    left: 50%;
+    background: no-repeat center center;
+    z-index: 1
+}
+.go-top__paw>i {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url(/wp-content/themes/cotie/css/../images/layout/top-paw-brown.svg) no-repeat center bottom
+}
+.go-top__paw.brown>i {
+    background-image: url(/KJH-IMG/top/top-paw-brown.svg);
+}
+.go-top__paw.white>i {
+    background-image: url(/KJH-IMG/top/top-paw-white.svg);
+}
+.go-top__paw.spotted>i {
+    background-image: url(/KJH-IMG/top/top-paw-spotted.svg);
+}
+.go-top__paw.dark>i {
+    background-image: url(/KJH-IMG/top/top-paw-dark.svg);
+}
+html.ie11 .go-top__punch>i.go-top__scratch-01 {
+    bottom: 57rem
+}
+
+html.ie11 .go-top__punch>i.go-top__scratch-02 {
+    bottom: 58rem
+}
+
+html.ie11 .go-top__paw>i {
+    bottom: -3rem
+}
+
+
+
 
 .go-top__punch>i.go-top__scratch-01 {
     width: 6rem;
@@ -90,17 +157,4 @@
     left: 18rem;
     bottom: 54rem;
     background-image: url(/KJH-IMG/top/top-scratch-02.svg);
-}
-
-.go-top__paw.spotted>i {
-    background-image: url(/KJH-IMG/top/top-paw-spotted.svg);
-}
-.go-top__paw.dark>i {
-    background-image: url(/KJH-IMG/top/top-paw-dark.svg);
-}
-.go-top__paw.white>i {
-    background-image: url(/KJH-IMG/top/top-paw-white.svg);
-}
-.go-top__paw.brown>i {
-    background-image: url(/KJH-IMG/top/top-paw-brown.svg);
 }
